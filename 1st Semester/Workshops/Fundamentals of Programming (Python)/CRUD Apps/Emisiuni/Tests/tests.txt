@@ -1,0 +1,3 @@
+Jurnal,Stiri,Informatii,2
+Reportaj,Informare,Viata la sat,3
+Divertisment,Film,5 Sense,4

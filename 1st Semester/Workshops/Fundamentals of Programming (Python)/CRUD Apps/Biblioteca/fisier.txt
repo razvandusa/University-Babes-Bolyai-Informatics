@@ -1,0 +1,10 @@
+345678912,Moromeții,Marin Preda,1955
+456789123,Baltagul,Mihail Sadoveanu,1930
+1023456789,Ultima noapte de dragoste întâia noapte de război,Camil Petrescu,1930
+234567891,Amintiri din copilărie,Ion Creangă,1890
+678912345,Enigma Otiliei,George Călinescu,1938
+789123456,Cel mai iubit dintre pământeni,Marin Preda,1980
+891234567,Scrisoarea pierdută,I.L. Caragiale,1884
+567891234,Pădurea spânzuraților,Liviu Rebreanu,1922
+912345678,Ciuleandra,Liviu Rebreanu,1927
+1123456789,Hanul Ancuței,Mihail Sadoveanu,1928
