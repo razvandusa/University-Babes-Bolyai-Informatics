@@ -10,7 +10,7 @@ date_oferta *constructor_oferta(char *tip, char *destinatie, char *data_plecare,
     oferta->destinatie = (char *) malloc((strlen(destinatie) + 1));
     oferta->data_plecare = (char *) malloc((strlen(data_plecare) + 1));
 
-    //Copiem datele date din parametrii functiei in oferta
+    //Copiem datele date din parametrii functiei in oferta data
     strcpy(oferta->tip, tip);
     strcpy(oferta->destinatie, destinatie);
     strcpy(oferta->data_plecare, data_plecare);

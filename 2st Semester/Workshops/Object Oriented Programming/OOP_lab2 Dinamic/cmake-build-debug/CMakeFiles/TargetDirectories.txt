@@ -1,3 +1,3 @@
-/Users/razvandusa/Documents/CLionProjects/OOP_lab2 Dinamic/cmake-build-debug/CMakeFiles/OOP_lab2.dir
-/Users/razvandusa/Documents/CLionProjects/OOP_lab2 Dinamic/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/razvandusa/Documents/CLionProjects/OOP_lab2 Dinamic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Object Oriented Programming/OOP_lab2 Dinamic/cmake-build-debug/CMakeFiles/OOP_lab2.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Object Oriented Programming/OOP_lab2 Dinamic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Object Oriented Programming/OOP_lab2 Dinamic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
