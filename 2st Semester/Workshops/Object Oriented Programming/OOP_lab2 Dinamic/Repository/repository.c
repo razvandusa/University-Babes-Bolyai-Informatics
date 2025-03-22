@@ -56,6 +56,7 @@ void actualizeaza_oferta(lista_de_oferte *lista, date_oferta *oferta, date_ofert
 }
 
 void sterge_oferta(lista_de_oferte *lista, date_oferta *oferta) {
+    //Cautam oferta pe care o stergem in lista
     for (int i = 0; i < lista->len; i++) {
         if (oferte_egale(&lista->oferte[i], oferta)) { //Cand am gasit oferta pe care vrem sa o stergem ii dam swap pana pe ultima pozitie
             for (int j = i; j < lista->len - 1; j++) {
