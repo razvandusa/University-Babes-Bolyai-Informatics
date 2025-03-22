@@ -44,7 +44,7 @@ void adaugare_oferta(lista_de_oferte *lista, date_oferta *oferta) {
 void actualizeaza_oferta(lista_de_oferte *lista, date_oferta *oferta, date_oferta *oferta_actualizata) {
     for (int i = 0; i <= lista->len; i++) {
         if (oferte_egale(&lista->oferte[i], oferta)) { //Aici am gasit oferta pe care dorim sa o actualizam
-            //Se reactualizeaza datele
+            //Se reactualizeaza datele smecher
             strcpy(lista->oferte[i].tip, oferta_actualizata->tip);
             strcpy(lista->oferte[i].destinatie, oferta_actualizata->destinatie);
             strcpy(lista->oferte[i].data_plecare, oferta_actualizata->data_plecare);
