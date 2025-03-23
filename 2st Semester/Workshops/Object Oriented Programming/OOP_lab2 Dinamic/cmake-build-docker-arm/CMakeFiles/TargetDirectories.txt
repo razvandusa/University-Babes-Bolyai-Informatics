@@ -1,3 +1,0 @@
-/tmp/OOP_lab2 Dinamic/cmake-build-docker-arm/CMakeFiles/OOP_lab2.dir
-/tmp/OOP_lab2 Dinamic/cmake-build-docker-arm/CMakeFiles/edit_cache.dir
-/tmp/OOP_lab2 Dinamic/cmake-build-docker-arm/CMakeFiles/rebuild_cache.dir
