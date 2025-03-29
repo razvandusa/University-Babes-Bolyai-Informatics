@@ -1,0 +1,105 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/teste/teste_domain.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/teste/teste_domain.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/teste/teste_domain.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../model/participant.h"
+        -:    2:#include "teste_domain.h"
+        -:    3:#include <assert.h>
+        -:    4:#include <string.h>
+        -:    5:#include <stdio.h>
+        -:    6:#include "../model/validation.h"
+        -:    7:
+function test_transpunere called 1 returned 100% blocks executed 52%
+        1:    8:void test_transpunere() {
+        1:    9:    Participant p1 = {1, "Nume1", "Prenume1", 20, 3};
+        1:   10:    Participant p2 = {2, "Nume2", "Prenume2", 40, 5};
+        1:   11:    transpunere(&p1, &p2);
+        -:   12:
+        1:   13:    assert(p1.id == p2.id);
+        1:   13-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   13-block  1
+    $$$$$:   13-block  2
+        1:   13-block  3
+        1:   14:    assert(strcmp(p1.nume, p2.nume) == 0);
+        1:   14-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   14-block  1
+    $$$$$:   14-block  2
+        1:   14-block  3
+        1:   15:    assert(strcmp(p1.prenume, p2.prenume) == 0);
+        1:   15-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   15-block  1
+    $$$$$:   15-block  2
+        1:   15-block  3
+        1:   16:    assert(p1.scor == p2.scor);
+        1:   16-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   16-block  1
+    $$$$$:   16-block  2
+        1:   16-block  3
+        1:   17:    assert(p1.probleme_rezolvate == p2.probleme_rezolvate);
+        1:   17-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   17-block  1
+    $$$$$:   17-block  2
+        1:   17-block  3
+        1:   18:    printf("Testele pentru domain ok\n");
+        1:   19:}
+        1:   19-block  0
+        -:   20:
+function test_validare called 1 returned 100% blocks executed 52%
+        1:   21:void test_validare() {
+        1:   22:    Participant p1 = {1, "Nume", "Prenume", 10, 1};
+        1:   23:    assert(validare(p1) == 1);
+        1:   23-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   23-block  1
+    $$$$$:   23-block  2
+        1:   23-block  3
+        -:   24:
+        1:   25:    Participant p2 = {-1, "Nume", "Prenume", 0, 1};
+        1:   26:    assert(validare(p2) == 0);
+        1:   26-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   26-block  1
+    $$$$$:   26-block  2
+        1:   26-block  3
+        -:   27:
+        1:   28:    Participant p3 = {2, "Nume", "Prenume", -3, 1};
+        1:   29:    assert(validare(p3) == 0);
+        1:   29-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   29-block  1
+    $$$$$:   29-block  2
+        1:   29-block  3
+        -:   30:
+        1:   31:    Participant p4 = {3, "Nume", "Prenume", 5, -10};
+        1:   32:    assert(validare(p4) == 0);
+        1:   32-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   32-block  1
+    $$$$$:   32-block  2
+        1:   32-block  3
+        1:   33:}
+        1:   33-block  0
+        -:   34:
+function test_all_domain called 1 returned 100% blocks executed 100%
+        1:   35:void test_all_domain() {
+        1:   36:    test_transpunere();
+        1:   37:    test_validare();
+        1:   38:}
+        1:   38-block  0
+        -:   39:
+        -:   40:

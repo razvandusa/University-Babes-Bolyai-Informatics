@@ -1,0 +1,373 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/service/service_participanti.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/service/service_participanti.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/service/service_participanti.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "service_participanti.h"
+        -:    2:
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:
+        -:    6:#include "../repo/repo.h"
+        -:    7:
+        -:    8:
+function adauga_participant called 10 returned 100% blocks executed 100%
+       10:    9:int adauga_participant(Repository* repo, int id,   char* nume,  char* prenume) {
+       10:   10:    return store(repo, id, nume, prenume);
+       10:   10-block  0
+        -:   11:}
+        -:   12:
+function sterge_participant called 3 returned 100% blocks executed 100%
+        3:   13:int sterge_participant(Repository* repo, int id) {
+        3:   14:    return delete(repo, id);
+        3:   14-block  0
+        -:   15:}
+        -:   16:
+function rezolvare_problema called 4 returned 100% blocks executed 100%
+        4:   17:int rezolvare_problema(Repository* repo, int id, int punctaj) {
+        4:   18:    int pos = find(repo, id);
+        4:   19:    if (pos == -1)
+        4:   19-block  0
+branch  0 taken 1
+branch  1 taken 3
+        1:   20:        return 0;
+        1:   20-block  0
+        3:   21:    repo->lista_repo.lista_participanti[pos].probleme_rezolvate++;
+        3:   22:    repo->lista_repo.lista_participanti[pos].scor += punctaj;
+        3:   23:    return 1;
+        3:   23-block  0
+        -:   24:
+        4:   25:}
+        4:   25-block  0
+        -:   26:
+function update_nume called 2 returned 100% blocks executed 100%
+        2:   27:int update_nume(Repository* repo, int id,   char* nume_update) {
+        2:   28:    int pos = find(repo, id);
+        2:   29:    if (pos == -1) {
+        2:   29-block  0
+branch  0 taken 1
+branch  1 taken 1
+        1:   30:        return 0;
+        1:   30-block  0
+        -:   31:    }
+        -:   32:
+        1:   33:    Participant* participant = &repo->lista_repo.lista_participanti[pos];
+        -:   34:
+        1:   35:    return update(repo, id, nume_update, participant->prenume, participant->probleme_rezolvate, participant->scor);
+        1:   35-block  0
+        2:   36:}
+        2:   36-block  0
+        -:   37:
+function update_prenume called 2 returned 100% blocks executed 100%
+        2:   38:int update_prenume(Repository* repo,  int id,   char* prenume_update) {
+        2:   39:    int pos = find(repo, id);
+        2:   40:    if (pos == -1) {
+        2:   40-block  0
+branch  0 taken 1
+branch  1 taken 1
+        1:   41:        return 0;
+        1:   41-block  0
+        -:   42:    }
+        -:   43:
+        1:   44:    Participant* participant = &repo->lista_repo.lista_participanti[pos];
+        -:   45:
+        1:   46:    return update(repo, id, participant->nume, prenume_update, participant->probleme_rezolvate, participant->scor);
+        1:   46-block  0
+        2:   47:}
+        2:   47-block  0
+        -:   48:
+function update_probleme_rezolvate called 2 returned 100% blocks executed 100%
+        2:   49:int update_probleme_rezolvate(Repository* repo, int id, int probleme_update) {
+        2:   50:    int pos = find(repo, id);
+        2:   51:    if (pos == -1 || probleme_update < 0) {
+        2:   51-block  0
+branch  0 taken 1
+branch  1 taken 1
+        1:   51-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   52:        return 0;
+        1:   52-block  0
+        -:   53:    }
+        -:   54:
+        1:   55:    Participant* participant = &repo->lista_repo.lista_participanti[pos];
+        -:   56:
+        1:   57:    return update(repo, id, participant->nume, participant->prenume, probleme_update, participant->scor);
+        1:   57-block  0
+        2:   58:}
+        2:   58-block  0
+        -:   59:
+function update_scor called 2 returned 100% blocks executed 100%
+        2:   60:int update_scor(Repository* repo, int id, int scor_upadte) {
+        -:   61:
+        2:   62:        int pos = find(repo, id);
+        2:   63:        if (pos == -1 || scor_upadte < 0) {
+        2:   63-block  0
+branch  0 taken 1
+branch  1 taken 1
+        1:   63-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   64:            return 0;
+        1:   64-block  0
+        -:   65:        }
+        -:   66:
+        1:   67:        Participant* participant = &repo->lista_repo.lista_participanti[pos];
+        -:   68:
+        1:   69:        return update(repo, id, participant->nume, participant->prenume, participant->probleme_rezolvate, scor_upadte);
+        1:   69-block  0
+        2:   70:}
+        2:   70-block  0
+        -:   71:
+function filtrare called 5 returned 100% blocks executed 100%
+        5:   72:Repository filtrare(Repository repo, int scor) {
+        5:   73:    int dimensiune = repo.lista_repo.dimensiune;
+        -:   74:    Repository repo_filtrat;
+        5:   75:    initializare_lista_participanti(&repo_filtrat);
+        5:   76:    repo_filtrat.lista_repo.dimensiune = dimensiune;
+        5:   77:    if (dimensiune  == 0) {
+        5:   77-block  0
+branch  0 taken 1
+branch  1 taken 4
+        1:   78:        return repo_filtrat;
+        1:   78-block  0
+        -:   79:    }
+        4:   80:    int index = 0;
+       16:   81:    for (int i = 0; i < dimensiune; i++) {
+        4:   81-block  0
+       16:   81-block  1
+branch  0 taken 12
+branch  1 taken 4
+       12:   81-block  2
+       12:   82:        if (repo.lista_repo.lista_participanti[i].scor >= scor) {
+       12:   82-block  0
+branch  0 taken 6
+branch  1 taken 6
+        6:   83:            transpunere(&repo_filtrat.lista_repo.lista_participanti[index], &repo.lista_repo.lista_participanti[i]);
+        6:   84:            index++;
+        6:   85:        }
+        6:   85-block  0
+       12:   86:    }
+       12:   86-block  0
+        4:   87:    repo_filtrat.lista_repo.dimensiune = index;
+        4:   88:    return repo_filtrat;
+        4:   88-block  0
+        5:   89:}
+        5:   89-block  0
+        -:   90:
+function swtich_participanti called 15 returned 100% blocks executed 100%
+       15:   91:void swtich_participanti(Participant* p1, Participant* p2) {
+        -:   92:    Participant p_aux;
+       15:   93:    transpunere(&p_aux, p1);
+       15:   94:    transpunere(p1, p2);
+       15:   95:    transpunere(p2, &p_aux);
+       15:   96:}
+       15:   96-block  0
+        -:   97:
+function sortare_nume called 4 returned 100% blocks executed 100%
+        4:   98:Repository sortare_nume(Repository repo, int ordine, int (*comparare)(Participant, Participant)) {
+        4:   99:    int dimensiune = repo.lista_repo.dimensiune;
+        -:  100:
+        4:  101:    if (dimensiune == 0) {
+        4:  101-block  0
+branch  0 taken 2
+branch  1 taken 2
+        2:  102:        return repo;
+        2:  102-block  0
+        -:  103:    }
+        -:  104:
+        -:  105:    //crescator
+        2:  106:    if (ordine == 1) {
+        2:  106-block  0
+branch  0 taken 1
+branch  1 taken 1
+        4:  107:        for (int i = 0; i < dimensiune-1; i++) {
+        1:  107-block  0
+        4:  107-block  1
+branch  0 taken 3
+branch  1 taken 1
+        3:  107-block  2
+        9:  108:            for (int j = i+1; j < dimensiune; j++) {
+        3:  108-block  0
+        9:  108-block  1
+branch  0 taken 6
+branch  1 taken 3
+        6:  108-block  2
+        6:  109:                if (comparare(repo.lista_repo.lista_participanti[i], repo.lista_repo.lista_participanti[j]) > 0) {
+        6:  109-block  0
+branch  0 taken 4
+branch  1 taken 2
+        2:  110:                        swtich_participanti(&repo.lista_repo.lista_participanti[i], &repo.lista_repo.lista_participanti[j]);
+        2:  111:                    }
+        2:  111-block  0
+        6:  112:                }
+        6:  112-block  0
+        -:  113:
+        3:  114:            }
+        3:  114-block  0
+        1:  115:        return repo;
+        1:  115-block  0
+        -:  116:        }
+        -:  117:
+        -:  118:
+        -:  119:    //descrescator
+        4:  120:    for (int i = 0; i < dimensiune-1; i++) {
+        1:  120-block  0
+        4:  120-block  1
+branch  0 taken 3
+branch  1 taken 1
+        3:  120-block  2
+        9:  121:        for (int j = i+1; j < dimensiune; j++) {
+        3:  121-block  0
+        9:  121-block  1
+branch  0 taken 6
+branch  1 taken 3
+        6:  121-block  2
+        6:  122:            if (comparare(repo.lista_repo.lista_participanti[i], repo.lista_repo.lista_participanti[j]) < 0) {
+        6:  122-block  0
+branch  0 taken 0
+branch  1 taken 6
+        6:  123:                    swtich_participanti(&repo.lista_repo.lista_participanti[i], &repo.lista_repo.lista_participanti[j]);
+        6:  124:                }
+        6:  124-block  0
+        6:  125:        }
+        6:  125-block  0
+        3:  126:    }
+        3:  126-block  0
+        1:  127:    return repo;
+        1:  127-block  0
+        -:  128:
+        -:  129:
+        4:  130:}
+        4:  130-block  0
+        -:  131:
+function comparare_nume called 15 returned 100% blocks executed 100%
+       15:  132:int comparare_nume(Participant p1, Participant p2) {
+       15:  133:    if (strcmp(p1.nume, p2.nume) == 0) {
+       15:  133-block  0
+branch  0 taken 10
+branch  1 taken 5
+        5:  134:        if (strcmp(p1.prenume, p2.prenume) == 0) {
+        5:  134-block  0
+branch  0 taken 1
+branch  1 taken 4
+        1:  135:            return comparare_scor(p1, p2);
+        1:  135-block  0
+        -:  136:        } else {
+        4:  137:            return strcmp(p1.prenume, p2.prenume);
+        4:  137-block  0
+        -:  138:        }
+        -:  139:    }
+       10:  140:    return strcmp(p1.nume, p2.nume);
+       10:  140-block  0
+       15:  141:}
+       15:  141-block  0
+        -:  142:
+function comparare_scor called 16 returned 100% blocks executed 100%
+       16:  143:int comparare_scor(Participant p1, Participant p2) {
+       16:  144:    if (p1.scor == p2.scor) {
+       16:  144-block  0
+branch  0 taken 2
+branch  1 taken 14
+        2:  145:        return 0;
+        2:  145-block  0
+       14:  146:    } else if (p1.scor > p2.scor) {
+       14:  146-block  0
+branch  0 taken 2
+branch  1 taken 12
+        2:  147:        return 1;
+        2:  147-block  0
+        -:  148:    }
+       12:  149:    return -1;
+       12:  149-block  0
+       16:  150:}
+       16:  150-block  0
+        -:  151:
+function sortare_scor called 3 returned 100% blocks executed 100%
+        3:  152:Repository sortare_scor(Repository repo, int ordine, int (*comparare)(Participant, Participant)) {
+        3:  153:    int dimensiune = repo.lista_repo.dimensiune;
+        3:  154:    if (dimensiune == 0) {
+        3:  154-block  0
+branch  0 taken 2
+branch  1 taken 1
+        1:  155:        return repo;
+        1:  155-block  0
+        -:  156:    }
+        -:  157:
+        -:  158:    //crescator
+        2:  159:    if (ordine == 1) {
+        2:  159-block  0
+branch  0 taken 1
+branch  1 taken 1
+        4:  160:        for (int i = 0; i < dimensiune-1; i++) {
+        1:  160-block  0
+        4:  160-block  1
+branch  0 taken 3
+branch  1 taken 1
+        3:  160-block  2
+        9:  161:            for (int j = i+1; j < dimensiune; j++) {
+        3:  161-block  0
+        9:  161-block  1
+branch  0 taken 6
+branch  1 taken 3
+        6:  161-block  2
+        6:  162:                 if (comparare(repo.lista_repo.lista_participanti[i], repo.lista_repo.lista_participanti[j]) > 0) {
+        6:  162-block  0
+branch  0 taken 5
+branch  1 taken 1
+        1:  163:                    swtich_participanti(&repo.lista_repo.lista_participanti[i], &repo.lista_repo.lista_participanti[j]);
+        1:  164:                }
+        1:  164-block  0
+        6:  165:            }
+        6:  165-block  0
+        -:  166:
+        3:  167:        }
+        3:  167-block  0
+        1:  168:        return repo;
+        1:  168-block  0
+        -:  169:    }
+        -:  170:    //descrescator
+        4:  171:    for (int i = 0; i < dimensiune-1; i++) {
+        1:  171-block  0
+        4:  171-block  1
+branch  0 taken 3
+branch  1 taken 1
+        3:  171-block  2
+        9:  172:        for (int j = i+1; j < dimensiune; j++) {
+        3:  172-block  0
+        9:  172-block  1
+branch  0 taken 6
+branch  1 taken 3
+        6:  172-block  2
+        6:  173:            if (comparare(repo.lista_repo.lista_participanti[i], repo.lista_repo.lista_participanti[j]) < 0) {
+        6:  173-block  0
+branch  0 taken 1
+branch  1 taken 5
+        5:  174:                swtich_participanti(&repo.lista_repo.lista_participanti[i], &repo.lista_repo.lista_participanti[j]);
+        5:  175:            }
+        5:  175-block  0
+        6:  176:        }
+        6:  176-block  0
+        3:  177:    }
+        3:  177-block  0
+        1:  178:    return repo;
+        1:  178-block  0
+        3:  179:}
+        3:  179-block  0
+        -:  180:
+function undo_service called 2 returned 100% blocks executed 100%
+        2:  181:int undo_service(Repository* repo) {
+        2:  182:    if (repo->lista_repo_undo.dimensiune == 0) {
+        2:  182-block  0
+branch  0 taken 1
+branch  1 taken 1
+        1:  183:        elibereaza_lista_participanti(repo);
+        1:  184:        initializare_lista_participanti(repo);
+        1:  185:        return 0;
+        1:  185-block  0
+        -:  186:    }
+        1:  187:    undo(repo);
+        1:  188:    return 1;
+        1:  188-block  0
+        2:  189:}
+        2:  189-block  0

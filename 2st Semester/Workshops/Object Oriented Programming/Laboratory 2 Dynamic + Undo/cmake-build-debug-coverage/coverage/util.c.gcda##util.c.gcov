@@ -1,0 +1,398 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/util/util.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/util/util.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/util/util.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+        -:    2:#include<stdio.h>
+        -:    3:#include<string.h>
+        -:    4:#include<ctype.h>
+        -:    5:#include "util.h"
+        -:    6:
+function id_selector called 0 returned 0% blocks executed 0%
+    #####:    7:int id_selector() {
+        -:    8:    int choice;
+    #####:    9:    while(1) {
+    $$$$$:    9-block  0
+    #####:   10:        printf("ID:");
+    #####:   11:        if(scanf("%d", &choice) != 1) {
+    $$$$$:   11-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   12:            printf("Input invalid\n");
+    #####:   13:            while (getchar() != '\n'){}
+    $$$$$:   13-block  0
+    $$$$$:   13-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   13-block  2
+    #####:   14:            continue;
+    $$$$$:   14-block  0
+        -:   15:        }
+    #####:   16:          if (choice <= 0) {
+    $$$$$:   16-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   17:              printf("ID-ul trebuie sa fie numar intreg strict pozitiv\n");
+    #####:   18:              continue;
+    $$$$$:   18-block  0
+        -:   19:        }
+    #####:   20:        return choice;
+    $$$$$:   20-block  0
+        -:   21:    }
+        -:   22:}
+        -:   23:
+function choice_selector called 1 returned 100% blocks executed 42%
+        1:   24:int choice_selector() {
+        -:   25:    int choice;
+        1:   26:    while(1) {
+        1:   26-block  0
+        1:   27:        printf("Optiune:");
+        1:   28:        if(scanf("%d", &choice) != 1) {
+        1:   28-block  0
+branch  0 taken 0
+branch  1 taken 1
+    #####:   29:            printf("Input invalid\n");
+    #####:   30:            while (getchar() != '\n'){}
+    $$$$$:   30-block  0
+    $$$$$:   30-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   30-block  2
+    #####:   31:            continue;
+    $$$$$:   31-block  0
+        -:   32:        }
+        1:   33:        return choice;
+        1:   33-block  0
+        -:   34:    }
+        -:   35:
+        -:   36:}
+        -:   37:
+function punctaj_input called 0 returned 0% blocks executed 0%
+    #####:   38:int punctaj_input() {
+        -:   39:    int punctaj;
+    #####:   40:    while(1) {
+    $$$$$:   40-block  0
+    #####:   41:        printf("Punctajul problemei rezolvate: ");
+    #####:   42:        if(scanf("%d", &punctaj) != 1) {
+    $$$$$:   42-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   43:            printf("Input invalid\n");
+    #####:   44:            while (getchar() != '\n'){}
+    $$$$$:   44-block  0
+    $$$$$:   44-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   44-block  2
+    #####:   45:            continue;
+    $$$$$:   45-block  0
+        -:   46:        }
+    #####:   47:        if (punctaj < 1 || punctaj > 10) {
+    $$$$$:   47-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   47-block  1
+branch  2 never executed
+branch  3 never executed
+    #####:   48:            printf("Punctajul problemei trebuie sa fie intre 1 si 10\n");
+    #####:   49:            while (getchar() != '\n'){}
+    $$$$$:   49-block  0
+    $$$$$:   49-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   49-block  2
+    #####:   50:            continue;
+    $$$$$:   50-block  0
+        -:   51:        }
+        -:   52:
+    #####:   53:        return punctaj;
+    $$$$$:   53-block  0
+        -:   54:    }
+        -:   55:}
+        -:   56:
+function nume_input called 0 returned 0% blocks executed 0%
+    #####:   57:Participant nume_input() {
+        -:   58:    Participant participant_input;
+        -:   59:    char nume[30];
+        -:   60:
+    #####:   61:    while (1) {
+    $$$$$:   61-block  0
+    $$$$$:   61-block  1
+    #####:   62:        printf("Nume: ");
+    #####:   63:        if (scanf("%s", nume) != 1) {
+    $$$$$:   63-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   64:            printf("Numele invalid\n");
+    #####:   65:            while (getchar() != '\n'){}
+    $$$$$:   65-block  0
+    $$$$$:   65-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   65-block  2
+    #####:   66:            continue;
+    $$$$$:   66-block  0
+        -:   67:        }
+    #####:   68:        int valid = 1;
+    #####:   69:        if (strlen(nume) > 20) {
+    $$$$$:   69-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   70:            printf("Numele poate avea maxim 20 de caractere\n");
+    #####:   71:            while (getchar() != '\n'){}
+    $$$$$:   71-block  0
+    $$$$$:   71-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   71-block  2
+    #####:   72:            continue;
+    $$$$$:   72-block  0
+        -:   73:        }
+    #####:   74:        for (int i = 0; i <= (int)(strlen(nume))-1; i++) {
+    $$$$$:   74-block  0
+    $$$$$:   74-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   74-block  2
+        -:   75:            // printf("%d\n", (int)strlen(nume));
+    #####:   76:            if (isdigit(nume[i])) {
+    $$$$$:   76-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   77:                printf("Numele nu poate contine cifre\n");
+    #####:   78:                while (getchar() != '\n'){}
+    $$$$$:   78-block  0
+    $$$$$:   78-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   78-block  2
+    #####:   79:                valid = 0;
+    #####:   80:                break;
+    $$$$$:   80-block  0
+        -:   81:            }
+    #####:   82:        }
+    $$$$$:   82-block  0
+    #####:   83:        if (valid)
+    $$$$$:   83-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   84:            break;
+    $$$$$:   84-block  0
+        -:   85:    }
+    #####:   86:    strcpy(participant_input.nume, nume);
+    #####:   87:    return participant_input;
+    $$$$$:   87-block  0
+        -:   88:}
+        -:   89:
+function prenume_input called 0 returned 0% blocks executed 0%
+    #####:   90:Participant prenume_input() {
+        -:   91:    Participant participant_input;
+        -:   92:    char prenume[30];
+        -:   93:
+    #####:   94:    while (1) {
+    $$$$$:   94-block  0
+    $$$$$:   94-block  1
+    #####:   95:        printf("Prenume: ");
+    #####:   96:        if (scanf("%s", prenume) != 1) {
+    $$$$$:   96-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   97:            printf("Prenume invalid\n");
+    #####:   98:            while (getchar() != '\n'){}
+    $$$$$:   98-block  0
+    $$$$$:   98-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   98-block  2
+    #####:   99:            continue;
+    $$$$$:   99-block  0
+        -:  100:        }
+    #####:  101:        int valid = 1;
+    #####:  102:        if (strlen(prenume) > 20) {
+    $$$$$:  102-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  103:            printf("Prenumele poate avea maxim 20 de caractere\n");
+    #####:  104:            while (getchar() != '\n'){}
+    $$$$$:  104-block  0
+    $$$$$:  104-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  104-block  2
+    #####:  105:            continue;
+    $$$$$:  105-block  0
+        -:  106:        }
+    #####:  107:        for (int i = 0; i <= (int)(strlen(prenume))-1; i++) {
+    $$$$$:  107-block  0
+    $$$$$:  107-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  107-block  2
+    #####:  108:            if (isdigit(prenume[i])) {
+    $$$$$:  108-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  109:                printf("Prenumele nu poate contine cifre\n");
+    #####:  110:                while (getchar() != '\n'){}
+    $$$$$:  110-block  0
+    $$$$$:  110-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  110-block  2
+    #####:  111:                valid = 0;
+    #####:  112:                break;
+    $$$$$:  112-block  0
+        -:  113:            }
+    #####:  114:        }
+    $$$$$:  114-block  0
+    #####:  115:        if (valid)
+    $$$$$:  115-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  116:            break;
+    $$$$$:  116-block  0
+        -:  117:    }
+    #####:  118:    strcpy(participant_input.prenume, prenume);
+    #####:  119:    return participant_input;
+    $$$$$:  119-block  0
+        -:  120:}
+        -:  121:
+function probleme_rezolvate_input called 0 returned 0% blocks executed 0%
+    #####:  122:int probleme_rezolvate_input() {
+        -:  123:    int numar;
+    #####:  124:    while (1) {
+    $$$$$:  124-block  0
+    $$$$$:  124-block  1
+    #####:  125:        printf("Noul numar de probleme rezolvate : ");
+    #####:  126:        if (scanf("%d", &numar) != 1) {
+    $$$$$:  126-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  127:            printf("Numar invalid\n");
+    #####:  128:            while (getchar() != '\n');
+    $$$$$:  128-block  0
+    $$$$$:  128-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  128-block  2
+    #####:  129:        } else if (numar < 0 ){
+    $$$$$:  129-block  0
+    $$$$$:  129-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:  130:            printf("Numarul de probleme rezolvate trebuie sa fie pozitiv\n");
+    #####:  131:            while (getchar() != '\n'){}
+    $$$$$:  131-block  0
+    $$$$$:  131-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  131-block  2
+    #####:  132:        } else {
+    $$$$$:  132-block  0
+    #####:  133:            break;
+    $$$$$:  133-block  0
+        -:  134:        }
+        -:  135:    }
+    #####:  136:    return numar;
+    $$$$$:  136-block  0
+        -:  137:}
+        -:  138:
+function scor_input called 0 returned 0% blocks executed 0%
+    #####:  139:int scor_input() {
+        -:  140:    int scor;
+    #####:  141:    while (1) {
+    $$$$$:  141-block  0
+    $$$$$:  141-block  1
+    #####:  142:        printf("Scor: ");
+    #####:  143:        if (scanf("%d", &scor) != 1) {
+    $$$$$:  143-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  144:            printf("Scor invalid\n");
+    #####:  145:            while (getchar() != '\n');
+    $$$$$:  145-block  0
+    $$$$$:  145-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  145-block  2
+    #####:  146:        } else if (scor < 0){
+    $$$$$:  146-block  0
+    $$$$$:  146-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:  147:            printf("Scorul trebuie sa fie pozitiv\n");
+    #####:  148:            while (getchar() != '\n'){}
+    $$$$$:  148-block  0
+    $$$$$:  148-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  148-block  2
+    #####:  149:        } else {
+    $$$$$:  149-block  0
+    #####:  150:            break;
+    $$$$$:  150-block  0
+        -:  151:        }
+        -:  152:    }
+    #####:  153:    return scor;
+    $$$$$:  153-block  0
+        -:  154:}
+        -:  155:
+function ordine_input called 0 returned 0% blocks executed 0%
+    #####:  156:int ordine_input() {
+    #####:  157:    while (1) {
+    $$$$$:  157-block  0
+    $$$$$:  157-block  1
+        -:  158:        char ordine[15];
+    #####:  159:        printf("Ordine (crescator/descrescator): ");
+    #####:  160:        if (scanf("%s", ordine) != 1) {
+    $$$$$:  160-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  161:            printf("Input invalid\n");
+    #####:  162:            while (getchar() != '\n'){}
+    $$$$$:  162-block  0
+    $$$$$:  162-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  162-block  2
+    #####:  163:            continue;
+    $$$$$:  163-block  0
+        -:  164:        }
+    #####:  165:        if (strcmp(ordine, "crescator") == 0) {
+    $$$$$:  165-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  166:            return 1;
+    $$$$$:  166-block  0
+    #####:  167:        } else if (strcmp(ordine, "descrescator") == 0) {
+    $$$$$:  167-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  168:            return 0;
+    $$$$$:  168-block  0
+        -:  169:        } else {
+    #####:  170:            printf("Ordine invalida (optiunile sunt crescator/descrescator)\n");
+    #####:  171:            while (getchar() != '\n'){}
+    $$$$$:  171-block  0
+    $$$$$:  171-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  171-block  2
+        -:  172:        }
+        -:  173:    }
+    #####:  174:}
+    $$$$$:  174-block  0
+        -:  175:
+        -:  176:
+function input_participant called 0 returned 0% blocks executed 0%
+    #####:  177:Participant input_participant() {
+        -:  178:    Participant participant_input;
+    #####:  179:    int id = id_selector();
+    #####:  180:    participant_input.id = id;
+    #####:  181:    strcpy(participant_input.nume, nume_input().nume);
+    #####:  182:    strcpy(participant_input.prenume, prenume_input().prenume);
+    #####:  183:    return participant_input;
+    $$$$$:  183-block  0
+        -:  184:
+        -:  185:}

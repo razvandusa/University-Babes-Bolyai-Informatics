@@ -1,0 +1,3 @@
+/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir
+/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir

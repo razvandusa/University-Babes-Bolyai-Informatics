@@ -1,0 +1,22 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/teste/test_all.h
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/main.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/main.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#ifndef TEST_ALL_H
+        -:    2:#define TEST_ALL_H
+        -:    3://Functie pentru rularea testelor aferente tuturor modulelor
+        -:    4:#include "teste_domain.h"
+        -:    5:#include "teste_repo.h"
+        -:    6:#include "teste_service.h"
+        -:    7:
+        -:    8://Apeleaza functiile de test aferente tuturor modulelor
+function test_all called 1 returned 100% blocks executed 100%
+        1:    9:void test_all() {
+        1:   10:    test_all_domain();
+        1:   11:    test_all_repo();
+        1:   12:    test_all_service();
+        1:   13:}
+        1:   13-block  0
+        -:   14:
+        -:   15:#endif

@@ -1,0 +1,426 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/ui/ui.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/ui/ui.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/ui/ui.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include<stdio.h>
+        -:    2:#include "ui.h"
+        -:    3:#include "../service/service_participanti.h"
+        -:    4:#include "../util/util.h"
+        -:    5:#include <ctype.h>
+        -:    6:#include <string.h>
+        -:    7:
+        -:    8:
+function run_app called 1 returned 100% blocks executed 27%
+        1:    9:void run_app() {
+        1:   10:    int isRunning = 1;
+        -:   11:    Repository repo;
+        1:   12:    initializare_lista_participanti(&repo);
+        1:   13:    initializare_lista_undo(&repo);
+        1:   14:    initializare_lista_participanti_stersi(&repo);
+        -:   15:
+        2:   16:    while (isRunning) {
+        1:   16-block  0
+        2:   16-block  1
+branch  0 taken 1
+branch  1 taken 1
+        1:   16-block  2
+        1:   17:        meniu_principal();
+        1:   18:        int choice = choice_selector();
+        1:   19:        switch (choice) {
+        1:   19-block  0
+branch  0 taken 0
+branch  1 taken 0
+branch  2 taken 0
+branch  3 taken 0
+branch  4 taken 0
+branch  5 taken 1
+branch  6 taken 0
+branch  7 taken 0
+branch  8 taken 0
+branch  9 taken 0
+branch 10 taken 0
+        -:   20:            default:
+    #####:   21:                printf("Optiune invalida\n");
+    #####:   22:            break;
+    $$$$$:   22-block  0
+        -:   23:
+        -:   24:            case 0:
+        1:   25:                isRunning = 0;
+        1:   26:                elibereaza_lista_participanti(&repo);
+        1:   27:                elibereaza_lista_undo(&repo);
+        1:   28:                elibereaza_lista_participanti_stersi(&repo);
+        1:   29:            break;
+        1:   29-block  0
+        -:   30:
+        -:   31:            case 1:
+    #####:   32:                adauga_participant_ui(&repo);
+    #####:   33:                break;
+    $$$$$:   33-block  0
+        -:   34:
+        -:   35:            case 2:
+    #####:   36:                update_participant_ui(&repo);
+    #####:   37:                break;
+    $$$$$:   37-block  0
+        -:   38:
+        -:   39:            case 3:
+    #####:   40:                rezolvare_problema_ui(&repo);
+    #####:   41:                break;
+    $$$$$:   41-block  0
+        -:   42:
+        -:   43:            case 4:
+    #####:   44:                sterge_participant_ui(&repo);
+    #####:   45:                break;
+    $$$$$:   45-block  0
+        -:   46:
+        -:   47:            case 5:
+    #####:   48:                filtrare_ui(repo);
+    #####:   49:                break;
+    $$$$$:   49-block  0
+        -:   50:
+        -:   51:            case 6:
+    #####:   52:                meniu_sortari();
+    #####:   53:                int choice_sortare = choice_selector();
+    #####:   54:                if (choice_sortare == 1) {
+    $$$$$:   54-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   55:                    sortare_nume_ui(repo);
+    #####:   56:                } else if (choice_sortare == 2) {
+    $$$$$:   56-block  0
+    $$$$$:   56-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   57:                    sortare_scor_ui(repo);
+    #####:   58:                } else {
+    $$$$$:   58-block  0
+    #####:   59:                    printf("Optiune invalida");
+    $$$$$:   59-block  0
+        -:   60:                }
+    #####:   61:                break;
+    $$$$$:   61-block  0
+        -:   62:
+        -:   63:            case 7:
+    #####:   64:                print_lista_participanti(repo);
+    #####:   65:                break;
+    $$$$$:   65-block  0
+        -:   66:
+        -:   67:            case 8:
+    #####:   68:                undo_ui(&repo);
+    #####:   69:                break;
+    $$$$$:   69-block  0
+        -:   70:
+        -:   71:            case 9:
+    #####:   72:                print_lista_participanti_stersi(repo);
+    #####:   73:                break;
+    $$$$$:   73-block  0
+        -:   74:        }
+        -:   75:
+        -:   76:    }
+        1:   77:    printf("Se opreste executia aplicatiei");
+        -:   78:
+        1:   79:}
+        1:   79-block  0
+        -:   80:
+function print_participant called 0 returned 0% blocks executed 0%
+    #####:   81:void print_participant(Participant participant) {
+    #####:   82:    printf("%d. %s %s:\n\tScor: %d\n\tProbleme rezolvate: %d\n", participant.id,
+    #####:   83:           participant.nume, participant.prenume, participant.scor, participant.probleme_rezolvate);
+    #####:   84:}
+    $$$$$:   84-block  0
+        -:   85:
+function print_lista_participanti called 0 returned 0% blocks executed 0%
+    #####:   86:void print_lista_participanti(Repository repo) {
+    #####:   87:    int dimensiune = repo.lista_repo.dimensiune;
+    #####:   88:    if (dimensiune == 0) {
+    $$$$$:   88-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   89:        printf("Nu exista participanti inregistrati\n");
+    #####:   90:        return;
+    $$$$$:   90-block  0
+        -:   91:    }
+    #####:   92:    for (int i=0; i < dimensiune; i++) {
+    $$$$$:   92-block  0
+    $$$$$:   92-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   92-block  2
+    #####:   93:        print_participant(repo.lista_repo.lista_participanti[i]);
+    #####:   94:    }
+    $$$$$:   94-block  0
+    #####:   95:}
+    $$$$$:   95-block  0
+        -:   96:
+function print_lista_participanti_stersi called 0 returned 0% blocks executed 0%
+    #####:   97:void print_lista_participanti_stersi(Repository repo) {
+    #####:   98:    int dimensiune = repo.lista_repo_stersi.dimensiune;
+    #####:   99:    if (dimensiune == 0) {
+    $$$$$:   99-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  100:        printf("Nu exista participanti stersi\n");
+    #####:  101:        return;
+    $$$$$:  101-block  0
+        -:  102:    }
+    #####:  103:    for (int i=0; i < dimensiune; i++) {
+    $$$$$:  103-block  0
+    $$$$$:  103-block  1
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  103-block  2
+    #####:  104:        print_participant(repo.lista_repo_stersi.lista_participanti_stersi[i]);
+    #####:  105:    }
+    $$$$$:  105-block  0
+    #####:  106:}
+    $$$$$:  106-block  0
+        -:  107:
+function meniu_principal called 1 returned 100% blocks executed 100%
+        1:  108:void meniu_principal() {
+        1:  109:    printf("Optiuni:\n \t1. Adaugare participant\n\t2. Actualizare participant\n\t3. Rezolvare problema\n\t"
+        -:  110:           "4. Stergere participant\n\t5. Filtrare dupa scor (<scor)\n\t6. Sortari\n\t7. Afisare participanti\n\t8. Undo\n\t9. Afisare participanti stersi\n\t0. Exit\n");
+        1:  111:}
+        1:  111-block  0
+        -:  112:
+function adauga_participant_ui called 0 returned 0% blocks executed 0%
+    #####:  113:void adauga_participant_ui(Repository* repo) {
+    #####:  114:    Participant participant = input_participant();
+    #####:  115:    int result = adauga_participant(repo, participant.id, participant.nume, participant.prenume);
+    #####:  116:    if (result)
+    $$$$$:  116-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  117:        printf("Concurent adaugat cu succes\n");
+    $$$$$:  117-block  0
+        -:  118:    else
+    #####:  119:        printf("Concurent cu ID-ul %d deja existent\n", participant.id);
+    $$$$$:  119-block  0
+    #####:  120:}
+    $$$$$:  120-block  0
+        -:  121:
+function sterge_participant_ui called 0 returned 0% blocks executed 0%
+    #####:  122:void sterge_participant_ui(Repository* repo) {
+    #####:  123:    int dimensiune = repo->lista_repo.dimensiune;
+    #####:  124:    if (dimensiune == 0) {
+    $$$$$:  124-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  125:        printf("Nu exista participanti inregistrati\n");
+    #####:  126:        return;
+    $$$$$:  126-block  0
+        -:  127:    }
+    #####:  128:    print_lista_participanti(*repo);
+    #####:  129:    int id = id_selector();
+    #####:  130:    int result = sterge_participant(repo, id);
+    #####:  131:    if (result) {
+    $$$$$:  131-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  132:        printf("Stergere facuta cu succes\n");
+    #####:  133:    } else {
+    $$$$$:  133-block  0
+    #####:  134:        printf("Participantul cu ID %d nu a fost gasit\n", id);
+    $$$$$:  134-block  0
+        -:  135:    }
+    #####:  136:}
+    $$$$$:  136-block  0
+        -:  137:
+function rezolvare_problema_ui called 0 returned 0% blocks executed 0%
+    #####:  138:void rezolvare_problema_ui(Repository* repo) {
+    #####:  139:    int id = id_selector();
+    #####:  140:    int pos = find(repo, id);
+    #####:  141:    if (pos == -1) {
+    $$$$$:  141-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  142:        printf("Participant cu ID-ul %d inexistent\n", id);
+    #####:  143:        return;
+    $$$$$:  143-block  0
+        -:  144:    }
+    #####:  145:    int punctaj = punctaj_input();
+    #####:  146:    int result = rezolvare_problema(repo, id, punctaj);
+    #####:  147:    if (result) {
+    $$$$$:  147-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  148:        printf("Scorul participantului %s %s a fost actualizat la %d\n", repo->lista_repo.lista_participanti[pos].prenume, repo->lista_repo.lista_participanti[pos].nume, repo->lista_repo.lista_participanti[pos].scor);
+    #####:  149:    } else {
+    $$$$$:  149-block  0
+    #####:  150:        printf("Participantul a rezolvat numarul maxim de probleme\n");
+    $$$$$:  150-block  0
+        -:  151:    }
+    #####:  152:}
+    $$$$$:  152-block  0
+        -:  153:
+function update_participant_ui called 0 returned 0% blocks executed 0%
+    #####:  154:void update_participant_ui(Repository* repo) {
+    #####:  155:    int dimensiune = repo->lista_repo.dimensiune;
+    #####:  156:    if (dimensiune == 0) {
+    $$$$$:  156-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  157:        printf("Nu exista participanti inregistrati\n");
+    #####:  158:        return;
+    $$$$$:  158-block  0
+        -:  159:    }
+    #####:  160:    print_lista_participanti(*repo);
+    #####:  161:    int id = id_selector();
+    #####:  162:    int pos = find(repo, id);
+    #####:  163:    if (pos == -1) {
+    $$$$$:  163-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  164:        printf("Participant cu ID-ul %d inexistent\n", id);
+    #####:  165:        return;
+    $$$$$:  165-block  0
+        -:  166:    }
+    #####:  167:    print_participant(repo->lista_repo.lista_participanti[pos]);
+        -:  168:
+    #####:  169:    meniu_update();
+    #####:  170:    int choice = choice_selector();
+        -:  171:    int result;
+    #####:  172:    switch (choice) {
+    $$$$$:  172-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+        -:  173:        default:
+    #####:  174:            printf("Optiune invalida\n");
+    #####:  175:            break;
+    $$$$$:  175-block  0
+        -:  176:        case 1:
+    #####:  177:            result = update_nume(repo, id, nume_input().nume);
+    #####:  178:            if (result) {
+    $$$$$:  178-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  179:                printf("Modificare facuta cu succes\n");
+    #####:  180:            } else {
+    $$$$$:  180-block  0
+    #####:  181:                printf("Eroare la modificare\n");
+    $$$$$:  181-block  0
+        -:  182:            }
+    #####:  183:            break;
+    $$$$$:  183-block  0
+        -:  184:
+        -:  185:        case 2:
+    #####:  186:            result = update_prenume(repo, id, prenume_input().prenume);
+    #####:  187:            if (result) {
+    $$$$$:  187-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  188:            printf("Modificare facuta cu succes\n");
+    #####:  189:            } else {
+    $$$$$:  189-block  0
+    #####:  190:            printf("Eroare la modificare\n");
+    $$$$$:  190-block  0
+        -:  191:            }
+    #####:  192:            break;
+    $$$$$:  192-block  0
+        -:  193:
+        -:  194:        case 3:
+    #####:  195:            result = update_probleme_rezolvate(repo, id, probleme_rezolvate_input());
+    #####:  196:            if (result) {
+    $$$$$:  196-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  197:            printf("Modificare facuta cu succes\n");
+    #####:  198:            } else {
+    $$$$$:  198-block  0
+    #####:  199:            printf("Eroare la modificare\n");
+    $$$$$:  199-block  0
+        -:  200:            }
+    #####:  201:            break;
+    $$$$$:  201-block  0
+        -:  202:
+        -:  203:        case 4:
+    #####:  204:            result = update_scor(repo, id, scor_input());
+    #####:  205:            if (result) {
+    $$$$$:  205-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  206:            printf("Modificare facuta cu succes\n");
+    #####:  207:            } else {
+    $$$$$:  207-block  0
+    #####:  208:            printf("Eroare la modificare\n");
+    $$$$$:  208-block  0
+        -:  209:            }
+    #####:  210:            break;
+    $$$$$:  210-block  0
+        -:  211:    }
+    #####:  212:}
+    $$$$$:  212-block  0
+        -:  213:
+function meniu_update called 0 returned 0% blocks executed 0%
+    #####:  214:void meniu_update() {
+    #####:  215:    printf("Optiuni de modificare: \n\t1. Nume\n\t2. Prenume\n\t3. Probleme rezolvate\n\t4. Scor\n");
+    #####:  216:}
+    $$$$$:  216-block  0
+        -:  217:
+function filtrare_ui called 0 returned 0% blocks executed 0%
+    #####:  218:void filtrare_ui(Repository repo) {
+    #####:  219:    if (repo.lista_repo.dimensiune == 0) {
+    $$$$$:  219-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  220:        printf("Nu exista participanti inregistrati\n");
+    #####:  221:        return;
+    $$$$$:  221-block  0
+        -:  222:    }
+    #####:  223:    int scor = scor_input();
+    #####:  224:    Repository repo_filtrat = filtrare(repo, scor);
+    #####:  225:    printf("LISTA PARTICIPANTILOR CU SCORUL PESTE %d\n", scor);
+    #####:  226:    if (repo_filtrat.lista_repo.dimensiune == 0) {
+    $$$$$:  226-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  227:        printf("Nu exista participanti cu scor > %d\n", scor);
+    #####:  228:        elibereaza_lista_participanti(&repo_filtrat);
+    #####:  229:        return;
+    $$$$$:  229-block  0
+        -:  230:    }
+    #####:  231:    print_lista_participanti(repo_filtrat);
+    #####:  232:    elibereaza_lista_participanti(&repo_filtrat);
+    #####:  233:}
+    $$$$$:  233-block  0
+    $$$$$:  233-block  1
+        -:  234:
+function meniu_sortari called 0 returned 0% blocks executed 0%
+    #####:  235:void meniu_sortari() {
+    #####:  236:    printf("Sortari: \n\t1. Dupa nume\n\t2. Dupa scor\n");
+    #####:  237:}
+    $$$$$:  237-block  0
+        -:  238:
+        -:  239:
+function sortare_nume_ui called 0 returned 0% blocks executed 0%
+    #####:  240:void sortare_nume_ui(Repository repo) {
+    #####:  241:    int ordine = ordine_input();
+    #####:  242:    printf("LISTA PARTICIPANTILOR SORTATA DUPA NUME\n");
+    #####:  243:    print_lista_participanti(sortare_nume(repo, ordine, comparare_nume));
+    #####:  244:}
+    $$$$$:  244-block  0
+        -:  245:
+        -:  246:
+function sortare_scor_ui called 0 returned 0% blocks executed 0%
+    #####:  247:void sortare_scor_ui(Repository repo) {
+    #####:  248:    int ordine = ordine_input();
+    #####:  249:    printf("LISTA PARTICIPANTILOR SORTATA DUPA SCOR\n");
+    #####:  250:    print_lista_participanti(sortare_scor(repo, ordine, comparare_scor));
+    #####:  251:}
+    $$$$$:  251-block  0
+        -:  252:
+        -:  253:
+function undo_ui called 0 returned 0% blocks executed 0%
+    #####:  254:void undo_ui(Repository* repo) {
+    #####:  255:    int valid = undo_service(repo);
+    #####:  256:    if (!valid) {
+    $$$$$:  256-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  257:        printf("Lista a ajuns vida!\n");
+    #####:  258:    }
+    $$$$$:  258-block  0
+    #####:  259:}
+    $$$$$:  259-block  0

@@ -1,0 +1,580 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/teste/teste_repo.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/teste/teste_repo.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/teste/teste_repo.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../repo/repo.h"
+        -:    2:#include "../model/participant.h"
+        -:    3:#include <assert.h>
+        -:    4:#include <string.h>
+        -:    5:#include <stdio.h>
+        -:    6:// #include <stdlib.h>
+        -:    7:
+function test_initializare_lista_participanti called 1 returned 100% blocks executed 55%
+        1:    8:void test_initializare_lista_participanti() {
+        -:    9:    Repository repo;
+        1:   10:    initializare_lista_participanti(&repo);
+        1:   11:    assert(repo.lista_repo.capacitate == 10);
+        1:   11-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   11-block  1
+    $$$$$:   11-block  2
+        1:   11-block  3
+        1:   12:    assert(repo.lista_repo.dimensiune == 0);
+        1:   12-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   12-block  1
+    $$$$$:   12-block  2
+        1:   12-block  3
+        1:   13:    elibereaza_lista_participanti(&repo);
+        1:   14:}
+        1:   14-block  0
+        -:   15:
+function test_initializare_lista_undo called 1 returned 100% blocks executed 55%
+        1:   16:void test_initializare_lista_undo() {
+        -:   17:    Repository repo;
+        1:   18:    initializare_lista_undo(&repo);
+        1:   19:    assert(repo.lista_repo_undo.capacitate == 10);
+        1:   19-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   19-block  1
+    $$$$$:   19-block  2
+        1:   19-block  3
+        1:   20:    assert(repo.lista_repo_undo.dimensiune == 0);
+        1:   20-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   20-block  1
+    $$$$$:   20-block  2
+        1:   20-block  3
+        1:   21:    elibereaza_lista_undo(&repo);
+        1:   22:}
+        1:   22-block  0
+        -:   23:
+function test_initializare_lista_stersi called 1 returned 100% blocks executed 55%
+        1:   24:void test_initializare_lista_stersi() {
+        -:   25:    Repository repo;
+        1:   26:    initializare_lista_participanti_stersi(&repo);
+        1:   27:    assert(repo.lista_repo_stersi.capacitate == 10);
+        1:   27-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   27-block  1
+    $$$$$:   27-block  2
+        1:   27-block  3
+        1:   28:    assert(repo.lista_repo_stersi.dimensiune == 0);
+        1:   28-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   28-block  1
+    $$$$$:   28-block  2
+        1:   28-block  3
+        1:   29:    elibereaza_lista_participanti_stersi(&repo);
+        1:   30:}
+        1:   30-block  0
+        -:   31:
+function test_dealocare called 1 returned 100% blocks executed 51%
+        1:   32:void test_dealocare() {
+        -:   33:    Repository repo;
+        1:   34:    initializare_lista_participanti(&repo);
+        1:   35:    initializare_lista_undo(&repo);
+        1:   36:    repo.lista_repo.dimensiune = 3;
+        1:   37:    repo.lista_repo_undo.dimensiune = 1;
+        -:   38:
+        -:   39:    // Verificăm dacă memoria a fost alocată corect
+        1:   40:    assert(repo.lista_repo.lista_participanti != NULL);
+        1:   40-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   40-block  1
+    $$$$$:   40-block  2
+        1:   40-block  3
+        1:   41:    assert(repo.lista_repo_undo.lista_undo[0].lista_participanti != NULL);
+        1:   41-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   41-block  1
+    $$$$$:   41-block  2
+        1:   41-block  3
+        -:   42:
+        -:   43:    // Populăm lista de participanți pentru a verifica mai ușor
+        1:   44:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:   45:    strcpy(repo.lista_repo.lista_participanti[0].nume, "Nume1");
+        1:   46:    strcpy(repo.lista_repo.lista_participanti[0].prenume, "Prenume1");
+        -:   47:
+        1:   48:    repo.lista_repo_undo.lista_undo[0].lista_participanti[0].id = 1;
+        1:   49:    strcpy(repo.lista_repo_undo.lista_undo->lista_participanti[0].nume, "Nume1");
+        1:   50:    strcpy(repo.lista_repo_undo.lista_undo->lista_participanti[0].prenume, "Prenume1");
+        -:   51:
+        1:   52:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:   53:    strcpy(repo.lista_repo.lista_participanti[1].nume, "Nume2");
+        1:   54:    strcpy(repo.lista_repo.lista_participanti[1].prenume, "Prenume2");
+        -:   55:
+        1:   56:    repo.lista_repo.lista_participanti[2].id = 3;
+        1:   57:    strcpy(repo.lista_repo.lista_participanti[2].nume, "Nume3");
+        1:   58:    strcpy(repo.lista_repo.lista_participanti[2].prenume, "Prenume3");
+        -:   59:
+        -:   60:    // Apelăm funcția de eliberare a memoriei
+        1:   61:    elibereaza_lista_participanti(&repo);
+        1:   62:    elibereaza_lista_undo(&repo);
+        -:   63:
+        -:   64:    // Verificăm dacă lista de participanți a fost eliberată corect
+        1:   65:    assert(repo.lista_repo.lista_participanti == NULL);  // lista ar trebui să fie NULL
+        1:   65-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   65-block  1
+    $$$$$:   65-block  2
+        1:   65-block  3
+        1:   66:    assert(repo.lista_repo.dimensiune == 0);  // dimensiunea ar trebui să fie 0
+        1:   66-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   66-block  1
+    $$$$$:   66-block  2
+        1:   66-block  3
+        1:   67:    assert(repo.lista_repo.capacitate == 0);  // capacitatea ar trebui să fie 0
+        1:   67-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   67-block  1
+    $$$$$:   67-block  2
+        1:   67-block  3
+        1:   68:    assert(repo.lista_repo_undo.lista_undo == NULL);
+        1:   68-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   68-block  1
+    $$$$$:   68-block  2
+        1:   68-block  3
+        1:   69:    assert(repo.lista_repo_undo.dimensiune == 0);
+        1:   69-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   69-block  1
+    $$$$$:   69-block  2
+        1:   69-block  3
+        1:   70:    assert(repo.lista_repo_undo.capacitate == 0);
+        1:   70-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   70-block  1
+    $$$$$:   70-block  2
+        1:   70-block  3
+        -:   71:
+        -:   72:    // Verificăm dacă nu putem accesa elemente din lista eliberată
+        -:   73:    // Comportamentul de accesare directă a listei după eliberare ar trebui să ducă la erori sau la comportamente necontrolate,
+        -:   74:    // dar nu este necesar să testăm acest lucru în mod explicit (doar să nu accesăm acea zonă de memorie).
+        -:   75:
+        -:   76:    //printf("Testul pentru elibereaza_lista_participanti a trecut cu succes.\n");
+        1:   77:}
+        1:   77-block  0
+        -:   78:
+function test_find called 1 returned 100% blocks executed 52%
+        1:   79:void test_find() {
+        -:   80:    Repository repo;
+        1:   81:    initializare_lista_participanti(&repo);
+        1:   82:    repo.lista_repo.dimensiune = 3;
+        1:   83:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:   84:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:   85:    repo.lista_repo.lista_participanti[2].id = 3;
+        1:   86:    assert(find(&repo, 1) == 0);
+        1:   86-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   86-block  1
+    $$$$$:   86-block  2
+        1:   86-block  3
+        1:   87:    assert(find(&repo, 2) == 1);
+        1:   87-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   87-block  1
+    $$$$$:   87-block  2
+        1:   87-block  3
+        1:   88:    assert(find(&repo, 3) == 2);
+        1:   88-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   88-block  1
+    $$$$$:   88-block  2
+        1:   88-block  3
+        1:   89:    assert(find(&repo, 4) == -1);
+        1:   89-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   89-block  1
+    $$$$$:   89-block  2
+        1:   89-block  3
+        1:   90:    elibereaza_lista_participanti(&repo);
+        1:   91:}
+        1:   91-block  0
+        -:   92://
+function test_store called 1 returned 100% blocks executed 51%
+        1:   93:void test_store() {
+        -:   94:    Repository repo;
+        1:   95:    initializare_lista_participanti(&repo);
+        1:   96:    initializare_lista_undo(&repo);
+        -:   97:    //adaugare participant
+        1:   98:    assert(store(&repo, 1, "Nume1", "Prenume1") == 1);
+        1:   98-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   98-block  1
+    $$$$$:   98-block  2
+        1:   98-block  3
+        1:   99:    assert(repo.lista_repo.dimensiune == 1);
+        1:   99-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   99-block  1
+    $$$$$:   99-block  2
+        1:   99-block  3
+        1:  100:    assert(repo.lista_repo.lista_participanti[0].id == 1);
+        1:  100-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  100-block  1
+    $$$$$:  100-block  2
+        1:  100-block  3
+        1:  101:    assert(strcmp(repo.lista_repo.lista_participanti[0].nume, "Nume1") == 0);
+        1:  101-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  101-block  1
+    $$$$$:  101-block  2
+        1:  101-block  3
+        1:  102:    assert(strcmp(repo.lista_repo.lista_participanti[0].prenume, "Prenume1") == 0);
+        1:  102-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  102-block  1
+    $$$$$:  102-block  2
+        1:  102-block  3
+        -:  103:    //adaugare, id existent
+        1:  104:    assert(store(&repo, 1, "Nume2", "Prenume2") == 0);
+        1:  104-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  104-block  1
+    $$$$$:  104-block  2
+        1:  104-block  3
+        1:  105:    assert(repo.lista_repo.dimensiune == 1);  // Dimensiunea nu ar trebui să se schimbe
+        1:  105-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  105-block  1
+    $$$$$:  105-block  2
+        1:  105-block  3
+        -:  106:    //adaugare participant
+        1:  107:    assert(store(&repo, 2, "Nume2", "Prenume2") == 1);
+        1:  107-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  107-block  1
+    $$$$$:  107-block  2
+        1:  107-block  3
+        1:  108:    assert(repo.lista_repo.dimensiune == 2);
+        1:  108-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  108-block  1
+    $$$$$:  108-block  2
+        1:  108-block  3
+        1:  109:    assert(repo.lista_repo.lista_participanti[1].id == 2);
+        1:  109-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  109-block  1
+    $$$$$:  109-block  2
+        1:  109-block  3
+        1:  110:    assert(strcmp(repo.lista_repo.lista_participanti[1].nume, "Nume2") == 0);
+        1:  110-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  110-block  1
+    $$$$$:  110-block  2
+        1:  110-block  3
+        1:  111:    elibereaza_lista_participanti(&repo);
+        -:  112:
+        1:  113:    initializare_lista_participanti(&repo);
+        1:  114:    store(&repo, 1, "Nume1", "Prenume1");
+        1:  115:    store(&repo, 2, "Nume2", "Prenume2");
+        1:  116:    store(&repo, 3, "Nume3", "Prenume3");
+        1:  117:    store(&repo, 4, "Nume4", "Prenume4");
+        1:  118:    store(&repo, 5, "Nume5", "Prenume5");
+        1:  119:    store(&repo, 6, "Nume6", "Prenume6");
+        1:  120:    store(&repo, 7, "Nume7", "Prenume7");
+        1:  121:    store(&repo, 8, "Nume8", "Prenume8");
+        1:  122:    store(&repo, 9, "Nume9", "Prenume9");
+        1:  123:    store(&repo, 10, "Nume10", "Prenume10");
+        1:  124:    store(&repo, 11, "Nume11", "Prenume11");
+        -:  125:    // printf("%d   ", repo.lista_repo.dimensiune);
+        -:  126:    // printf("%d", repo.lista_repo.capacitate);
+        1:  127:    assert(repo.lista_repo.capacitate == 20);
+        1:  127-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  127-block  1
+    $$$$$:  127-block  2
+        1:  127-block  3
+        1:  128:    elibereaza_lista_participanti(&repo);
+        1:  129:    elibereaza_lista_undo(&repo);
+        1:  130:}
+        1:  130-block  0
+        -:  131:
+function test_store_undo called 1 returned 100% blocks executed 55%
+        1:  132:void test_store_undo() {
+        -:  133:    Repository repo;
+        1:  134:    initializare_lista_participanti(&repo);
+        1:  135:    initializare_lista_undo(&repo);
+        1:  136:    store(&repo, 1, "Nume1", "Prenume1");
+        1:  137:    store_undo(&repo,repo.lista_repo);
+        1:  138:    assert(repo.lista_repo.dimensiune == 1);
+        1:  138-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  138-block  1
+    $$$$$:  138-block  2
+        1:  138-block  3
+        1:  139:    assert(repo.lista_repo_undo.lista_undo->lista_participanti[0].id == 1);
+        1:  139-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  139-block  1
+    $$$$$:  139-block  2
+        1:  139-block  3
+        1:  140:    elibereaza_lista_participanti(&repo);
+        1:  141:    elibereaza_lista_undo(&repo);
+        1:  142:}
+        1:  142-block  0
+        -:  143:
+function test_store_sters called 1 returned 100% blocks executed 60%
+        1:  144:void test_store_sters() {
+        -:  145:    Repository repo;
+        1:  146:    initializare_lista_participanti_stersi(&repo);
+        1:  147:    store_sters(&repo,1,"Nume1","Prenume1",4,4);
+        1:  148:    store_sters(&repo,2,"Nume1","Prenume1",4,4);
+        1:  149:    store_sters(&repo,3,"Nume1","Prenume1",4,4);
+        1:  150:    store_sters(&repo,4,"Nume1","Prenume1",4,4);
+        1:  151:    store_sters(&repo,5,"Nume1","Prenume1",4,4);
+        1:  152:    store_sters(&repo,6,"Nume1","Prenume1",4,4);
+        1:  153:    store_sters(&repo,7,"Nume1","Prenume1",4,4);
+        1:  154:    store_sters(&repo,8,"Nume1","Prenume1",4,4);
+        1:  155:    store_sters(&repo,9,"Nume1","Prenume1",4,4);
+        1:  156:    store_sters(&repo,10,"Nume1","Prenume1",4,4);
+        1:  157:    store_sters(&repo,11,"Nume1","Prenume1",4,4);
+        1:  158:    assert(repo.lista_repo_stersi.dimensiune == 11);
+        1:  158-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  158-block  1
+    $$$$$:  158-block  2
+        1:  158-block  3
+        1:  159:    elibereaza_lista_participanti_stersi(&repo);
+        1:  160:}
+        1:  160-block  0
+        -:  161:
+function test_undo called 1 returned 100% blocks executed 55%
+        1:  162:void test_undo() {
+        -:  163:    Repository repo;
+        1:  164:    initializare_lista_participanti(&repo);
+        1:  165:    initializare_lista_undo(&repo);
+        1:  166:    store(&repo, 1, "Nume1", "Prenume1");
+        1:  167:    store(&repo, 2, "Nume2", "Prenume2");
+        -:  168:    // printf("%d\n", repo.lista_repo_undo.dimensiune);
+        -:  169:    // for (int i = 0; i < repo.lista_repo_undo.dimensiune; i++) {
+        -:  170:    //     for (int j = 0; j < repo.lista_repo_undo.lista_undo[i].dimensiune; j++) {
+        -:  171:    //         printf("%d\n",repo.lista_repo_undo.lista_undo[i].lista_participanti[j].id);
+        -:  172:    //         printf("%s\n",repo.lista_repo_undo.lista_undo[i].lista_participanti[j].nume);
+        -:  173:    //         printf("%s\n",repo.lista_repo_undo.lista_undo[i].lista_participanti[j].prenume);
+        -:  174:    //     }
+        -:  175:    // }
+        1:  176:    undo(&repo);
+        1:  177:    assert(repo.lista_repo_undo.dimensiune == 0);
+        1:  177-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  177-block  1
+    $$$$$:  177-block  2
+        1:  177-block  3
+        1:  178:    assert(repo.lista_repo.dimensiune == 1);
+        1:  178-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  178-block  1
+    $$$$$:  178-block  2
+        1:  178-block  3
+        1:  179:    elibereaza_lista_participanti(&repo);
+        1:  180:    elibereaza_lista_undo(&repo);
+        1:  181:}
+        1:  181-block  0
+        -:  182:
+function test_delete called 1 returned 100% blocks executed 51%
+        1:  183:void test_delete() {
+        -:  184:    Repository repo;
+        1:  185:    initializare_lista_participanti(&repo);
+        1:  186:    initializare_lista_undo(&repo);
+        1:  187:    initializare_lista_participanti_stersi(&repo);
+        1:  188:    repo.lista_repo.dimensiune = 3;
+        1:  189:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:  190:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:  191:    repo.lista_repo.lista_participanti[2].id = 3;
+        -:  192:
+        1:  193:    assert(delete(&repo, 2) == 1);
+        1:  193-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  193-block  1
+    $$$$$:  193-block  2
+        1:  193-block  3
+        1:  194:    assert(repo.lista_repo.dimensiune == 2);
+        1:  194-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  194-block  1
+    $$$$$:  194-block  2
+        1:  194-block  3
+        1:  195:    assert(repo.lista_repo.lista_participanti[0].id == 1);
+        1:  195-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  195-block  1
+    $$$$$:  195-block  2
+        1:  195-block  3
+        1:  196:    assert(repo.lista_repo.lista_participanti[1].id == 3);
+        1:  196-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  196-block  1
+    $$$$$:  196-block  2
+        1:  196-block  3
+        -:  197:
+        1:  198:    assert(delete(&repo, 4) == 0);
+        1:  198-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  198-block  1
+    $$$$$:  198-block  2
+        1:  198-block  3
+        1:  199:    assert(repo.lista_repo.dimensiune == 2);
+        1:  199-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  199-block  1
+    $$$$$:  199-block  2
+        1:  199-block  3
+        -:  200:
+        1:  201:    assert(delete(&repo, 1) == 1);
+        1:  201-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  201-block  1
+    $$$$$:  201-block  2
+        1:  201-block  3
+        1:  202:    assert(repo.lista_repo.dimensiune == 1);
+        1:  202-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  202-block  1
+    $$$$$:  202-block  2
+        1:  202-block  3
+        1:  203:    assert(repo.lista_repo.lista_participanti[0].id == 3);
+        1:  203-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  203-block  1
+    $$$$$:  203-block  2
+        1:  203-block  3
+        -:  204:
+        1:  205:    elibereaza_lista_participanti(&repo);
+        1:  206:    elibereaza_lista_undo(&repo);
+        1:  207:    elibereaza_lista_participanti_stersi(&repo);
+        1:  208:}
+        1:  208-block  0
+        -:  209:
+function test_update called 1 returned 100% blocks executed 51%
+        1:  210:void test_update() {
+        -:  211:    Repository repo;
+        1:  212:    initializare_lista_participanti(&repo);
+        1:  213:    initializare_lista_undo(&repo);
+        1:  214:    repo.lista_repo.dimensiune = 4;
+        1:  215:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:  216:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:  217:    repo.lista_repo.lista_participanti[2].id = 3;
+        1:  218:    repo.lista_repo.lista_participanti[3].id = 4;
+        -:  219:    //participant existent
+        1:  220:    assert(update(&repo, 2, "Nume2_updated", "Prenume2_updated", 5, 100) == 1);
+        1:  220-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  220-block  1
+    $$$$$:  220-block  2
+        1:  220-block  3
+        1:  221:    assert(strcmp(repo.lista_repo.lista_participanti[1].nume, "Nume2_updated") == 0);
+        1:  221-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  221-block  1
+    $$$$$:  221-block  2
+        1:  221-block  3
+        1:  222:    assert(strcmp(repo.lista_repo.lista_participanti[1].prenume, "Prenume2_updated") == 0);
+        1:  222-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  222-block  1
+    $$$$$:  222-block  2
+        1:  222-block  3
+        1:  223:    assert(repo.lista_repo.lista_participanti[1].probleme_rezolvate == 5);
+        1:  223-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  223-block  1
+    $$$$$:  223-block  2
+        1:  223-block  3
+        1:  224:    assert(repo.lista_repo.lista_participanti[1].scor == 100);
+        1:  224-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  224-block  1
+    $$$$$:  224-block  2
+        1:  224-block  3
+        1:  225:    assert(update(&repo, 4, "Nume4_update", "Prenume", -5, -100) == 0);
+        1:  225-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  225-block  1
+    $$$$$:  225-block  2
+        1:  225-block  3
+        -:  226:    //id inexistent
+        1:  227:    assert(update(&repo, -5, "Nume4", "Prenume4", 3, 50) == 0);
+        1:  227-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  227-block  1
+    $$$$$:  227-block  2
+        1:  227-block  3
+        1:  228:    elibereaza_lista_participanti(&repo);
+        1:  229:    elibereaza_lista_undo(&repo);
+        1:  230:}
+        1:  230-block  0
+        -:  231:
+function test_all_repo called 1 returned 100% blocks executed 100%
+        1:  232:void test_all_repo() {
+        1:  233:   test_initializare_lista_participanti();
+        1:  234:    test_initializare_lista_undo();
+        1:  235:    test_dealocare();
+        1:  236:    test_find();
+        1:  237:    test_store();
+        1:  238:    test_store_undo();
+        1:  239:    test_undo();
+        1:  240:   test_delete();
+        1:  241:   test_update();
+        1:  242:    test_store_sters();
+        1:  243:    test_initializare_lista_stersi();
+        1:  244:   printf("Teste repo ok\n");
+        1:  245: }
+        1:  245-block  0

@@ -1,0 +1,36 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/model/validation.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/model/validation.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/model/validation.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <ctype.h>
+        -:    2:#include <string.h>
+        -:    3:#include "validation.h"
+function validare called 10 returned 100% blocks executed 100%
+       10:    4:int validare(Participant p) {
+       10:    5:    if (p.id <= 0 || p.probleme_rezolvate < 0 || p.scor < 0)
+       10:    5-block  0
+branch  0 taken 9
+branch  1 taken 1
+        9:    5-block  1
+branch  2 taken 7
+branch  3 taken 2
+        7:    5-block  2
+branch  4 taken 6
+branch  5 taken 1
+        4:    6:        return 0;
+        4:    6-block  0
+        -:    7:    // for (int i = 0; i <= strlen(p.nume); i++) {
+        -:    8:    //     if (isdigit(p.nume[i])) {
+        -:    9:    //         return 0;
+        -:   10:    //     }
+        -:   11:    // }
+        -:   12:    // for (int i = 0; i <= strlen(p.prenume); i++) {
+        -:   13:    //     if (isdigit(p.prenume[i])) {
+        -:   14:    //         return 0;
+        -:   15:    //     }
+        -:   16:    // }
+        6:   17:    return 1;
+        6:   17-block  0
+       10:   18:}
+       10:   18-block  0

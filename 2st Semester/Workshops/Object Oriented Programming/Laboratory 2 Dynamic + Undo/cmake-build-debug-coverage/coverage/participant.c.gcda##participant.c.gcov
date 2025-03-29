@@ -1,0 +1,18 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/model/participant.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/model/participant.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/model/participant.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "participant.h"
+        -:    2:
+        -:    3:#include <string.h>
+        -:    4:
+function transpunere called 61 returned 100% blocks executed 100%
+       61:    5:void transpunere(Participant* participant1, Participant* participant2) {
+       61:    6:    participant1->id = participant2->id;
+       61:    7:    strcpy(participant1->nume, participant2->nume);
+       61:    8:    strcpy(participant1->prenume, participant2->prenume);
+       61:    9:    participant1->scor = participant2->scor;
+       61:   10:    participant1->probleme_rezolvate = participant2->probleme_rezolvate;
+       61:   11:}
+       61:   11-block  0

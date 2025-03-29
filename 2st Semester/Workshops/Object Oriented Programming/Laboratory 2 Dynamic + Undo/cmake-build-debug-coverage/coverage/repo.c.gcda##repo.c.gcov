@@ -1,0 +1,412 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/repo/repo.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/repo/repo.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/repo/repo.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "repo.h"
+        -:    2:
+        -:    3:#include <stdio.h>
+        -:    4:#include <string.h>
+        -:    5:#include <stdlib.h>
+        -:    6:
+        -:    7:
+        -:    8:
+function initializare_lista_participanti called 31 returned 100% blocks executed 100%
+       31:    9:void initializare_lista_participanti(Repository* repo) {
+       31:   10:    repo->lista_repo.lista_participanti = calloc(sizeof(Participant),10);
+       31:   11:    repo->lista_repo.dimensiune = 0;
+       31:   12:    repo->lista_repo.capacitate = 10;
+       31:   13:}
+       31:   13-block  0
+        -:   14:
+function initializare_lista_participanti_stersi called 5 returned 100% blocks executed 100%
+        5:   15:void initializare_lista_participanti_stersi(Repository* repo) {
+        5:   16:    repo->lista_repo_stersi.lista_participanti_stersi = calloc(sizeof(Participant),10);
+        5:   17:    repo->lista_repo_stersi.dimensiune = 0;
+        5:   18:    repo->lista_repo_stersi.capacitate = 10;
+        5:   19:}
+        5:   19-block  0
+        -:   20:
+function initializare_lista_undo called 15 returned 100% blocks executed 100%
+       15:   21:void initializare_lista_undo(Repository* repo) {
+       15:   22:    repo->lista_repo_undo.lista_undo = malloc(sizeof(ListaParticipanti) * 10);
+      165:   23:    for (int i = 0; i < 10; i++) {
+       15:   23-block  0
+      165:   23-block  1
+branch  0 taken 150
+branch  1 taken 15
+      150:   23-block  2
+      150:   24:        repo->lista_repo_undo.lista_undo[i].lista_participanti = calloc(sizeof(Participant),10);
+      150:   25:    }
+      150:   25-block  0
+       15:   26:    repo->lista_repo_undo.dimensiune = 0;
+       15:   27:    repo->lista_repo_undo.capacitate = 10;
+       15:   28:}
+       15:   28-block  0
+        -:   29:
+function elibereaza_lista_participanti called 31 returned 100% blocks executed 100%
+       31:   30:void elibereaza_lista_participanti(Repository* repo) {
+       31:   31:    free(repo->lista_repo.lista_participanti);
+       31:   32:    repo->lista_repo.lista_participanti = NULL;
+       31:   33:    repo->lista_repo.dimensiune = 0;
+       31:   34:    repo->lista_repo.capacitate = 0;
+       31:   35:}
+       31:   35-block  0
+        -:   36:
+function elibereaza_lista_participanti_stersi called 5 returned 100% blocks executed 100%
+        5:   37:void elibereaza_lista_participanti_stersi(Repository* repo) {
+        5:   38:    free(repo->lista_repo_stersi.lista_participanti_stersi);
+        5:   39:    repo->lista_repo_stersi.lista_participanti_stersi = NULL;
+        5:   40:    repo->lista_repo_stersi.dimensiune = 0;
+        5:   41:    repo->lista_repo_stersi.capacitate = 0;
+        5:   42:}
+        5:   42-block  0
+        -:   43:
+function elibereaza_lista_undo called 11 returned 100% blocks executed 100%
+       11:   44:void elibereaza_lista_undo(Repository* repo) {
+        -:   45:
+      131:   46:    for (int i = 0; i < repo->lista_repo_undo.capacitate; i++) {
+       11:   46-block  0
+      131:   46-block  1
+branch  0 taken 120
+branch  1 taken 11
+      120:   46-block  2
+      120:   47:        if (repo->lista_repo_undo.lista_undo[i].lista_participanti) {
+      120:   47-block  0
+branch  0 taken 8
+branch  1 taken 112
+      112:   48:            free(repo->lista_repo_undo.lista_undo[i].lista_participanti);
+      112:   49:            repo->lista_repo_undo.lista_undo[i].lista_participanti = NULL;
+      112:   50:        }
+      112:   50-block  0
+      120:   51:    }
+      120:   51-block  0
+        -:   52:
+       11:   53:    free(repo->lista_repo_undo.lista_undo);
+       11:   54:    repo->lista_repo_undo.lista_undo = NULL;
+       11:   55:    repo->lista_repo_undo.dimensiune = 0;
+       11:   56:    repo->lista_repo_undo.capacitate = 0;
+       11:   57:}
+       11:   57-block  0
+        -:   58:
+        -:   59:
+function find called 56 returned 100% blocks executed 100%
+       56:   60:int find(Repository* repo, int id) {
+      145:   61:    for (int i = 0; i < repo->lista_repo.dimensiune; i++) {
+       56:   61-block  0
+      145:   61-block  1
+branch  0 taken 111
+branch  1 taken 34
+       89:   61-block  2
+      111:   62:        if(repo->lista_repo.lista_participanti[i].id == id) {
+      111:   62-block  0
+branch  0 taken 22
+branch  1 taken 89
+       22:   63:            return i;
+       22:   63-block  0
+        -:   64:        }
+       89:   65:    }
+       89:   65-block  0
+       34:   66:    return -1;
+       34:   66-block  0
+       56:   67:}
+       56:   67-block  0
+        -:   68:
+function store called 27 returned 100% blocks executed 100%
+       27:   69:int store(Repository* repo, int id,  char* nume,  char* prenume) {
+       27:   70:    if (repo->lista_repo.dimensiune > 0) {
+       27:   70-block  0
+branch  0 taken 11
+branch  1 taken 16
+       16:   71:        store_undo(repo,repo->lista_repo);
+       16:   72:    }
+       16:   72-block  0
+        -:   73:
+       27:   74:    if (find(repo, id) != -1) {
+       27:   74-block  0
+branch  0 taken 25
+branch  1 taken 2
+        2:   75:        return 0;
+        2:   75-block  0
+        -:   76:    }
+        -:   77:
+       25:   78:    if (repo->lista_repo.dimensiune == repo->lista_repo.capacitate) {
+       25:   78-block  0
+branch  0 taken 24
+branch  1 taken 1
+        1:   79:        int new_capacitate = repo->lista_repo.capacitate * 2;
+        1:   80:        Participant* new_list = realloc(repo->lista_repo.lista_participanti, new_capacitate * sizeof(Participant));
+        -:   81:        // if (new_list == NULL) {
+        -:   82:        //     return 0;
+        -:   83:        // }
+        1:   84:        repo->lista_repo.lista_participanti = new_list;
+        1:   85:        repo->lista_repo.capacitate = new_capacitate;
+        1:   86:    }
+        1:   86-block  0
+        -:   87:
+       25:   88:    int dimensiune = repo->lista_repo.dimensiune;
+        -:   89:    //lista->lista_participanti[lista->dimensiune].id = id;
+       25:   90:    repo->lista_repo.lista_participanti[dimensiune].id = id;
+        -:   91:
+        -:   92:    //folosirea strncpy previne erorile cauzate de nume prea mari primite ca parametri
+       25:   93:    strncpy(repo->lista_repo.lista_participanti[dimensiune].nume, nume, 19);
+       25:   94:    repo->lista_repo.lista_participanti[dimensiune].nume[20] = '\0';
+       25:   95:    strncpy(repo->lista_repo.lista_participanti[dimensiune].prenume, prenume, 19);
+       25:   96:    repo->lista_repo.lista_participanti[dimensiune].prenume[20] = '\0';
+        -:   97:
+       25:   98:    repo->lista_repo.lista_participanti[dimensiune].scor = 0;
+       25:   99:    repo->lista_repo.lista_participanti[dimensiune].probleme_rezolvate = 0;
+        -:  100:
+       25:  101:    repo->lista_repo.dimensiune++;
+        -:  102:
+       25:  103:    return 1;
+       25:  103-block  0
+       27:  104:}
+       27:  104-block  0
+        -:  105:
+function store_undo called 30 returned 100% blocks executed 91%
+       30:  106:void store_undo(Repository* repo, ListaParticipanti lista_repo) {
+       30:  107:    int curent = repo->lista_repo_undo.dimensiune;
+        -:  108:
+        -:  109:    // Verificam și realocam lista de undo daca este necesar
+       30:  110:    if (repo->lista_repo_undo.capacitate == repo->lista_repo_undo.dimensiune) {
+       30:  110-block  0
+branch  0 taken 29
+branch  1 taken 1
+        1:  111:        int new_capacitate = (repo->lista_repo_undo.capacitate == 0) ? 2 : repo->lista_repo_undo.capacitate * 2;
+        1:  111-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  111-block  1
+        1:  111-block  2
+        1:  112:        ListaParticipanti* new_undo_list = realloc(repo->lista_repo_undo.lista_undo, new_capacitate * sizeof(ListaParticipanti));
+        -:  113:
+        1:  114:        repo->lista_repo_undo.lista_undo = new_undo_list;
+        1:  115:        repo->lista_repo_undo.capacitate = new_capacitate;
+        1:  116:    }
+        1:  116-block  0
+        -:  117:
+        -:  118:    // Asiguram alocarea de memorie pentru lista_participanti
+       30:  119:    if (lista_repo.dimensiune >= repo->lista_repo_undo.lista_undo[curent].capacitate) {
+       30:  119-block  0
+branch  0 taken 0
+branch  1 taken 30
+        -:  120:        // Cream suficient spatiu pentru fiecare participant
+       30:  121:        repo->lista_repo_undo.lista_undo[curent].lista_participanti = realloc(
+       30:  122:            repo->lista_repo_undo.lista_undo[curent].lista_participanti,
+       30:  123:            lista_repo.dimensiune * sizeof(Participant)
+        -:  124:        );
+       30:  125:    }
+       30:  125-block  0
+        -:  126:
+        -:  127:    // Copiem participantii în lista de undo
+      122:  128:    for (int i = 0; i < lista_repo.dimensiune; i++) {
+       30:  128-block  0
+      122:  128-block  1
+branch  0 taken 30
+branch  1 taken 92
+       92:  128-block  2
+       92:  129:        repo->lista_repo_undo.lista_undo[curent].lista_participanti[i] = lista_repo.lista_participanti[i];
+        -:  130:
+        -:  131:        // Copiem numele si prenumele
+       92:  132:        repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].nume[sizeof(repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].nume) - 1] = '\0';
+       92:  133:        repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].prenume[sizeof(repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].prenume) - 1] = '\0';
+       92:  134:    }
+       92:  134-block  0
+        -:  135:
+        -:  136:    // Actualizam dimensiunile și capacitatile
+       30:  137:    repo->lista_repo_undo.lista_undo[curent].dimensiune = lista_repo.dimensiune;
+       30:  138:    repo->lista_repo_undo.lista_undo[curent].capacitate = lista_repo.capacitate;
+       30:  139:    repo->lista_repo_undo.dimensiune++;
+       30:  140:}
+       30:  140-block  0
+        -:  141:
+function store_sters called 15 returned 100% blocks executed 100%
+       15:  142:void store_sters(Repository* repo, int id,  char* nume,  char* prenume, int scor, int probleme_rezolvate) {
+        -:  143:
+       15:  144:    if (repo->lista_repo_stersi.dimensiune == repo->lista_repo_stersi.capacitate) {
+       15:  144-block  0
+branch  0 taken 14
+branch  1 taken 1
+        1:  145:        int new_capacitate = repo->lista_repo_stersi.capacitate * 2;
+        1:  146:        Participant* new_list = realloc(repo->lista_repo_stersi.lista_participanti_stersi, new_capacitate * sizeof(Participant));
+        -:  147:        // if (new_list == NULL) {
+        -:  148:        //     return 0;
+        -:  149:        // }
+        1:  150:        repo->lista_repo_stersi.lista_participanti_stersi = new_list;
+        1:  151:        repo->lista_repo_stersi.capacitate = new_capacitate;
+        1:  152:    }
+        1:  152-block  0
+        -:  153:
+       15:  154:    int dimensiune = repo->lista_repo_stersi.dimensiune;
+        -:  155:    //lista->lista_participanti[lista->dimensiune].id = id;
+       15:  156:    repo->lista_repo_stersi.lista_participanti_stersi[dimensiune].id = id;
+        -:  157:
+        -:  158:    //folosirea strncpy previne erorile cauzate de nume prea mari primite ca parametri
+       15:  159:    strncpy(repo->lista_repo_stersi.lista_participanti_stersi[dimensiune].nume, nume, 19);
+       15:  160:    repo->lista_repo_stersi.lista_participanti_stersi[dimensiune].nume[20] = '\0';
+       15:  161:    strncpy(repo->lista_repo_stersi.lista_participanti_stersi[dimensiune].prenume, prenume, 19);
+       15:  162:    repo->lista_repo_stersi.lista_participanti_stersi[dimensiune].prenume[20] = '\0';
+       15:  163:    repo->lista_repo_stersi.lista_participanti_stersi[dimensiune].scor = scor;
+       15:  164:    repo->lista_repo_stersi.lista_participanti_stersi[dimensiune].probleme_rezolvate = probleme_rezolvate;
+        -:  165:
+       15:  166:    repo->lista_repo_stersi.dimensiune++;
+       15:  167:}
+       15:  167-block  0
+        -:  168:
+        -:  169:// void store_undo(Repository* repo, ListaParticipanti lista_repo) {
+        -:  170://     int curent = repo->lista_repo_undo.dimensiune;
+        -:  171://
+        -:  172://     if (repo->lista_repo_undo.capacitate == repo->lista_repo_undo.dimensiune) {
+        -:  173://         int new_capacitate = repo->lista_repo_undo.capacitate * 2;
+        -:  174://         ListaParticipanti* new_undo_list = realloc(repo->lista_repo_undo.lista_undo, new_capacitate * sizeof(ListaParticipanti));
+        -:  175://         repo->lista_repo_undo.lista_undo = new_undo_list;
+        -:  176://         repo->lista_repo_undo.capacitate = new_capacitate;
+        -:  177://     }
+        -:  178://
+        -:  179://     if (lista_repo.dimensiune >= repo->lista_repo_undo.lista_undo->capacitate) {
+        -:  180://         int other_new_capacitate = repo->lista_repo_undo.lista_undo->capacitate * 2;
+        -:  181://         for (int i = repo->lista_repo_undo.lista_undo->capacitate; i < other_new_capacitate; i++) {
+        -:  182://             repo->lista_repo_undo.lista_undo[i].lista_participanti = calloc(sizeof(Participant),other_new_capacitate);
+        -:  183://         }
+        -:  184://     }
+        -:  185://
+        -:  186://     for (int i = 0; i < lista_repo.dimensiune; i++) {
+        -:  187://         repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].id = lista_repo.lista_participanti[i].id;
+        -:  188://         strcpy(repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].nume,lista_repo.lista_participanti[i].nume);
+        -:  189://         strcpy(repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].prenume,lista_repo.lista_participanti[i].prenume);
+        -:  190://         repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].probleme_rezolvate = lista_repo.lista_participanti[i].probleme_rezolvate;
+        -:  191://         repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].scor = lista_repo.lista_participanti[i].scor;
+        -:  192://     }
+        -:  193://     repo->lista_repo_undo.lista_undo[curent].dimensiune = lista_repo.dimensiune;
+        -:  194://     repo->lista_repo_undo.lista_undo[curent].capacitate = lista_repo.capacitate;
+        -:  195://     repo->lista_repo_undo.dimensiune++;
+        -:  196:// }
+        -:  197:
+function undo called 2 returned 100% blocks executed 100%
+        2:  198:void undo(Repository* repo) {
+        -:  199:    //Copiem participantii
+        -:  200:    // for (int i = 0; i < repo->lista_repo_undo.dimensiune; i++) {
+        -:  201:    //     for (int j = 0; j < repo->lista_repo_undo.lista_undo[i].dimensiune; j++) {
+        -:  202:    //         printf("%d\n",repo->lista_repo_undo.lista_undo[i].lista_participanti[j].id);
+        -:  203:    //         printf("%s\n",repo->lista_repo_undo.lista_undo[i].lista_participanti[j].nume);
+        -:  204:    //         printf("%s\n",repo->lista_repo_undo.lista_undo[i].lista_participanti[j].prenume);
+        -:  205:    //     }
+        -:  206:    // }
+        2:  207:    int curent = repo->lista_repo_undo.dimensiune - 1;
+        -:  208:
+        4:  209:    for (int i = 0; i < repo->lista_repo_undo.lista_undo[curent].dimensiune; i++) {
+        2:  209-block  0
+        4:  209-block  1
+branch  0 taken 2
+branch  1 taken 2
+        2:  209-block  2
+        2:  210:        repo->lista_repo.lista_participanti[i].id = repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].id;
+        2:  211:        strcpy(repo->lista_repo.lista_participanti[i].nume,repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].nume);
+        2:  212:        strcpy(repo->lista_repo.lista_participanti[i].prenume,repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].prenume);
+        2:  213:        repo->lista_repo.lista_participanti[i].scor = repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].scor;
+        2:  214:        repo->lista_repo.lista_participanti[i].probleme_rezolvate = repo->lista_repo_undo.lista_undo[curent].lista_participanti[i].probleme_rezolvate;
+        2:  215:    }
+        2:  215-block  0
+        -:  216:    // printf("%d\n",repo->lista_repo_undo.lista_undo[curent].dimensiune);
+        2:  217:    repo->lista_repo.dimensiune = repo->lista_repo_undo.lista_undo[curent].dimensiune;
+        2:  218:    repo->lista_repo_undo.dimensiune--;
+        2:  219:}
+        2:  219-block  0
+        -:  220:
+function delete called 6 returned 100% blocks executed 100%
+        6:  221:int delete(Repository* repo, int id) {
+        6:  222:    if (repo->lista_repo.dimensiune > 0) {
+        6:  222-block  0
+branch  0 taken 6
+branch  1 taken 0
+        6:  223:        store_undo(repo,repo->lista_repo);
+        6:  224:    }
+        6:  224-block  0
+        6:  225:    int pos = find(repo, id);
+        6:  226:    if (pos == -1) { return 0; }
+        6:  226-block  0
+branch  0 taken 4
+branch  1 taken 2
+        2:  226-block  1
+        4:  227:    store_sters(repo,pos,repo->lista_repo.lista_participanti[pos].nume,repo->lista_repo.lista_participanti[pos].prenume,repo->lista_repo.lista_participanti[pos].scor,repo->lista_repo.lista_participanti[pos].probleme_rezolvate);
+        8:  228:    for (int i = pos; i < repo->lista_repo.dimensiune - 1; i++) {
+        4:  228-block  0
+        8:  228-block  1
+branch  0 taken 4
+branch  1 taken 4
+        4:  228-block  2
+        4:  229:        transpunere(&repo->lista_repo.lista_participanti[i], &repo->lista_repo.lista_participanti[i+1]);
+        4:  230:    }
+        4:  230-block  0
+        4:  231:    repo->lista_repo.dimensiune--;
+        -:  232:
+        4:  233:    if (repo->lista_repo.dimensiune > 0 && repo->lista_repo.dimensiune <= repo->lista_repo.capacitate / 4) {
+        4:  233-block  0
+branch  0 taken 4
+branch  1 taken 0
+        4:  233-block  1
+branch  2 taken 0
+branch  3 taken 4
+        4:  234:        int new_capacity = repo->lista_repo.capacitate / 2;
+        4:  235:        if (new_capacity < 10) {
+        4:  235-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:  236:            new_capacity = 10;
+        4:  237:        }
+        4:  237-block  0
+        4:  238:        Participant* new_list = realloc(repo->lista_repo.lista_participanti, new_capacity * sizeof(Participant));
+        4:  239:        if (new_list != NULL) {
+        4:  239-block  0
+branch  0 taken 0
+branch  1 taken 4
+        4:  240:            repo->lista_repo.lista_participanti = new_list;
+        4:  241:            repo->lista_repo.capacitate = new_capacity;
+        4:  242:        }
+        4:  242-block  0
+        4:  243:    }
+        4:  243-block  0
+        -:  244:
+        4:  245:    return 1;
+        4:  245-block  0
+        6:  246:}
+        6:  246-block  0
+        -:  247:
+function update called 7 returned 100% blocks executed 100%
+        7:  248:int update(Repository* repo, int id,  char* nume,  char* prenume, int probleme, int scor) {
+        7:  249:    if (repo->lista_repo.dimensiune > 0) {
+        7:  249-block  0
+branch  0 taken 0
+branch  1 taken 7
+        7:  250:        store_undo(repo,repo->lista_repo);
+        7:  251:    }
+        7:  251-block  0
+        7:  252:    int pos = find(repo, id);
+        7:  253:    if (pos == -1) {
+        7:  253-block  0
+branch  0 taken 6
+branch  1 taken 1
+        1:  254:        return 0;
+        1:  254-block  0
+        -:  255:    }
+        -:  256:    Participant new_data;
+        6:  257:    new_data.id = id;
+        6:  258:    strcpy(new_data.nume, nume);
+        6:  259:    strcpy(new_data.prenume, prenume);
+        6:  260:    new_data.probleme_rezolvate = probleme;
+        6:  261:    new_data.scor = scor;
+        6:  262:    if (validare(new_data) == 0)
+        6:  262-block  0
+branch  0 taken 1
+branch  1 taken 5
+        1:  263:        return 0;
+        1:  263-block  0
+        5:  264:    transpunere(&repo->lista_repo.lista_participanti[pos], &new_data);
+        -:  265:
+        5:  266:    return 1;
+        5:  266-block  0
+        7:  267:}
+        7:  267-block  0
+        -:  268:
+        -:  269:

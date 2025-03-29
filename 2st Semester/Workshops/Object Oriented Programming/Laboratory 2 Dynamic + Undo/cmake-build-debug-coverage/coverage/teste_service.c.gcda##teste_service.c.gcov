@@ -1,0 +1,993 @@
+        -:    0:Source:/Users/razvandusa/Documents/CLionProjects/lab2_4/teste/teste_service.c
+        -:    0:Graph:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/teste/teste_service.c.gcno
+        -:    0:Data:/Users/razvandusa/Documents/CLionProjects/lab2_4/cmake-build-debug-coverage/CMakeFiles/lab2_4.dir/teste/teste_service.c.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "teste_service.h"
+        -:    2:#include "../repo/repo.h"
+        -:    3:#include "../service/service_participanti.h"
+        -:    4:#include <assert.h>
+        -:    5:#include <string.h>
+        -:    6:#include <stdio.h>
+        -:    7:#include <stdlib.h>
+        -:    8:
+        -:    9:#include "../ui/ui.h"
+        -:   10:
+function test_adauga_participant called 1 returned 100% blocks executed 51%
+        1:   11:void test_adauga_participant() {
+        -:   12:    Repository repo;
+        1:   13:    initializare_lista_participanti(&repo);
+        1:   14:    initializare_lista_undo(&repo);
+        -:   15:
+        -:   16:
+        1:   17:    assert(adauga_participant(&repo, 1, "Nume1", "Prenume1") == 1);
+        1:   17-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   17-block  1
+    $$$$$:   17-block  2
+        1:   17-block  3
+        1:   18:    assert(repo.lista_repo.dimensiune == 1);
+        1:   18-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   18-block  1
+    $$$$$:   18-block  2
+        1:   18-block  3
+        1:   19:    assert(repo.lista_repo.lista_participanti[0].id == 1);
+        1:   19-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   19-block  1
+    $$$$$:   19-block  2
+        1:   19-block  3
+        1:   20:    assert(strcmp(repo.lista_repo.lista_participanti[0].nume, "Nume1") == 0);
+        1:   20-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   20-block  1
+    $$$$$:   20-block  2
+        1:   20-block  3
+        1:   21:    assert(strcmp(repo.lista_repo.lista_participanti[0].prenume, "Prenume1") == 0);
+        1:   21-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   21-block  1
+    $$$$$:   21-block  2
+        1:   21-block  3
+        -:   22:
+        1:   23:    assert(adauga_participant(&repo, 1, "Nume2", "Prenume2") == 0);
+        1:   23-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   23-block  1
+    $$$$$:   23-block  2
+        1:   23-block  3
+        1:   24:    assert(repo.lista_repo.dimensiune == 1);
+        1:   24-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   24-block  1
+    $$$$$:   24-block  2
+        1:   24-block  3
+        -:   25:
+        1:   26:    assert(adauga_participant(&repo, 2, "Nume2", "Prenume2") == 1);
+        1:   26-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   26-block  1
+    $$$$$:   26-block  2
+        1:   26-block  3
+        1:   27:    assert(repo.lista_repo.dimensiune == 2);
+        1:   27-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   27-block  1
+    $$$$$:   27-block  2
+        1:   27-block  3
+        1:   28:    assert(repo.lista_repo.lista_participanti[1].id == 2);
+        1:   28-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   28-block  1
+    $$$$$:   28-block  2
+        1:   28-block  3
+        1:   29:    assert(strcmp(repo.lista_repo.lista_participanti[1].nume, "Nume2") == 0);
+        1:   29-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   29-block  1
+    $$$$$:   29-block  2
+        1:   29-block  3
+        1:   30:    elibereaza_lista_participanti(&repo);
+        1:   31:    elibereaza_lista_undo(&repo);
+        1:   32:}
+        1:   32-block  0
+        -:   33://
+function test_sterge_participant called 1 returned 100% blocks executed 51%
+        1:   34:void test_sterge_participant() {
+        -:   35:    Repository repo;
+        1:   36:    initializare_lista_participanti(&repo);
+        1:   37:    initializare_lista_undo(&repo);
+        1:   38:    initializare_lista_participanti_stersi(&repo);
+        1:   39:    repo.lista_repo.dimensiune = 3;
+        1:   40:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:   41:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:   42:    repo.lista_repo.lista_participanti[2].id = 3;
+        -:   43:
+        1:   44:    assert(sterge_participant(&repo, 2) == 1);
+        1:   44-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   44-block  1
+    $$$$$:   44-block  2
+        1:   44-block  3
+        1:   45:    assert(repo.lista_repo.dimensiune == 2);
+        1:   45-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   45-block  1
+    $$$$$:   45-block  2
+        1:   45-block  3
+        1:   46:    assert(repo.lista_repo.lista_participanti[0].id == 1);
+        1:   46-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   46-block  1
+    $$$$$:   46-block  2
+        1:   46-block  3
+        1:   47:    assert(repo.lista_repo.lista_participanti[1].id == 3);
+        1:   47-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   47-block  1
+    $$$$$:   47-block  2
+        1:   47-block  3
+        -:   48:
+        1:   49:    assert(sterge_participant(&repo, 4) == 0);
+        1:   49-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   49-block  1
+    $$$$$:   49-block  2
+        1:   49-block  3
+        1:   50:    assert(repo.lista_repo.dimensiune == 2);
+        1:   50-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   50-block  1
+    $$$$$:   50-block  2
+        1:   50-block  3
+        -:   51:
+        1:   52:    assert(sterge_participant(&repo, 1) == 1);
+        1:   52-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   52-block  1
+    $$$$$:   52-block  2
+        1:   52-block  3
+        1:   53:    assert(repo.lista_repo.dimensiune == 1);
+        1:   53-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   53-block  1
+    $$$$$:   53-block  2
+        1:   53-block  3
+        1:   54:    assert(repo.lista_repo.lista_participanti[0].id == 3);
+        1:   54-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   54-block  1
+    $$$$$:   54-block  2
+        1:   54-block  3
+        1:   55:    elibereaza_lista_participanti(&repo);
+        1:   56:    elibereaza_lista_undo(&repo);
+        1:   57:    elibereaza_lista_participanti_stersi(&repo);
+        1:   58:}
+        1:   58-block  0
+        -:   59://
+function test_rezolvare_problema called 1 returned 100% blocks executed 51%
+        1:   60:void test_rezolvare_problema() {
+        -:   61:    Repository repo;
+        1:   62:    initializare_lista_participanti(&repo);
+        -:   63:
+        1:   64:    repo.lista_repo.dimensiune = 3;
+        1:   65:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:   66:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:   67:    repo.lista_repo.lista_participanti[2].id = 3;
+        -:   68:
+        1:   69:    repo.lista_repo.lista_participanti[0].scor = 0;
+        1:   70:    repo.lista_repo.lista_participanti[0].probleme_rezolvate = 0;
+        1:   71:    repo.lista_repo.lista_participanti[1].scor = 0;
+        1:   72:    repo.lista_repo.lista_participanti[1].probleme_rezolvate = 0;
+        1:   73:    repo.lista_repo.lista_participanti[2].scor = 0;
+        1:   74:    repo.lista_repo.lista_participanti[2].probleme_rezolvate = 0;
+        -:   75:
+        1:   76:    assert(rezolvare_problema(&repo, 1, 10) == 1);
+        1:   76-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   76-block  1
+    $$$$$:   76-block  2
+        1:   76-block  3
+        1:   77:    assert(repo.lista_repo.lista_participanti[0].scor == 10);
+        1:   77-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   77-block  1
+    $$$$$:   77-block  2
+        1:   77-block  3
+        1:   78:    assert(repo.lista_repo.lista_participanti[0].probleme_rezolvate == 1);
+        1:   78-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   78-block  1
+    $$$$$:   78-block  2
+        1:   78-block  3
+        -:   79:
+        1:   80:    assert(rezolvare_problema(&repo, 100, 1) == 0);
+        1:   80-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   80-block  1
+    $$$$$:   80-block  2
+        1:   80-block  3
+        -:   81:    // print_participant(repo.lista_repo.lista_participanti[1]);
+        -:   82:    // rezolvare_problema(&repo, 2, 7);
+        -:   83:    // print_participant(repo.lista_repo.lista_participanti[1]);
+        -:   84:
+        -:   85:    //print_participant(repo.lista_repo.lista_participanti[1]);
+        1:   86:    assert(rezolvare_problema(&repo, 2, 7) == 1);
+        1:   86-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   86-block  1
+    $$$$$:   86-block  2
+        1:   86-block  3
+        1:   87:    assert(repo.lista_repo.lista_participanti[1].scor == 7);
+        1:   87-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   87-block  1
+    $$$$$:   87-block  2
+        1:   87-block  3
+        1:   88:    assert(repo.lista_repo.lista_participanti[1].probleme_rezolvate == 1);
+        1:   88-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   88-block  1
+    $$$$$:   88-block  2
+        1:   88-block  3
+        -:   89:
+        1:   90:    assert(rezolvare_problema(&repo, 3, 5) == 1);
+        1:   90-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   90-block  1
+    $$$$$:   90-block  2
+        1:   90-block  3
+        1:   91:    assert(repo.lista_repo.lista_participanti[2].scor == 5);
+        1:   91-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:   91-block  1
+    $$$$$:   91-block  2
+        1:   91-block  3
+        1:   92:    assert(repo.lista_repo.lista_participanti[2].probleme_rezolvate == 1);
+        1:   92-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:   92-block  1
+    $$$$$:   92-block  2
+        1:   92-block  3
+        1:   93:    elibereaza_lista_participanti(&repo);
+        1:   94:}
+        1:   94-block  0
+        -:   95:
+function test_update_nume called 1 returned 100% blocks executed 64%
+        1:   96:void test_update_nume() {
+        -:   97:    Repository repo;
+        1:   98:    initializare_lista_participanti(&repo);
+        1:   99:    initializare_lista_undo(&repo);
+        -:  100:
+        1:  101:    adauga_participant(&repo, 1, "Nume1", "Prenume1");
+        -:  102:
+        1:  103:    assert(update_nume(&repo, 1, "Nume1_update") == 1);
+        1:  103-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  103-block  1
+    $$$$$:  103-block  2
+        1:  103-block  3
+        1:  104:    assert(strcmp(repo.lista_repo.lista_participanti[0].nume, "Nume1_update") == 0);
+        1:  104-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  104-block  1
+    $$$$$:  104-block  2
+        1:  104-block  3
+        1:  105:    assert(update_nume(&repo, 2, "nu_exista") == 0);
+        1:  105-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  105-block  1
+    $$$$$:  105-block  2
+        1:  105-block  3
+        1:  106:    elibereaza_lista_participanti(&repo);
+       11:  107:    for (int i = 0; i < 10; i++) {
+        1:  107-block  0
+       11:  107-block  1
+branch  0 taken 10
+branch  1 taken 1
+       10:  107-block  2
+       10:  108:        free(repo.lista_repo_undo.lista_undo[i].lista_participanti);
+       10:  109:    }
+       10:  109-block  0
+        1:  110:    free(repo.lista_repo_undo.lista_undo);
+        1:  111:}
+        1:  111-block  0
+        -:  112:
+function test_update_prenume called 1 returned 100% blocks executed 64%
+        1:  113:void test_update_prenume() {
+        -:  114:    Repository repo;
+        1:  115:    initializare_lista_participanti(&repo);
+        1:  116:    initializare_lista_undo(&repo);
+        -:  117:
+        1:  118:    adauga_participant(&repo, 1, "Nume1", "Prenume1");
+        -:  119:
+        1:  120:    assert(update_prenume(&repo, 1, "Prenume1_update") == 1);
+        1:  120-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  120-block  1
+    $$$$$:  120-block  2
+        1:  120-block  3
+        1:  121:    assert(strcmp(repo.lista_repo.lista_participanti[0].prenume, "Prenume1_update") == 0);
+        1:  121-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  121-block  1
+    $$$$$:  121-block  2
+        1:  121-block  3
+        1:  122:    assert(update_prenume(&repo, 2, "nu_exista") == 0);
+        1:  122-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  122-block  1
+    $$$$$:  122-block  2
+        1:  122-block  3
+        1:  123:    elibereaza_lista_participanti(&repo);
+       11:  124:    for (int i = 0; i < 10; i++) {
+        1:  124-block  0
+       11:  124-block  1
+branch  0 taken 10
+branch  1 taken 1
+       10:  124-block  2
+       10:  125:        free(repo.lista_repo_undo.lista_undo[i].lista_participanti);
+       10:  126:    }
+       10:  126-block  0
+        1:  127:    free(repo.lista_repo_undo.lista_undo);
+        1:  128:}
+        1:  128-block  0
+        -:  129:
+function test_update_probleme_rezolvate called 1 returned 100% blocks executed 64%
+        1:  130:void test_update_probleme_rezolvate() {
+        -:  131:    Repository repo;
+        1:  132:    initializare_lista_participanti(&repo);
+        1:  133:    initializare_lista_undo(&repo);
+        -:  134:
+        1:  135:    adauga_participant(&repo, 1, "Nume1", "Prenume1");
+        -:  136:
+        1:  137:    repo.lista_repo.lista_participanti[0].scor = 0;
+        1:  138:    repo.lista_repo.lista_participanti[0].probleme_rezolvate = 0;
+        -:  139:
+        1:  140:    assert(update_probleme_rezolvate(&repo, 1, 5) == 1);
+        1:  140-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  140-block  1
+    $$$$$:  140-block  2
+        1:  140-block  3
+        1:  141:    assert(repo.lista_repo.lista_participanti[0].probleme_rezolvate == 5);
+        1:  141-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  141-block  1
+    $$$$$:  141-block  2
+        1:  141-block  3
+        1:  142:    assert(update_probleme_rezolvate(&repo, 4, 3) == 0);
+        1:  142-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  142-block  1
+    $$$$$:  142-block  2
+        1:  142-block  3
+        1:  143:    elibereaza_lista_participanti(&repo);
+       11:  144:    for (int i = 0; i < 10; i++) {
+        1:  144-block  0
+       11:  144-block  1
+branch  0 taken 10
+branch  1 taken 1
+       10:  144-block  2
+       10:  145:        free(repo.lista_repo_undo.lista_undo[i].lista_participanti);
+       10:  146:    }
+       10:  146-block  0
+        1:  147:    free(repo.lista_repo_undo.lista_undo);
+        1:  148:}
+        1:  148-block  0
+        -:  149:
+function test_update_scor called 1 returned 100% blocks executed 64%
+        1:  150:void test_update_scor() {
+        -:  151:    Repository repo;
+        1:  152:    initializare_lista_participanti(&repo);
+        1:  153:    initializare_lista_undo(&repo);
+        -:  154:
+        1:  155:    adauga_participant(&repo, 1, "Nume1", "Prenume1");
+        -:  156:
+        1:  157:    repo.lista_repo.lista_participanti[0].scor = 0;
+        1:  158:    repo.lista_repo.lista_participanti[0].probleme_rezolvate = 0;
+        -:  159:
+        1:  160:    assert(update_scor(&repo, 1, 100) == 1);
+        1:  160-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  160-block  1
+    $$$$$:  160-block  2
+        1:  160-block  3
+        1:  161:    assert(repo.lista_repo.lista_participanti[0].scor == 100);
+        1:  161-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  161-block  1
+    $$$$$:  161-block  2
+        1:  161-block  3
+        1:  162:    assert(update_scor(&repo, 2, 50) == 0);
+        1:  162-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  162-block  1
+    $$$$$:  162-block  2
+        1:  162-block  3
+        1:  163:    elibereaza_lista_participanti(&repo);
+       11:  164:    for (int i = 0; i < 10; i++) {
+        1:  164-block  0
+       11:  164-block  1
+branch  0 taken 10
+branch  1 taken 1
+       10:  164-block  2
+       10:  165:        free(repo.lista_repo_undo.lista_undo[i].lista_participanti);
+       10:  166:    }
+       10:  166-block  0
+        1:  167:    free(repo.lista_repo_undo.lista_undo);
+        1:  168:}
+        1:  168-block  0
+        -:  169:
+function test_filtrare called 1 returned 100% blocks executed 51%
+        1:  170:void test_filtrare() {
+        -:  171:    Repository repo;
+        -:  172:    Repository repo_gol;
+        1:  173:    initializare_lista_participanti(&repo);
+        1:  174:    initializare_lista_participanti(&repo_gol);
+        -:  175:    Repository repo_filtrat;
+        -:  176:
+        1:  177:    repo_gol.lista_repo.dimensiune = 0;
+        1:  178:    repo_filtrat = filtrare(repo_gol, 100);
+        1:  179:    assert(repo_filtrat.lista_repo.dimensiune == 0);
+        1:  179-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  179-block  1
+    $$$$$:  179-block  2
+        1:  179-block  3
+        1:  180:    repo.lista_repo.dimensiune = 3;
+        1:  181:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:  182:    repo.lista_repo.lista_participanti[0].scor = 50;
+        1:  183:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:  184:    repo.lista_repo.lista_participanti[1].scor = 80;
+        1:  185:    repo.lista_repo.lista_participanti[2].id = 3;
+        1:  186:    repo.lista_repo.lista_participanti[2].scor = 30;
+        -:  187:
+        1:  188:    elibereaza_lista_participanti(&repo_filtrat);
+        1:  189:    repo_filtrat = filtrare(repo, 60);
+        -:  190:    //printf("DIMENSIUNE %d", repo_filtrat.lista_repo.dimensiune);
+        -:  191:    //print_participant(repo_filtrat.lista_repo.lista_participanti[0]);
+        -:  192:    //print_participant(repo_filtrat.lista_repo.lista_participanti[1]);
+        1:  193:    assert(repo_filtrat.lista_repo.dimensiune == 1);
+        1:  193-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  193-block  1
+    $$$$$:  193-block  2
+        1:  193-block  3
+        1:  194:    assert(repo_filtrat.lista_repo.lista_participanti[0].id == 2);
+        1:  194-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  194-block  1
+    $$$$$:  194-block  2
+        1:  194-block  3
+        1:  195:    assert(repo_filtrat.lista_repo.lista_participanti[0].scor == 80);
+        1:  195-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  195-block  1
+    $$$$$:  195-block  2
+        1:  195-block  3
+        -:  196:
+        1:  197:    elibereaza_lista_participanti(&repo_filtrat);
+        1:  198:    repo_filtrat = filtrare(repo, 40);
+        1:  199:    assert(repo_filtrat.lista_repo.dimensiune == 2);
+        1:  199-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  199-block  1
+    $$$$$:  199-block  2
+        1:  199-block  3
+        1:  200:    assert(repo_filtrat.lista_repo.lista_participanti[0].id == 1);
+        1:  200-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  200-block  1
+    $$$$$:  200-block  2
+        1:  200-block  3
+        1:  201:    assert(repo_filtrat.lista_repo.lista_participanti[1].id == 2);
+        1:  201-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  201-block  1
+    $$$$$:  201-block  2
+        1:  201-block  3
+        -:  202:
+        1:  203:    elibereaza_lista_participanti(&repo_filtrat);
+        1:  204:    repo_filtrat = filtrare(repo, 10);
+        1:  205:    assert(repo_filtrat.lista_repo.dimensiune == 3);
+        1:  205-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  205-block  1
+    $$$$$:  205-block  2
+        1:  205-block  3
+        1:  206:    assert(repo_filtrat.lista_repo.lista_participanti[0].id == 1);
+        1:  206-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  206-block  1
+    $$$$$:  206-block  2
+        1:  206-block  3
+        1:  207:    assert(repo_filtrat.lista_repo.lista_participanti[1].id == 2);
+        1:  207-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  207-block  1
+    $$$$$:  207-block  2
+        1:  207-block  3
+        1:  208:    assert(repo_filtrat.lista_repo.lista_participanti[2].id == 3);
+        1:  208-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  208-block  1
+    $$$$$:  208-block  2
+        1:  208-block  3
+        -:  209:
+        1:  210:    elibereaza_lista_participanti(&repo_filtrat);
+        1:  211:     repo_filtrat = filtrare(repo, 100);
+        1:  212:    assert(repo_filtrat.lista_repo.dimensiune == 0);
+        1:  212-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  212-block  1
+    $$$$$:  212-block  2
+        1:  212-block  3
+        -:  213:
+        1:  214:    elibereaza_lista_participanti(&repo);
+        1:  215:    elibereaza_lista_participanti(&repo_gol);
+        1:  216:    elibereaza_lista_participanti(&repo_filtrat);
+        1:  217:}
+        1:  217-block  0
+        -:  218:
+function test_swtich_participanti called 1 returned 100% blocks executed 51%
+        1:  219:void test_swtich_participanti() {
+        -:  220:    Repository repo;
+        1:  221:    initializare_lista_participanti(&repo);
+        -:  222:    //p1
+        1:  223:    repo.lista_repo.dimensiune = 2;
+        1:  224:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:  225:    repo.lista_repo.lista_participanti[0].scor = 50;
+        1:  226:    repo.lista_repo.lista_participanti[0].probleme_rezolvate = 2;
+        1:  227:    strcpy(repo.lista_repo.lista_participanti[0].nume, "Nume1");
+        1:  228:    strcpy(repo.lista_repo.lista_participanti[0].prenume, "Prenume1");
+        -:  229:    //p2
+        1:  230:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:  231:    repo.lista_repo.lista_participanti[1].scor = 80;
+        1:  232:    repo.lista_repo.lista_participanti[1].probleme_rezolvate = 3;
+        1:  233:    strcpy(repo.lista_repo.lista_participanti[1].nume, "Nume2");
+        1:  234:    strcpy(repo.lista_repo.lista_participanti[1].prenume, "Prenume2");
+        -:  235:
+        1:  236:    swtich_participanti(&repo.lista_repo.lista_participanti[0], &repo.lista_repo.lista_participanti[1]);
+        -:  237:
+        1:  238:    assert(repo.lista_repo.lista_participanti[0].id == 2);
+        1:  238-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  238-block  1
+    $$$$$:  238-block  2
+        1:  238-block  3
+        1:  239:    assert(repo.lista_repo.lista_participanti[0].scor == 80);
+        1:  239-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  239-block  1
+    $$$$$:  239-block  2
+        1:  239-block  3
+        1:  240:    assert(strcmp(repo.lista_repo.lista_participanti[0].nume, "Nume2") == 0);
+        1:  240-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  240-block  1
+    $$$$$:  240-block  2
+        1:  240-block  3
+        1:  241:    assert(strcmp(repo.lista_repo.lista_participanti[0].prenume, "Prenume2") == 0);
+        1:  241-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  241-block  1
+    $$$$$:  241-block  2
+        1:  241-block  3
+        -:  242:
+        1:  243:    assert(repo.lista_repo.lista_participanti[1].id == 1);
+        1:  243-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  243-block  1
+    $$$$$:  243-block  2
+        1:  243-block  3
+        1:  244:    assert(repo.lista_repo.lista_participanti[1].scor == 50);
+        1:  244-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  244-block  1
+    $$$$$:  244-block  2
+        1:  244-block  3
+        1:  245:    assert(strcmp(repo.lista_repo.lista_participanti[1].nume, "Nume1") == 0);
+        1:  245-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  245-block  1
+    $$$$$:  245-block  2
+        1:  245-block  3
+        1:  246:    assert(strcmp(repo.lista_repo.lista_participanti[1].prenume, "Prenume1") == 0);
+        1:  246-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  246-block  1
+    $$$$$:  246-block  2
+        1:  246-block  3
+        1:  247:    elibereaza_lista_participanti(&repo);
+        1:  248:}
+        1:  248-block  0
+        -:  249:
+function test_sortare_nume called 1 returned 100% blocks executed 52%
+        1:  250:void test_sortare_nume() {
+        -:  251:    Repository repo;
+        -:  252:    Repository repo_gol;
+        1:  253:    initializare_lista_participanti(&repo);
+        1:  254:    initializare_lista_participanti(&repo_gol);
+        1:  255:    assert(sortare_nume(repo_gol, 1, comparare_nume).lista_repo.dimensiune == 0);
+        1:  255-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  255-block  1
+    $$$$$:  255-block  2
+        1:  255-block  3
+        1:  256:    assert(sortare_nume(repo_gol, 0, comparare_nume).lista_repo.dimensiune == 0);
+        1:  256-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  256-block  1
+    $$$$$:  256-block  2
+        1:  256-block  3
+        1:  257:    repo.lista_repo.dimensiune = 4;
+        -:  258:
+        1:  259:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:  260:    repo.lista_repo.lista_participanti[0].scor = 50;
+        1:  261:    repo.lista_repo.lista_participanti[0].probleme_rezolvate = 2;
+        1:  262:    strcpy(repo.lista_repo.lista_participanti[0].nume, "Nume_a");
+        1:  263:    strcpy(repo.lista_repo.lista_participanti[0].prenume, "Prenume_b");
+        -:  264:
+        1:  265:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:  266:    repo.lista_repo.lista_participanti[1].scor = 50;
+        1:  267:    repo.lista_repo.lista_participanti[1].probleme_rezolvate = 2;
+        1:  268:    strcpy(repo.lista_repo.lista_participanti[1].nume, "Nume_a");
+        1:  269:    strcpy(repo.lista_repo.lista_participanti[1].prenume, "Prenume_a");
+        -:  270:
+        1:  271:    repo.lista_repo.lista_participanti[2].id = 3;
+        1:  272:    repo.lista_repo.lista_participanti[2].scor = 50;
+        1:  273:    repo.lista_repo.lista_participanti[2].probleme_rezolvate = 2;
+        1:  274:    strcpy(repo.lista_repo.lista_participanti[2].nume, "Nume_c");
+        1:  275:    strcpy(repo.lista_repo.lista_participanti[2].prenume, "Prenume_c");
+        -:  276:
+        1:  277:    repo.lista_repo.lista_participanti[3].id = 4;
+        1:  278:    repo.lista_repo.lista_participanti[3].scor = 50;
+        1:  279:    repo.lista_repo.lista_participanti[3].probleme_rezolvate = 2;
+        1:  280:    strcpy(repo.lista_repo.lista_participanti[3].nume, "Nume_b");
+        1:  281:    strcpy(repo.lista_repo.lista_participanti[3].prenume, "Prenume_b");
+        -:  282:
+        -:  283:
+        -:  284:
+        -:  285:    // crescator
+        1:  286:    Repository repo_sortat = sortare_nume(repo, 1, comparare_nume);
+        -:  287:
+        -:  288:
+        -:  289:
+        1:  290:    assert(strcmp(repo_sortat.lista_repo.lista_participanti[0].nume, "Nume_a") == 0);
+        1:  290-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  290-block  1
+    $$$$$:  290-block  2
+        1:  290-block  3
+        1:  291:    assert(strcmp(repo_sortat.lista_repo.lista_participanti[1].nume, "Nume_a") == 0);
+        1:  291-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  291-block  1
+    $$$$$:  291-block  2
+        1:  291-block  3
+        1:  292:    assert(strcmp(repo_sortat.lista_repo.lista_participanti[2].nume, "Nume_b") == 0);
+        1:  292-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  292-block  1
+    $$$$$:  292-block  2
+        1:  292-block  3
+        1:  293:    assert(strcmp(repo_sortat.lista_repo.lista_participanti[3].nume, "Nume_c") == 0);
+        1:  293-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  293-block  1
+    $$$$$:  293-block  2
+        1:  293-block  3
+        -:  294:
+        -:  295:
+        1:  296:    repo_sortat = sortare_nume(repo, 0, comparare_nume);  // sortare descrescatoare
+        -:  297:
+        -:  298:    // assert(strcmp(repo_sortat.lista_repo.lista_participanti[0].nume, "Nume_c") == 0);
+        -:  299:    // assert(strcmp(repo_sortat.lista_repo.lista_participanti[1].nume, "Nume_b") == 0);
+        -:  300:    // assert(strcmp(repo_sortat.lista_repo.lista_participanti[2].nume, "Nume_a") == 0);
+        -:  301:    // assert(strcmp(repo_sortat.lista_repo.lista_participanti[3].nume, "Nume_a") == 0);
+        -:  302:
+        1:  303:    elibereaza_lista_participanti(&repo);
+        1:  304:    elibereaza_lista_participanti(&repo_gol);
+        -:  305:
+        -:  306:
+        1:  307:}
+        1:  307-block  0
+        -:  308:
+function test_sortare_scor called 1 returned 100% blocks executed 51%
+        1:  309:void test_sortare_scor() {
+        -:  310:    Repository repo, repo_gol;
+        1:  311:    initializare_lista_participanti(&repo);
+        1:  312:    initializare_lista_participanti(&repo_gol);
+        1:  313:    repo_gol.lista_repo.dimensiune = 0;
+        1:  314:    assert(sortare_scor(repo_gol, 1, comparare_scor).lista_repo.dimensiune == 0);
+        1:  314-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  314-block  1
+    $$$$$:  314-block  2
+        1:  314-block  3
+        -:  315:
+        1:  316:    repo.lista_repo.dimensiune = 4;
+        1:  317:    repo.lista_repo.lista_participanti[0].id = 1;
+        1:  318:    repo.lista_repo.lista_participanti[0].scor = 17;
+        1:  319:    repo.lista_repo.lista_participanti[0].probleme_rezolvate = 2;
+        1:  320:    strcpy(repo.lista_repo.lista_participanti[0].nume, "Nume1");
+        1:  321:    strcpy(repo.lista_repo.lista_participanti[0].prenume, "Prenume1");
+        -:  322:
+        1:  323:    repo.lista_repo.lista_participanti[1].id = 2;
+        1:  324:    repo.lista_repo.lista_participanti[1].scor = 100;
+        1:  325:    repo.lista_repo.lista_participanti[1].probleme_rezolvate = 3;
+        1:  326:    strcpy(repo.lista_repo.lista_participanti[1].nume, "Nume2");
+        1:  327:    strcpy(repo.lista_repo.lista_participanti[1].prenume, "Prenume2");
+        -:  328:
+        1:  329:    repo.lista_repo.lista_participanti[2].id = 3;
+        1:  330:    repo.lista_repo.lista_participanti[2].scor = 18;
+        1:  331:    repo.lista_repo.lista_participanti[2].probleme_rezolvate = 1;
+        1:  332:    strcpy(repo.lista_repo.lista_participanti[2].nume, "Nume3");
+        1:  333:    strcpy(repo.lista_repo.lista_participanti[2].prenume, "Prenume3");
+        -:  334:
+        1:  335:    repo.lista_repo.lista_participanti[3].id = 4;
+        1:  336:    repo.lista_repo.lista_participanti[3].scor = 100;
+        1:  337:    repo.lista_repo.lista_participanti[3].probleme_rezolvate = 1;
+        1:  338:    strcpy(repo.lista_repo.lista_participanti[3].nume, "Nume3");
+        1:  339:    strcpy(repo.lista_repo.lista_participanti[3].prenume, "Prenume3");
+        -:  340:
+        1:  341:    repo = sortare_scor(repo, 1, comparare_scor);
+        -:  342:    //printf("%d", repo.lista_repo.lista_participanti[0].scor);
+        1:  343:    assert(repo.lista_repo.lista_participanti[0].scor == 17);
+        1:  343-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  343-block  1
+    $$$$$:  343-block  2
+        1:  343-block  3
+        1:  344:    assert(repo.lista_repo.lista_participanti[1].scor == 18);
+        1:  344-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  344-block  1
+    $$$$$:  344-block  2
+        1:  344-block  3
+        1:  345:    assert(repo.lista_repo.lista_participanti[2].scor == 100);
+        1:  345-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  345-block  1
+    $$$$$:  345-block  2
+        1:  345-block  3
+        1:  346:    assert(repo.lista_repo.lista_participanti[3].scor == 100);
+        1:  346-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  346-block  1
+    $$$$$:  346-block  2
+        1:  346-block  3
+        -:  347:
+        1:  348:    repo = sortare_scor(repo, 0, comparare_scor);
+        -:  349:
+        1:  350:    assert(repo.lista_repo.lista_participanti[0].scor == 100);
+        1:  350-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  350-block  1
+    $$$$$:  350-block  2
+        1:  350-block  3
+        1:  351:    assert(repo.lista_repo.lista_participanti[1].scor == 100);
+        1:  351-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  351-block  1
+    $$$$$:  351-block  2
+        1:  351-block  3
+        1:  352:    assert(repo.lista_repo.lista_participanti[2].scor == 18);
+        1:  352-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  352-block  1
+    $$$$$:  352-block  2
+        1:  352-block  3
+        1:  353:    assert(repo.lista_repo.lista_participanti[3].scor == 17);
+        1:  353-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  353-block  1
+    $$$$$:  353-block  2
+        1:  353-block  3
+        -:  354:
+        1:  355:    elibereaza_lista_participanti(&repo);
+        1:  356:    elibereaza_lista_participanti(&repo_gol);
+        -:  357:
+        1:  358:}
+        1:  358-block  0
+        -:  359:
+function test_comparare_nume called 1 returned 100% blocks executed 53%
+        1:  360:void test_comparare_nume() {
+        -:  361:    Participant p1, p2, p3;
+        1:  362:    strcpy(p1.nume, "Nume1");
+        1:  363:    strcpy(p1.prenume, "Prenume1");
+        1:  364:    p1.scor = 10;
+        -:  365:
+        1:  366:    strcpy(p2.nume, "Nume1");
+        1:  367:    strcpy(p2.prenume, "Prenume1");
+        1:  368:    p2.scor = 11;
+        -:  369:
+        1:  370:    strcpy(p3.nume, "Nume3");
+        1:  371:    strcpy(p3.prenume, "Prenume3");
+        -:  372:
+        1:  373:    assert(comparare_nume(p1, p2) == -1);
+        1:  373-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  373-block  1
+    $$$$$:  373-block  2
+        1:  373-block  3
+        1:  374:    assert(comparare_nume(p1, p3) < 0);
+        1:  374-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  374-block  1
+    $$$$$:  374-block  2
+        1:  374-block  3
+        1:  375:    assert(comparare_nume(p3, p1) > 0);
+        1:  375-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  375-block  1
+    $$$$$:  375-block  2
+        1:  375-block  3
+        -:  376:
+        1:  377:}
+        1:  377-block  0
+        -:  378:
+function test_comparare_scor called 1 returned 100% blocks executed 53%
+        1:  379:void test_comparare_scor() {
+        -:  380:    Participant p1, p2, p3;
+        1:  381:    p1.scor = 10;
+        1:  382:    p2.scor = 20;
+        1:  383:    p3.scor = 30;
+        1:  384:    assert(comparare_scor(p1, p2) == -1);
+        1:  384-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  384-block  1
+    $$$$$:  384-block  2
+        1:  384-block  3
+        1:  385:    assert(comparare_scor(p1, p3) == -1);
+        1:  385-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  385-block  1
+    $$$$$:  385-block  2
+        1:  385-block  3
+        1:  386:    assert(comparare_scor(p3, p1) == 1);
+        1:  386-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  386-block  1
+    $$$$$:  386-block  2
+        1:  386-block  3
+        1:  387:}
+        1:  387-block  0
+        -:  388:
+function test_undo_service called 1 returned 100% blocks executed 55%
+        1:  389:void test_undo_service() {
+        -:  390:    Repository repo;
+        1:  391:    initializare_lista_participanti(&repo);
+        1:  392:    initializare_lista_undo(&repo);
+        1:  393:    adauga_participant(&repo, 1, "Nume1", "Prenume1");
+        1:  394:    assert(undo_service(&repo) == 0);
+        1:  394-block  0
+branch  0 taken 1
+branch  1 taken 0
+    $$$$$:  394-block  1
+    $$$$$:  394-block  2
+        1:  394-block  3
+        1:  395:    adauga_participant(&repo, 2, "Nume2", "Prenume2");
+        1:  396:    adauga_participant(&repo, 3, "Nume3", "Prenume3");
+        1:  397:    assert(undo_service(&repo) == 1);
+        1:  397-block  0
+branch  0 taken 0
+branch  1 taken 1
+    $$$$$:  397-block  1
+    $$$$$:  397-block  2
+        1:  397-block  3
+        1:  398:    elibereaza_lista_participanti(&repo);
+        1:  399:    elibereaza_lista_undo(&repo);
+        1:  400:}
+        1:  400-block  0
+        -:  401:
+        -:  402:
+function test_all_service called 1 returned 100% blocks executed 100%
+        1:  403:void test_all_service() {
+        1:  404:    test_adauga_participant();
+        1:  405:    test_sterge_participant();
+        1:  406:    test_rezolvare_problema();
+        1:  407:    test_update_nume();
+        1:  408:    test_update_prenume();
+        1:  409:    test_update_probleme_rezolvate();
+        1:  410:    test_update_scor();
+        1:  411:    test_filtrare();
+        1:  412:    test_swtich_participanti();
+        1:  413:    test_sortare_nume();
+        1:  414:    test_sortare_scor();
+        1:  415:    test_comparare_nume();
+        1:  416:    test_comparare_scor();
+        1:  417:    test_undo_service();
+        1:  418:    printf("Teste service ok\n");
+        1:  419:}
+        1:  419-block  0
+        -:  420:
+        -:  421:
+        -:  422:
+        -:  423:
+        -:  424:

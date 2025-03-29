@@ -1,0 +1,25 @@
+# ninja log v6
+3	143	1742976881995120048	CMakeFiles/lab2_4.dir/teste/teste_service.c.o	df9b5cd5c4d0edf5
+3	33	1742889085050159631	CMakeFiles/lab2_4.dir/teste/teste_domain.c.o	b5699edc70174c93
+2	142	1742978947314157049	CMakeFiles/lab2_4.dir/repo/repo.c.o	dca96a91eadc9bae
+2	142	1742978947314474005	CMakeFiles/lab2_4.dir/teste/teste_repo.c.o	2cbd9bce63937eef
+0	21	1742942921413718123	CMakeFiles/lab2_4.dir/main.c.o	cd8d14fb0b1d36c1
+0	29	1742889101311618945	CMakeFiles/lab2_4.dir/util/util.c.o	feac8494a0cbe0f5
+2	142	1742976881994666888	CMakeFiles/lab2_4.dir/ui/ui.c.o	f687a1d5368654bd
+3	142	1742976881994992967	CMakeFiles/lab2_4.dir/service/service_participanti.c.o	b176ab5051c31e73
+1	30	1742890012019311330	CMakeFiles/lab2_4.dir/model/validation.c.o	3d7014108282c318
+1	30	1742889085048665516	CMakeFiles/lab2_4.dir/model/participant.c.o	8414596fdd4a8143
+142	228	1742978947454621737	lab2_4	5feae32befb999df
+469	1141	7635501683872336	lab2_4.exe	666b42a25d94c812
+4	47	1742979233659961254	CMakeFiles/lab2_4.dir/repo/repo.c.o	dca96a91eadc9bae
+47	75	1742979233703706319	lab2_4	5feae32befb999df
+3	40	1742981157518927676	CMakeFiles/lab2_4.dir/repo/repo.c.o	dca96a91eadc9bae
+3	40	1742981157519218886	CMakeFiles/lab2_4.dir/teste/teste_repo.c.o	2cbd9bce63937eef
+40	71	1742981157556269351	lab2_4	5feae32befb999df
+3	146	1742982131292762045	CMakeFiles/lab2_4.dir/repo/repo.c.o	dca96a91eadc9bae
+4	146	1742982131293046006	CMakeFiles/lab2_4.dir/teste/teste_repo.c.o	2cbd9bce63937eef
+146	232	1742982131435521550	lab2_4	5feae32befb999df
+3	156	1742985752847791493	CMakeFiles/lab2_4.dir/repo/repo.c.o	dca96a91eadc9bae
+156	243	1742985753001425104	lab2_4	5feae32befb999df
+1	42	1742985852975791221	CMakeFiles/lab2_4.dir/repo/repo.c.o	dca96a91eadc9bae
+43	71	1742985853017271199	lab2_4	5feae32befb999df
