@@ -1,0 +1,8 @@
+# ninja log v6
+2	468	1743341680167564810	CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/MDO.cpp.o	e9adcedf46a3f535
+3	385	1743341680167865021	CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/IteratorMDO.cpp.o	6b21f59d2e2d452c
+2	329	1743341692651706103	CMakeFiles/MultiDictionar_Ordonat.dir/App.cpp.o	61a03905d3b51951
+329	355	1743341692978445565	MultiDictionar_Ordonat	35c24b5dfa6bcfb3
+1	45	1743367125817172274	build.ninja	da5b6f1d3dffc899
+2	324	1743341561653326580	CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestScurt.cpp.o	22214d937cf44ba8
+2	349	1743341561653550332	CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestExtins.cpp.o	f5b610bdb084a6d4
