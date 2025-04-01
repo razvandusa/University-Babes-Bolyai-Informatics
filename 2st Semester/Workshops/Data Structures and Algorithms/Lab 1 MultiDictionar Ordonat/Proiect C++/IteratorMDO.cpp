@@ -1,36 +1,30 @@
 #include "IteratorMDO.h"
 #include "MDO.h"
 
-IteratorMDO::IteratorMDO(const MDO& d) : dict(d), curent(0){
-	//S-a initializat dictionarul cu referinta catre MDO si curent cu 0
-    //Pentru fiecare nod din elemente se adauga o pereche in vectorul de perechi
-    for (const auto& nod : dict.elemente) {
-    	for (const auto& val : nod.valori) {
-         	perechi.push_back(std::make_pair(nod.cheie, val));
-        }
-    }
+IteratorMDO::IteratorMDO(const MDO& d) : dict(d){
+	this->poz = 0;
+	this->curent = 0;
 }
 
 void IteratorMDO::prim(){
-	curent = 0;
+	this->poz = 0;
+	this->curent = 0;
 }
 
 void IteratorMDO::urmator(){
-	/* de adaugat */
-    ++curent;
+	if (!valid()) throw std::exception();
+
+	curent++;
+	if (curent >= dict.perechi.element(poz).valori.dim()) {
+	    poz++;
+	    curent = 0;
+	}
 }
 
 bool IteratorMDO::valid() const{
-	/* de adaugat */
-	return curent < perechi.size();
+	return poz < dict.perechi.dim() && curent < dict.perechi.element(poz).valori.dim();
 }
 
 TElem IteratorMDO::element() const{
-	//Returnam perechea de la pozitia curenta
-    if (!valid()) {
-      	throw std::out_of_range("Element is not valid");
-    }
-    return perechi[curent];
+	return std::make_pair(dict.perechi.element(poz).cheie, dict.perechi.element(poz).valori.element(curent));
 }
-
-

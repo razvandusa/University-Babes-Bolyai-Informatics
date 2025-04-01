@@ -1,4 +1,4 @@
-# Install script for directory: /Users/razvandusa/CLionProjects/MultiDictionar Ordonat
+# Install script for directory: /Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

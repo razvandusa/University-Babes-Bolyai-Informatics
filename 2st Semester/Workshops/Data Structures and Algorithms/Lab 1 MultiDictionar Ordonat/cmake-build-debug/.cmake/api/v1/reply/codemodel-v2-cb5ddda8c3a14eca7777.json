@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MultiDictionar_Ordonat::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MultiDictionar_Ordonat-Debug-8e23bbb21c642e8b2a08.json",
+					"jsonFile" : "target-MultiDictionar_Ordonat-Debug-9789627b00ad45a6d036.json",
 					"name" : "MultiDictionar_Ordonat",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug",
-		"source" : "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat"
+		"build" : "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug",
+		"source" : "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat"
 	},
 	"version" : 
 	{

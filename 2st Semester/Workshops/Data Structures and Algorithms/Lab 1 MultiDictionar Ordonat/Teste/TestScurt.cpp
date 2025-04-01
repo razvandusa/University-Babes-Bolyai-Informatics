@@ -1,7 +1,7 @@
 #include <assert.h>
 
-#include "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/Proiect C++/MDO.h"
-#include "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/Proiect C++/IteratorMDO.h"
+#include "../Proiect C++/MDO.h"
+#include "../Proiect C++/IteratorMDO.h"
 
 #include <exception>
 #include <vector>

@@ -2,6 +2,8 @@
 
 #include <vector>
 
+#include "VectorDinamic.h"
+
 typedef int TCheie;
 typedef int TValoare;
 
@@ -18,13 +20,12 @@ class MDO {
 	friend class IteratorMDO;
     private:
 	/* aici e reprezentarea */
-    struct Nod {
-    //Structura asta ne permite sa paastram ordinea cheilor si asocierea multiplor valori per cheie
-      	TCheie cheie;
-        std::vector<TValoare> valori;
-    };
-	std::vector<Nod> elemente;
-	Relatie relatie;
+	struct Pereche {
+		TCheie cheie;
+		VectorDinamic<TValoare> valori;
+	};
+        VectorDinamic<Pereche> perechi;
+        Relatie relatie;
     public:
 
 	// constructorul implicit al MultiDictionarului Ordonat

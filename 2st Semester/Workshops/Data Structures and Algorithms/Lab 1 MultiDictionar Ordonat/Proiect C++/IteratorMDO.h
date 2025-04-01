@@ -6,7 +6,8 @@
 class IteratorMDO{
 	friend class MDO;
 private:
-
+	int poz;
+    int curent;
 	//constructorul primeste o referinta catre Container
 	//iteratorul va referi primul element din container
 	IteratorMDO(const MDO& dictionar);
@@ -14,8 +15,6 @@ private:
 	//contine o referinta catre containerul pe care il itereaza
 	const MDO& dict;
 	/* aici e reprezentarea  specifica a iteratorului */
-    std::vector<TElem> perechi;
-	int curent;
 
 
 public:
@@ -34,4 +33,3 @@ public:
 		//arunca exceptie daca iteratorul nu e valid
 		TElem element() const;
 };
-

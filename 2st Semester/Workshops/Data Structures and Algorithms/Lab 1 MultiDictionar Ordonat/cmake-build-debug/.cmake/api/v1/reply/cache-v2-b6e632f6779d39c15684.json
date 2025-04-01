@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug"
+			"value" : "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat"
+			"value" : "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug"
+			"value" : "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug"
 		},
 		{
 			"name" : "MultiDictionar_Ordonat_IS_TOP_LEVEL",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat"
+			"value" : "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat"
 		}
 	],
 	"kind" : "cache",

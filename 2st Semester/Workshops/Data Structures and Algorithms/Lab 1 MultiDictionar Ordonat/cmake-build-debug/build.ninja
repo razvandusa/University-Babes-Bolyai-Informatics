@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/cmake-build-debug/
+cmake_ninja_workdir = /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target MultiDictionar_Ordonat
 
@@ -49,35 +49,47 @@ cmake_ninja_workdir = /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/cm
 
 build cmake_object_order_depends_target_MultiDictionar_Ordonat: phony || .
 
-build CMakeFiles/MultiDictionar_Ordonat.dir/App.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/App.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
+build CMakeFiles/MultiDictionar_Ordonat.dir/App.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/App.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
   DEP_FILE = CMakeFiles/MultiDictionar_Ordonat.dir/App.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
 
-build CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/MDO.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/Proiect$ C++/MDO.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
+build CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/VectorDinamic.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/Proiect$ C++/VectorDinamic.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
+  DEP_FILE = CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/VectorDinamic.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
+  OBJECT_FILE_DIR = CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++
+
+build CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/MDO.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/Proiect$ C++/MDO.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
   DEP_FILE = CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/MDO.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++
 
-build CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/IteratorMDO.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/Proiect$ C++/IteratorMDO.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
+build CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/IteratorMDO.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/Proiect$ C++/IteratorMDO.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
   DEP_FILE = CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/IteratorMDO.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++
 
-build CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestScurt.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/Teste/TestScurt.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
+build CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestScurt.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/Teste/TestScurt.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
   DEP_FILE = CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestScurt.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiDictionar_Ordonat.dir/Teste
 
-build CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestExtins.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/Teste/TestExtins.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
+build CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestExtins.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/Teste/TestExtins.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
   DEP_FILE = CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestExtins.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
   OBJECT_FILE_DIR = CMakeFiles/MultiDictionar_Ordonat.dir/Teste
+
+build CMakeFiles/MultiDictionar_Ordonat.dir/Test.cpp.o: CXX_COMPILER__MultiDictionar_Ordonat_unscanned_Debug /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/Test.cpp || cmake_object_order_depends_target_MultiDictionar_Ordonat
+  DEP_FILE = CMakeFiles/MultiDictionar_Ordonat.dir/Test.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
+  OBJECT_FILE_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
 
 
 # =============================================================================
@@ -87,7 +99,7 @@ build CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestExtins.cpp.o: CXX_COMPILER
 #############################################
 # Link the executable MultiDictionar_Ordonat
 
-build MultiDictionar_Ordonat: CXX_EXECUTABLE_LINKER__MultiDictionar_Ordonat_Debug CMakeFiles/MultiDictionar_Ordonat.dir/App.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/MDO.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/IteratorMDO.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestScurt.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestExtins.cpp.o
+build MultiDictionar_Ordonat: CXX_EXECUTABLE_LINKER__MultiDictionar_Ordonat_Debug CMakeFiles/MultiDictionar_Ordonat.dir/App.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/VectorDinamic.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/MDO.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Proiect_C++/IteratorMDO.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestScurt.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Teste/TestExtins.cpp.o CMakeFiles/MultiDictionar_Ordonat.dir/Test.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/MultiDictionar_Ordonat.dir
   POST_BUILD = :
@@ -100,7 +112,7 @@ build MultiDictionar_Ordonat: CXX_EXECUTABLE_LINKER__MultiDictionar_Ordonat_Debu
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -111,7 +123,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/razvandusa/CLionProjects/MultiDictionar Ordonat" -B"/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug"
+  COMMAND = cd "/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S"/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat" -B"/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -127,7 +139,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/razvandusa/CLionProjects/MultiDictionar Ordonat/cmake-build-debug
+# Folder: /Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug
 
 build all: phony MultiDictionar_Ordonat
 
@@ -138,14 +150,14 @@ build all: phony MultiDictionar_Ordonat
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/razvandusa/CLionProjects/MultiDictionar$ Ordonat/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/razvandusa/Documents/CLionProjects/Lab$ 1$ MultiDictionar$ Ordonat/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -2,8 +2,8 @@
 #include <assert.h>
 #include <algorithm>
 #include <vector>
-#include "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/Proiect C++/IteratorMDO.h"
-#include "/Users/razvandusa/CLionProjects/MultiDictionar Ordonat/Proiect C++/MDO.h"
+#include "../Proiect C++/IteratorMDO.h"
+#include "../Proiect C++/MDO.h"
 #include "TestExtins.h"
 
 using namespace std;
