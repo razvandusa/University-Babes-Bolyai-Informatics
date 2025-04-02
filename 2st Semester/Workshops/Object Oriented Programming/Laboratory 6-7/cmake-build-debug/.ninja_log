@@ -1,0 +1,12 @@
+# ninja log v6
+6	463	1743260180136995363	CMakeFiles/C__Tests.dir/src/domain.cpp.o	ba21b24b948b46fa
+4	361	1743326773198246890	CMakeFiles/C__Tests.dir/tests/tests_service.cpp.o	74523ce80915e825
+7	592	1743260180137975401	CMakeFiles/C__Tests.dir/src/validator.cpp.o	7b43a8a8a273b709
+4	250	1743326747512236310	CMakeFiles/C__Tests.dir/tests/tests_domain.cpp.o	bd6c7784212a3a13
+6	522	1743323980280155739	CMakeFiles/C__Tests.dir/tests/tests_repository.cpp.o	b7eb8b3a8f0a457a
+2	410	1743324023128917939	CMakeFiles/C__Tests.dir/main.cpp.o	fdb572738ba0833d
+6	536	1743323980279694404	CMakeFiles/C__Tests.dir/src/repository.cpp.o	1630b7a1c32565cd
+2	362	1743324023129142732	CMakeFiles/C__Tests.dir/src/service.cpp.o	b3ad85dc3de2f480
+7	498	1743260180138101817	CMakeFiles/C__Tests.dir/tests/tests_validator.cpp.o	fadbfacc24cd580a
+361	388	1743326773555521300	C__Tests	d8e98c31e8ab1cb3
+4	462	1743326200321788972	CMakeFiles/C__Tests.dir/src/ui.cpp.o	82f41c627e8f1252
