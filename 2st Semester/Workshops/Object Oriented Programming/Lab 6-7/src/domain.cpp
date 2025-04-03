@@ -1,4 +1,5 @@
 #include "../headers/domain.h"
+#include <iostream>
 /*
 *  Constructor implicit
 */
@@ -14,6 +15,14 @@ Disciplina::Disciplina(int id, const std::string &denumire, int ore, const std::
         this->tip = tip;
         this->cadru_didactic = cadru_didactic;
 }
+
+/*
+ *  Constructor de copiere
+ */
+Disciplina::Disciplina(const Disciplina &other) : id(other.get_id()),denumire(other.get_denumire()),ore(other.get_ore()),tip(other.get_tip()),cadru_didactic(other.get_cadru_didactic()){
+        std::cout << "\nS-a realizat o copiere!\n";
+}
+
 
 /*
 * Returneaza id-ul disciplinei

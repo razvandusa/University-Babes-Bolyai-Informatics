@@ -29,6 +29,12 @@ public:
     std::string update_disciplina(int id , const std::string &new_denumire, int new_ore, const std::string &new_tip, const std::string &new_cadru_didactic);
 
     /*
+    *  Cautam o disciplina dupa un id si o returnam
+    *  id - id-ul disciplinei pe care o cautam
+    */
+    Disciplina& find_disciplina(int id);
+
+    /*
      *  Returneaza lista de discipline
      */
     std::vector<Disciplina>& get_lista_discipline();
@@ -36,16 +42,17 @@ public:
     /*
      *  Filtreaza ofertele dupa criteriul care poate sa fie destinatie sau pret
      *  lista_discipline - lista de discipline pe care o filtram
+     *  camp_filtrare - campul dupa care filtram
      *  criteriu - criteriul dupa care filtram
      */
-    std::vector<Disciplina> filtrare_discipline(std::vector<Disciplina> lista_discipline, const std::string& criteriu);
+    std::vector<Disciplina> filtrare_discipline(const std::vector<Disciplina>& lista_discipline, const std::string camp_filtrare, const std::string& criteriu);
 
     /*
      *  Sorteaza ofertele dupa criteriul care poate sa fie denumire, destinatie, tip sau pret
      *  lista_discipline - lista de discipline pe care o sortam
      *  criteriu - criteriul dupa care sortam
      */
-    void sortare_discipline(std::vector<Disciplina> &lista_discipline, const std::string& criteriu);
+    void sortare_discipline(std::vector<Disciplina>& lista_discipline, const std::string& criteriu);
 private:
     Repository repository;
     Validator validator;

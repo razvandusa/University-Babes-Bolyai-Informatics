@@ -7,8 +7,9 @@ void UI::menu() {
     std::cout << "2. Sterge disciplina\n";
     std::cout << "3. Modifica disciplina\n";
     std::cout << "4. Afisare discipline\n";
-    std::cout << "5. Filtreaza discipline\n";
-    std::cout << "6. Sorteaza discipline\n";
+    std::cout << "5. Cauta disciplina\n";
+    std::cout << "6. Filtreaza discipline\n";
+    std::cout << "7. Sorteaza discipline\n";
     std::cout << "0. Exit\n";
 }
 
@@ -35,9 +36,12 @@ void UI::run() {
                 show_list_UI();
                 break;
             case 5:
-                filtrare_discipline_UI();
+                find_disciplina_UI();
                 break;
             case 6:
+                filtrare_discipline_UI();
+                break;
+            case 7:
                 sortare_discipline_UI();
                 break;
             default:
@@ -98,8 +102,26 @@ void UI::update_disciplina_UI() {
     std::cout << mesaj;
 }
 
+void UI::find_disciplina_UI() {
+    int id;
+    std::cout << "Scrie id-ul disciplinei pe care o cauti : ";
+    std::cin >> id;
+    Disciplina& disciplina = service.find_disciplina(id);
+    if (disciplina == Disciplina()) {
+        std::cout << "Disciplina nu exista!";
+    }
+    else {
+        std::cout <<"ID-ul disciplinei : " << disciplina.get_id() << std::endl;
+        std::cout <<"Denumirea disciplinei : " << disciplina.get_denumire() << std::endl;
+        std::cout <<"Numarul de ore a disciplinei : " << disciplina.get_ore() << std::endl;
+        std::cout <<"Tipul disciplinei : " << disciplina.get_tip() << std::endl;
+        std::cout <<"Cadrul didactic al disciplinei : " << disciplina.get_cadru_didactic() << std::endl;
+        std::cout << std::endl;
+    }
+}
+
 void UI::show_list_UI() {
-    std::vector<Disciplina> lista_discipline = service.get_lista_discipline();
+    std::vector<Disciplina>& lista_discipline = service.get_lista_discipline();
     if (lista_discipline.empty()) {
         std::cout << "Lista de discipline este goala!";
     }
@@ -116,35 +138,66 @@ void UI::show_list_UI() {
 }
 
 void UI::filtrare_discipline_UI() {
+    std::vector<Disciplina>& lista_discipline = service.get_lista_discipline();
     std::vector<Disciplina> lista_discipline_filtrata;
     std::cout << "Alege criteriul dupa care filtrezi lista : " << std::endl;
     std::cout << "1. Numar ore" << std::endl;
     std::cout << "2. Cadru didactic" << std::endl;
-    int criteriu;
-    std::cin >> criteriu;
-    if (criteriu == 1) {
-        lista_discipline_filtrata = service.filtrare_discipline(service.get_lista_discipline(), "numar ore");
+    int camp_filtrare;
+    std::string criteriu;
+    std::cin >> camp_filtrare;
+    if (camp_filtrare == 1) {
+        std::cout << "Scrie numarul minim de ore : " << std::endl;
+        std::cin >> criteriu;
+        try {
+            int test_conversie = std::stoi(criteriu);
+        } catch (std::invalid_argument& e) {
+            std::cout << "Numarul minim de ore trebuie sa fie intreg!" << std::endl;
+            return ;
+        }
+        lista_discipline_filtrata = service.filtrare_discipline(lista_discipline, "numar ore", criteriu);
+        if (lista_discipline_filtrata.empty()) {
+            std::cout << "Lista filtrata este goala!" << std::endl;
+        }
+        else {
+            std::cout <<"Lista filtrata este : " << std::endl;
+            for (const auto& disciplina : lista_discipline_filtrata) {
+                std::cout <<"ID-ul disciplinei : " << disciplina.get_id() << std::endl;
+                std::cout <<"Denumirea disciplinei : " << disciplina.get_denumire() << std::endl;
+                std::cout <<"Numarul de ore a disciplinei : " << disciplina.get_ore() << std::endl;
+                std::cout <<"Tipul disciplinei : " << disciplina.get_tip() << std::endl;
+                std::cout <<"Cadrul didactic al disciplinei : " << disciplina.get_cadru_didactic() << std::endl;
+                std::cout << std::endl;
+            }
+        }
     }
-    else if (criteriu == 2) {
-        lista_discipline_filtrata = service.filtrare_discipline(service.get_lista_discipline(), "cadru didactic");
+    else if (camp_filtrare == 2) {
+        std::cout << "Scrie cadrul didactic : " << std::endl;
+        std::cin.ignore();
+        std::getline(std::cin, criteriu);
+        lista_discipline_filtrata = service.filtrare_discipline(lista_discipline, "cadru didactic", criteriu);
+        if (lista_discipline_filtrata.empty()) {
+            std::cout << "Lista filtrata este goala!" << std::endl;
+        }
+        else {
+            std::cout <<"Lista filtrata este : " << std::endl;
+            for (const auto& disciplina : lista_discipline_filtrata) {
+                std::cout <<"ID-ul disciplinei : " << disciplina.get_id() << std::endl;
+                std::cout <<"Denumirea disciplinei : " << disciplina.get_denumire() << std::endl;
+                std::cout <<"Numarul de ore a disciplinei : " << disciplina.get_ore() << std::endl;
+                std::cout <<"Tipul disciplinei : " << disciplina.get_tip() << std::endl;
+                std::cout <<"Cadrul didactic al disciplinei : " << disciplina.get_cadru_didactic() << std::endl;
+                std::cout << std::endl;
+            }
+        }
     }
     else {
         std::cout << "Nu exista acest criteriu!" << std::endl;
-        return ;
-    }
-    std::cout <<"Lista filtrata este : " << std::endl;
-    for (const auto& disciplina : lista_discipline_filtrata) {
-        std::cout <<"ID-ul disciplinei : " << disciplina.get_id() << std::endl;
-        std::cout <<"Denumirea disciplinei : " << disciplina.get_denumire() << std::endl;
-        std::cout <<"Numarul de ore a disciplinei : " << disciplina.get_ore() << std::endl;
-        std::cout <<"Tipul disciplinei : " << disciplina.get_tip() << std::endl;
-        std::cout <<"Cadrul didactic al disciplinei : " << disciplina.get_cadru_didactic() << std::endl;
-        std::cout << std::endl;
     }
 }
 
 void UI::sortare_discipline_UI() {
-    std::cout << "Alege criteriul dupa care filtrezi lista : " << std::endl;
+    std::cout << "Alege criteriul dupa care sortezi lista : " << std::endl;
     std::cout << "1. Denumire" << std::endl;
     std::cout << "2. Numar ore" << std::endl;
     std::cout << "3. Cadru didactic" << std::endl;

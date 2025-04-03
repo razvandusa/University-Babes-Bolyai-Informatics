@@ -14,6 +14,11 @@ public:
     Disciplina(int id, const std::string &denumire, int ore, const std::string &tip, const std::string &cadru_didactic);
 
     /*
+     *  Constructor de copiere
+     */
+    Disciplina(const Disciplina& other);
+
+    /*
      *  Returneaza id-ul disciplinei
      */
     int get_id() const;

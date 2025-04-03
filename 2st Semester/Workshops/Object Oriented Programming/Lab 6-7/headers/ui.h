@@ -29,6 +29,11 @@ public:
     void update_disciplina_UI();
 
     /*
+     *  Cauta o disciplina din lista
+     */
+    void find_disciplina_UI();
+
+    /*
      *  Afiseaza lista de discipline
      */
     void show_list_UI();
