@@ -1,3 +1,3 @@
-/Users/razvandusa/CLionProjects/Matrice/cmake-build-debug/CMakeFiles/Matrice.dir
-/Users/razvandusa/CLionProjects/Matrice/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/razvandusa/CLionProjects/Matrice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Matrice/cmake-build-debug/CMakeFiles/Matrice.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Matrice/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Matrice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

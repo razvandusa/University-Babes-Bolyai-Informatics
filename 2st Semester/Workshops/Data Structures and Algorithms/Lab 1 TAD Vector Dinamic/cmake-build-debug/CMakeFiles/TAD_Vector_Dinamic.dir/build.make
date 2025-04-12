@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/razvandusa/CLionProjects/TAD Vector Dinamic"
+CMAKE_SOURCE_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TAD_Vector_Dinamic.dir/depend.make
@@ -70,74 +70,74 @@ include CMakeFiles/TAD_Vector_Dinamic.dir/progress.make
 include CMakeFiles/TAD_Vector_Dinamic.dir/flags.make
 
 CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/flags.make
-CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o: /Users/razvandusa/CLionProjects/TAD\ Vector\ Dinamic/main.cpp
+CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Vector\ Dinamic/main.cpp
 CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o -c "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/main.cpp"
 
 CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/main.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/main.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.i
 
 CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/main.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/main.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/main.cpp.s
 
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/flags.make
-CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o: /Users/razvandusa/CLionProjects/TAD\ Vector\ Dinamic/Teste/TestExtins.cpp
+CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Vector\ Dinamic/Teste/TestExtins.cpp
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o -c "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/Teste/TestExtins.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/Teste/TestExtins.cpp"
 
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/Teste/TestExtins.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/Teste/TestExtins.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.i
 
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/Teste/TestExtins.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/Teste/TestExtins.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestExtins.cpp.s
 
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/flags.make
-CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o: /Users/razvandusa/CLionProjects/TAD\ Vector\ Dinamic/Teste/TestScurt.cpp
+CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Vector\ Dinamic/Teste/TestScurt.cpp
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o -c "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/Teste/TestScurt.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/Teste/TestScurt.cpp"
 
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/Teste/TestScurt.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/Teste/TestScurt.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.i
 
 CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/Teste/TestScurt.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/Teste/TestScurt.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/Teste/TestScurt.cpp.s
 
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/flags.make
-CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o: /Users/razvandusa/CLionProjects/TAD\ Vector\ Dinamic/ProiectC++/VectorDinamic.cpp
+CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Vector\ Dinamic/ProiectC++/VectorDinamic.cpp
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o -c "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/ProiectC++/VectorDinamic.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/ProiectC++/VectorDinamic.cpp"
 
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/ProiectC++/VectorDinamic.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/ProiectC++/VectorDinamic.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.i
 
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/ProiectC++/VectorDinamic.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/ProiectC++/VectorDinamic.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.cpp.s
 
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/flags.make
-CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o: /Users/razvandusa/CLionProjects/TAD\ Vector\ Dinamic/ProiectC++/IteratorVectorDinamic.cpp
+CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Vector\ Dinamic/ProiectC++/IteratorVectorDinamic.cpp
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o: CMakeFiles/TAD_Vector_Dinamic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o -c "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/ProiectC++/IteratorVectorDinamic.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o -MF CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o.d -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/ProiectC++/IteratorVectorDinamic.cpp"
 
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/ProiectC++/IteratorVectorDinamic.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/ProiectC++/IteratorVectorDinamic.cpp" > CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.i
 
 CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/ProiectC++/IteratorVectorDinamic.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/ProiectC++/IteratorVectorDinamic.cpp" -o CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.s
 
 # Object files for target TAD_Vector_Dinamic
 TAD_Vector_Dinamic_OBJECTS = \
@@ -157,7 +157,7 @@ TAD_Vector_Dinamic: CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/VectorDinamic.c
 TAD_Vector_Dinamic: CMakeFiles/TAD_Vector_Dinamic.dir/ProiectC++/IteratorVectorDinamic.cpp.o
 TAD_Vector_Dinamic: CMakeFiles/TAD_Vector_Dinamic.dir/build.make
 TAD_Vector_Dinamic: CMakeFiles/TAD_Vector_Dinamic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TAD_Vector_Dinamic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TAD_Vector_Dinamic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TAD_Vector_Dinamic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/TAD_Vector_Dinamic.dir/clean:
 .PHONY : CMakeFiles/TAD_Vector_Dinamic.dir/clean
 
 CMakeFiles/TAD_Vector_Dinamic.dir/depend:
-	cd "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/razvandusa/CLionProjects/TAD Vector Dinamic" "/Users/razvandusa/CLionProjects/TAD Vector Dinamic" "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug" "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug" "/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles/TAD_Vector_Dinamic.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Vector Dinamic/cmake-build-debug/CMakeFiles/TAD_Vector_Dinamic.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/TAD_Vector_Dinamic.dir/depend
 
