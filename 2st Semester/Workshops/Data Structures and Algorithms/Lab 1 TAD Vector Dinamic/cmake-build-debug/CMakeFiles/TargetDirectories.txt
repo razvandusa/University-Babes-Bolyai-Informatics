@@ -1,0 +1,3 @@
+/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles/TAD_Vector_Dinamic.dir
+/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/CLionProjects/TAD Vector Dinamic/cmake-build-debug/CMakeFiles/rebuild_cache.dir
