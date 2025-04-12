@@ -19,7 +19,9 @@ void Stiva::adauga(TElem elem) {
         for (int i = 0; i < dimensiune; i++) {
         	newElemente[i] = elemente[i];
         }
+		delete[] elemente;
         elemente = newElemente;
+		capacitate = newCapacitate;
     }
     elemente[dimensiune++] = elem;
 }

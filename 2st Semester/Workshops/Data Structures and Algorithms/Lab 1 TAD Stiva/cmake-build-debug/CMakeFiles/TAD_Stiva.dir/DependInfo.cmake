@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/razvandusa/CLionProjects/TAD_Stiva/ProiectC++/Stiva.cpp" "CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o" "gcc" "CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o.d"
-  "/Users/razvandusa/CLionProjects/TAD_Stiva/main.cpp" "CMakeFiles/TAD_Stiva.dir/main.cpp.o" "gcc" "CMakeFiles/TAD_Stiva.dir/main.cpp.o.d"
+  "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/ProiectC++/Stiva.cpp" "CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o" "gcc" "CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o.d"
+  "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/main.cpp" "CMakeFiles/TAD_Stiva.dir/main.cpp.o" "gcc" "CMakeFiles/TAD_Stiva.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

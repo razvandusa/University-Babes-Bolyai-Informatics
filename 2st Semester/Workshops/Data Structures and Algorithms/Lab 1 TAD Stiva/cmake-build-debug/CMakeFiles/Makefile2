@@ -54,10 +54,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/razvandusa/CLionProjects/TAD_Stiva
+CMAKE_SOURCE_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/TAD_Stiva.dir/clean
 CMakeFiles/TAD_Stiva.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TAD_Stiva.dir/build.make CMakeFiles/TAD_Stiva.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TAD_Stiva.dir/build.make CMakeFiles/TAD_Stiva.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target TAD_Stiva"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug/CMakeFiles" --progress-num=1,2,3 "Built target TAD_Stiva"
 .PHONY : CMakeFiles/TAD_Stiva.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TAD_Stiva.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TAD_Stiva.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/TAD_Stiva.dir/rule
 
 # Convenience name for target.

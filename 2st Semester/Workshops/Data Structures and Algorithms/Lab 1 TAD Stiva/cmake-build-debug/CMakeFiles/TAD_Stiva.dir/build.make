@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/razvandusa/CLionProjects/TAD_Stiva
+CMAKE_SOURCE_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TAD_Stiva.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/TAD_Stiva.dir/progress.make
 include CMakeFiles/TAD_Stiva.dir/flags.make
 
 CMakeFiles/TAD_Stiva.dir/main.cpp.o: CMakeFiles/TAD_Stiva.dir/flags.make
-CMakeFiles/TAD_Stiva.dir/main.cpp.o: /Users/razvandusa/CLionProjects/TAD_Stiva/main.cpp
+CMakeFiles/TAD_Stiva.dir/main.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Stiva/main.cpp
 CMakeFiles/TAD_Stiva.dir/main.cpp.o: CMakeFiles/TAD_Stiva.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TAD_Stiva.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Stiva.dir/main.cpp.o -MF CMakeFiles/TAD_Stiva.dir/main.cpp.o.d -o CMakeFiles/TAD_Stiva.dir/main.cpp.o -c /Users/razvandusa/CLionProjects/TAD_Stiva/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TAD_Stiva.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Stiva.dir/main.cpp.o -MF CMakeFiles/TAD_Stiva.dir/main.cpp.o.d -o CMakeFiles/TAD_Stiva.dir/main.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/main.cpp"
 
 CMakeFiles/TAD_Stiva.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TAD_Stiva.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/razvandusa/CLionProjects/TAD_Stiva/main.cpp > CMakeFiles/TAD_Stiva.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/main.cpp" > CMakeFiles/TAD_Stiva.dir/main.cpp.i
 
 CMakeFiles/TAD_Stiva.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TAD_Stiva.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/razvandusa/CLionProjects/TAD_Stiva/main.cpp -o CMakeFiles/TAD_Stiva.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/main.cpp" -o CMakeFiles/TAD_Stiva.dir/main.cpp.s
 
 CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o: CMakeFiles/TAD_Stiva.dir/flags.make
-CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o: /Users/razvandusa/CLionProjects/TAD_Stiva/ProiectC++/Stiva.cpp
+CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Stiva/ProiectC++/Stiva.cpp
 CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o: CMakeFiles/TAD_Stiva.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o -MF CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o.d -o CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o -c /Users/razvandusa/CLionProjects/TAD_Stiva/ProiectC++/Stiva.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o -MF CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o.d -o CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/ProiectC++/Stiva.cpp"
 
 CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/razvandusa/CLionProjects/TAD_Stiva/ProiectC++/Stiva.cpp > CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/ProiectC++/Stiva.cpp" > CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.i
 
 CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/razvandusa/CLionProjects/TAD_Stiva/ProiectC++/Stiva.cpp -o CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/ProiectC++/Stiva.cpp" -o CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.s
 
 # Object files for target TAD_Stiva
 TAD_Stiva_OBJECTS = \
@@ -109,7 +109,7 @@ TAD_Stiva: CMakeFiles/TAD_Stiva.dir/main.cpp.o
 TAD_Stiva: CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o
 TAD_Stiva: CMakeFiles/TAD_Stiva.dir/build.make
 TAD_Stiva: CMakeFiles/TAD_Stiva.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TAD_Stiva"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TAD_Stiva"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TAD_Stiva.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/TAD_Stiva.dir/clean:
 .PHONY : CMakeFiles/TAD_Stiva.dir/clean
 
 CMakeFiles/TAD_Stiva.dir/depend:
-	cd /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/razvandusa/CLionProjects/TAD_Stiva /Users/razvandusa/CLionProjects/TAD_Stiva /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug /Users/razvandusa/CLionProjects/TAD_Stiva/cmake-build-debug/CMakeFiles/TAD_Stiva.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Stiva/cmake-build-debug/CMakeFiles/TAD_Stiva.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/TAD_Stiva.dir/depend
 

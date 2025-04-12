@@ -1,6 +1,6 @@
 CMakeFiles/TAD_Stiva.dir/ProiectC++/Stiva.cpp.o: \
-  /Users/razvandusa/CLionProjects/TAD_Stiva/ProiectC++/Stiva.cpp \
-  /Users/razvandusa/CLionProjects/TAD_Stiva/ProiectC++/Stiva.h \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Stiva/ProiectC++/Stiva.cpp \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Stiva/ProiectC++/Stiva.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \
