@@ -1,0 +1,3 @@
+/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles/Colectie__cu_relatie_.dir
+/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
