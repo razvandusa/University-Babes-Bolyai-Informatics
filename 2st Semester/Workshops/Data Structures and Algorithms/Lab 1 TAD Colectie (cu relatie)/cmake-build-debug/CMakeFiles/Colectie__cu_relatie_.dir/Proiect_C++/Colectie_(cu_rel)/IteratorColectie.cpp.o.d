@@ -1,7 +1,7 @@
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o: \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.cpp \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.h \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/Colectie.h \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.cpp \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.h \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/Colectie.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \

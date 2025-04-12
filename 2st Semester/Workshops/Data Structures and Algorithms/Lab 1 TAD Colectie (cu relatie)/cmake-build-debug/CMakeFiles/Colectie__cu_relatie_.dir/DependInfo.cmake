@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o.d"
-  "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o.d"
-  "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestExtins.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o.d"
-  "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestScurt.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o.d"
-  "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/main.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o.d"
+  "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o.d"
+  "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o.d"
+  "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestExtins.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o.d"
+  "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestScurt.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o.d"
+  "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/main.cpp" "CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o" "gcc" "CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

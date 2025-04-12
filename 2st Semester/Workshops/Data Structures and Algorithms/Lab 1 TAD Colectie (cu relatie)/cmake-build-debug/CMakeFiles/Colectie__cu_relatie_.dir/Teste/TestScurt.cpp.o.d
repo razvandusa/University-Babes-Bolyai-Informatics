@@ -1,8 +1,8 @@
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o: \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/TestScurt.cpp \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/TestScurt.h \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/../Proiect\ C++/Colectie\ (cu\ rel)/Colectie.h \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/../Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.h \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/TestScurt.cpp \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/TestScurt.h \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/../Proiect\ C++/Colectie\ (cu\ rel)/Colectie.h \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/../Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_symbol_aliasing.h \

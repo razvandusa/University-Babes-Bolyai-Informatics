@@ -1,3 +1,3 @@
-/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles/Colectie__cu_relatie_.dir
-/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles/Colectie__cu_relatie_.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles/rebuild_cache.dir

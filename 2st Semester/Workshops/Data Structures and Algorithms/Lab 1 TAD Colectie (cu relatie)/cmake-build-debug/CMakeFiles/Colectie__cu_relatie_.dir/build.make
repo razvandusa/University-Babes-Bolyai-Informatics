@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/razvandusa/CLionProjects/Colectie (cu relatie)"
+CMAKE_SOURCE_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Colectie__cu_relatie_.dir/depend.make
@@ -70,74 +70,74 @@ include CMakeFiles/Colectie__cu_relatie_.dir/progress.make
 include CMakeFiles/Colectie__cu_relatie_.dir/flags.make
 
 CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/flags.make
-CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o: /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/main.cpp
+CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/main.cpp
 CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o -MF CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o.d -o CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o -c "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o -MF CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o.d -o CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/main.cpp"
 
 CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/main.cpp" > CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/main.cpp" > CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.i
 
 CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/main.cpp" -o CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/main.cpp" -o CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.s
 
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/flags.make
-CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o: /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/Colectie.cpp
+CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/Colectie.cpp
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o" -MF "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o.d" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o" -c "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o" -MF "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o.d" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.o" -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp" > "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp" > "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.i"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/Colectie.cpp" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/Colectie.cpp.s"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/flags.make
-CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o: /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.cpp
+CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Proiect\ C++/Colectie\ (cu\ rel)/IteratorColectie.cpp
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o" -MF "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o.d" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o" -c "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o" -MF "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o.d" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.o" -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp" > "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp" > "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.i"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Proiect C++/Colectie (cu rel)/IteratorColectie.cpp" -o "CMakeFiles/Colectie__cu_relatie_.dir/Proiect_C++/Colectie_(cu_rel)/IteratorColectie.cpp.s"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/flags.make
-CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o: /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/TestExtins.cpp
+CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/TestExtins.cpp
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o -MF CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o.d -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o -c "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestExtins.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o -MF CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o.d -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestExtins.cpp"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestExtins.cpp" > CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestExtins.cpp" > CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.i
 
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestExtins.cpp" -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestExtins.cpp" -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp.s
 
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/flags.make
-CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o: /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/TestScurt.cpp
+CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o: /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/TestScurt.cpp
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o: CMakeFiles/Colectie__cu_relatie_.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o -MF CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o.d -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o -c "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestScurt.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o -MF CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o.d -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o -c "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestScurt.cpp"
 
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestScurt.cpp" > CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestScurt.cpp" > CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.i
 
 CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/Teste/TestScurt.cpp" -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/Teste/TestScurt.cpp" -o CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.s
 
 # Object files for target Colectie__cu_relatie_
 Colectie__cu_relatie__OBJECTS = \
@@ -157,7 +157,7 @@ Colectie__cu_relatie_: CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestExtins.cpp
 Colectie__cu_relatie_: CMakeFiles/Colectie__cu_relatie_.dir/Teste/TestScurt.cpp.o
 Colectie__cu_relatie_: CMakeFiles/Colectie__cu_relatie_.dir/build.make
 Colectie__cu_relatie_: CMakeFiles/Colectie__cu_relatie_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Colectie__cu_relatie_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Colectie__cu_relatie_"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Colectie__cu_relatie_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +169,6 @@ CMakeFiles/Colectie__cu_relatie_.dir/clean:
 .PHONY : CMakeFiles/Colectie__cu_relatie_.dir/clean
 
 CMakeFiles/Colectie__cu_relatie_.dir/depend:
-	cd "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/razvandusa/CLionProjects/Colectie (cu relatie)" "/Users/razvandusa/CLionProjects/Colectie (cu relatie)" "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug" "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug" "/Users/razvandusa/CLionProjects/Colectie (cu relatie)/cmake-build-debug/CMakeFiles/Colectie__cu_relatie_.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug" "/Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st Semester/Workshops/Data Structures and Algorithms/Lab 1 TAD Colectie (cu relatie)/cmake-build-debug/CMakeFiles/Colectie__cu_relatie_.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/Colectie__cu_relatie_.dir/depend
 

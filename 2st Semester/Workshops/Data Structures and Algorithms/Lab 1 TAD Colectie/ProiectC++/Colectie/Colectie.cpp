@@ -20,6 +20,7 @@ void Colectie::adauga(TElem elem) {
 		for (int i = 0; i < dimensiune; i++) {
 		    newElemente[i] = elemente[i];
 		}
+        delete[] elemente;
 		elemente = newElemente;
 		capacitate = newCapacitate;
 	}

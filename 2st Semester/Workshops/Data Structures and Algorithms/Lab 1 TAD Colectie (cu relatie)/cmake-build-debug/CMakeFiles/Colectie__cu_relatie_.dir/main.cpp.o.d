@@ -1,5 +1,5 @@
 CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o: \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/main.cpp \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \
@@ -956,5 +956,5 @@ CMakeFiles/Colectie__cu_relatie_.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/TestExtins.h \
-  /Users/razvandusa/CLionProjects/Colectie\ (cu\ relatie)/Teste/TestScurt.h
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/TestExtins.h \
+  /Users/razvandusa/Documents/GitHub/University-Babes-Bolyai-Informatics/2st\ Semester/Workshops/Data\ Structures\ and\ Algorithms/Lab\ 1\ TAD\ Colectie\ (cu\ relatie)/Teste/TestScurt.h

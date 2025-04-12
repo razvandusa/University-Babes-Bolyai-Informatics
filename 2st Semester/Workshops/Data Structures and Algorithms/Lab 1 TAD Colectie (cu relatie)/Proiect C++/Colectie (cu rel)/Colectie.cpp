@@ -22,6 +22,8 @@ void Colectie::adauga(TElem e) {
         	newElemente[i] = elemente[i];
         }
         capacitate = newCapacitate;
+		delete[] elemente;
+		elemente = newElemente;
 	}
 
     int poz = 0;
