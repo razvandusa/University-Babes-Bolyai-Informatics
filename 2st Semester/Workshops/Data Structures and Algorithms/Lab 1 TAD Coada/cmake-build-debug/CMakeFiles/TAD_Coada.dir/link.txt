@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/TAD_Coada.dir/main.cpp.o CMakeFiles/TAD_Coada.dir/Proiect_C++/Coada.cpp.o CMakeFiles/TAD_Coada.dir/Teste/TestScurt.cpp.o CMakeFiles/TAD_Coada.dir/Teste/TestExtins.cpp.o -o TAD_Coada
