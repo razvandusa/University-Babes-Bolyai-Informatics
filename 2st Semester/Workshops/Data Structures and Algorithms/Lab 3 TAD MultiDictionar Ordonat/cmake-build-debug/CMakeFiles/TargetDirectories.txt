@@ -1,3 +1,0 @@
-/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug/CMakeFiles/MultiDictionar_Ordonat.dir
-/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/razvandusa/Documents/CLionProjects/Lab 1 MultiDictionar Ordonat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
