@@ -1,0 +1,3 @@
+/Users/razvandusa/CLionProjects/TAD Dictionar Ordonat/cmake-build-debug/CMakeFiles/TAD_Dictionar_Ordonat.dir
+/Users/razvandusa/CLionProjects/TAD Dictionar Ordonat/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/CLionProjects/TAD Dictionar Ordonat/cmake-build-debug/CMakeFiles/rebuild_cache.dir
