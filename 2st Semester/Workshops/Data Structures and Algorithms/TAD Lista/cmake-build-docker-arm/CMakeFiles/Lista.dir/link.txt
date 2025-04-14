@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/Lista.dir/main.cpp.o CMakeFiles/Lista.dir/Teste/TestExtins.cpp.o CMakeFiles/Lista.dir/Teste/TestScurt.cpp.o CMakeFiles/Lista.dir/Proiect_C++/IteratorLP.cpp.o CMakeFiles/Lista.dir/Proiect_C++/Lista.cpp.o -o Lista 
