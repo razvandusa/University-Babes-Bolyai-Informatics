@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S "/tmp/Lab 8" -B "/tmp/Lab 8/cmake-build-docker-arm"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /tmp/Lab 8/cmake-build-docker-arm
