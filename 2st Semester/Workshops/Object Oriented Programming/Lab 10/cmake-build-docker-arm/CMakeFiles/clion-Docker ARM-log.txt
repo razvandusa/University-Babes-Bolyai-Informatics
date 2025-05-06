@@ -1,0 +1,19 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_PREFIX_PATH=/opt/homebrew/opt/qt6 -G "Unix Makefiles" -S "/tmp/Lab 10" -B "/tmp/Lab 10/cmake-build-docker-arm"
+-- Configuring incomplete, errors occurred!
+See also "/tmp/Lab 10/cmake-build-docker-arm/CMakeFiles/CMakeOutput.log".
+CMake Error at CMakeLists.txt:44 (find_package):
+  By not providing "FindQt6.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt6", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Qt6" with any of
+  the following names:
+
+    Qt6Config.cmake
+    qt6-config.cmake
+
+  Add the installation prefix of "Qt6" to CMAKE_PREFIX_PATH or set "Qt6_DIR"
+  to a directory containing one of the above files.  If "Qt6" provides a
+  separate development package or SDK, be sure it has been installed.
+
+

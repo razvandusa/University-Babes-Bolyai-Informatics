@@ -1,3 +1,0 @@
-/Users/razvandusa/CLionProjects/Lab 8/cmake-build-debug-coverage/CMakeFiles/Lab_8.dir
-/Users/razvandusa/CLionProjects/Lab 8/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
-/Users/razvandusa/CLionProjects/Lab 8/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
