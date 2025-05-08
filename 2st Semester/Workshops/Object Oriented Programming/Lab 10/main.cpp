@@ -31,18 +31,19 @@ void teste () {
 int main (int argc, char *argv[]) {
     teste();
 
-    std::unique_ptr<Repository> repository;
+    std::unique_ptr<RepositoryMemory> repository;
+    std::unique_ptr<RepositoryProbability> repositoryProbability = std::make_unique<RepositoryProbability>();
     std::string input;
     bool choosing = true;
     while (choosing) {
         try {
             std::cout << "\nAlege tipul de repository :\n";
-            std::cout << "1. Repository din fisier\n";
-            std::cout << "2. Repository in memorie\n";
+            std::cout << "1. Repository in memorie\n";
+            std::cout << "2. Repository din fisier\n";
             std::getline(std::cin, input);
             int optiune = stoi(input);
             if (optiune == 1) {
-                repository = std::make_unique<Repository>();
+                repository = std::make_unique<RepositoryMemory>();
                 choosing = false;
             } else if (optiune == 2) {
                 repository = std::make_unique<RepositoryFile>("/Users/razvandusa/CLionProjects/Lab 10/file.txt");
@@ -81,5 +82,3 @@ int main (int argc, char *argv[]) {
         }
     }
 }
-
-

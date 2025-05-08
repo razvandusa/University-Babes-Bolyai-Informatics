@@ -34,7 +34,7 @@ public:
     /*
      *  Constructorul clasei Service
      */
-    Service(std::unique_ptr<Repository> repo) : repository(std::move(repo)) {
+    Service(std::unique_ptr<RepositoryMemory> repo) : repository(std::move(repo)) {
         lista_discipline_undo.reserve(100);
     }
 
@@ -99,7 +99,7 @@ public:
      */
     void undo();
 private:
-    std::unique_ptr<Repository> repository;
+    std::unique_ptr<RepositoryMemory> repository;
     Validator validator;
     std::vector<std::unique_ptr<ActiuneUndo>> lista_discipline_undo;
 };

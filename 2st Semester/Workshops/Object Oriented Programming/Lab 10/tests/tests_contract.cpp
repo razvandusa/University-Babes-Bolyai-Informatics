@@ -5,7 +5,7 @@
 #include <ostream>
 
 void test_clear_contract() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     Contract contract;
 
@@ -17,7 +17,7 @@ void test_clear_contract() {
 }
 
 void test_add_contract() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     Contract contract;
 
@@ -31,7 +31,7 @@ void test_add_contract() {
 }
 
 void test_generate_contract() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     Contract contract;
 
@@ -58,7 +58,7 @@ void test_generate_contract() {
 }
 
 void test_export_contract() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     Contract contract;
 

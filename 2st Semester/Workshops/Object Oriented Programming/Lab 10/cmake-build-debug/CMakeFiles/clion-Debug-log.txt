@@ -8,6 +8,6 @@ CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
 
 
 -- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
--- Configuring done (0.2s)
+-- Configuring done (0.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/razvandusa/CLionProjects/Lab 10/cmake-build-debug

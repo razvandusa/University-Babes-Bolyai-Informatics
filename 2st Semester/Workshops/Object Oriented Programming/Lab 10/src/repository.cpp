@@ -4,20 +4,20 @@
 #include <iostream>
 Disciplina disciplina_vida;
 
-Repository::Repository() {
+RepositoryMemory::RepositoryMemory() {
     lista_discipline = std::vector<Disciplina> {};
     lista_discipline.reserve(100);
 }
 
-std::vector<Disciplina>& Repository::get_lista_discipline() {
+std::vector<Disciplina>& RepositoryMemory::get_lista_discipline() {
     return lista_discipline;
 }
 
-void Repository::add_disciplina(const Disciplina& disciplina) {
+void RepositoryMemory::add_disciplina(const Disciplina& disciplina) {
     lista_discipline.push_back(disciplina);
 }
 
-bool Repository::exista_disciplina(int id) const {
+bool RepositoryMemory::exista_disciplina(int id) const {
     for (const auto &disciplina : lista_discipline) {
         if (disciplina.get_id() == id) {
             return true;
@@ -26,7 +26,7 @@ bool Repository::exista_disciplina(int id) const {
     return false;
 }
 
-Disciplina& Repository::get_disciplina(int id) {
+Disciplina& RepositoryMemory::get_disciplina(int id) {
     for (auto &disciplina : lista_discipline) {
         if (disciplina.get_id() == id) {
             return disciplina;
@@ -35,7 +35,7 @@ Disciplina& Repository::get_disciplina(int id) {
     return disciplina_vida;
 }
 
-void Repository::remove_disciplina(int id) {
+void RepositoryMemory::remove_disciplina(int id) {
     for (auto disciplina = lista_discipline.begin(); disciplina < lista_discipline.end(); ++disciplina) {
         if (disciplina->get_id() == id) {
             lista_discipline.erase(disciplina);
@@ -43,18 +43,18 @@ void Repository::remove_disciplina(int id) {
     }
 }
 
-void Repository::update_disciplina(int id, const Disciplina& updated_disciplina) {
+void RepositoryMemory::update_disciplina(int id, const Disciplina& updated_disciplina) {
     Disciplina& disciplina = get_disciplina(id);
     disciplina = updated_disciplina;
 }
 
 void RepositoryFile::add_disciplina(const Disciplina &disciplina) {
-    Repository::add_disciplina(disciplina);
+    RepositoryMemory::add_disciplina(disciplina);
     writeToFile();
 }
 
 void RepositoryFile::remove_disciplina(int id) {
-    Repository::remove_disciplina(id);
+    RepositoryMemory::remove_disciplina(id);
     writeToFile();
 }
 
@@ -66,14 +66,14 @@ void RepositoryFile::loadFromFile() {
                && fin >> ore >> std::ws && std::getline(fin, tip)
                && std::getline(fin, cadru_didactic)) {
         Disciplina disciplina(id, denumire, ore, tip, cadru_didactic);
-        Repository::add_disciplina(disciplina);
+        RepositoryMemory::add_disciplina(disciplina);
     }
     fin.close();
 }
 
 void RepositoryFile::writeToFile() {
     std::ofstream fout(filename);
-    for (const auto &disciplina : Repository::get_lista_discipline()) {
+    for (const auto &disciplina : RepositoryMemory::get_lista_discipline()) {
         fout << disciplina.get_id() << std::endl;
         fout << disciplina.get_denumire() << std::endl;
         fout << disciplina.get_ore() << std::endl;
@@ -83,3 +83,9 @@ void RepositoryFile::writeToFile() {
     fout.close();
 }
 
+void RepositoryProbability::generate_probability() {
+    long int numar = random() % 100 / 10;
+    if (numar < 1) {
+        throw std::invalid_argument("Valoarea generata este in intervalul [0,1]!");
+    }
+}

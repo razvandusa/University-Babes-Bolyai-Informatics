@@ -9,10 +9,10 @@ class ActiuneUndo {
 
 class UndoAdauga : public ActiuneUndo {
 private:
-    Repository& repo;
+    RepositoryMemory& repo;
     Disciplina disciplina;
 public:
-    UndoAdauga(Repository& r, const Disciplina& d) : repo(r), disciplina(d) {}
+    UndoAdauga(RepositoryMemory& r, const Disciplina& d) : repo(r), disciplina(d) {}
 
     /*
      *  Realizeaza undo cand ultima operatie a fost adaugarea
@@ -22,10 +22,10 @@ public:
 
 class UndoSterge : public ActiuneUndo {
 private:
-    Repository& repo;
+    RepositoryMemory& repo;
     Disciplina disciplina;
 public:
-    UndoSterge(Repository& r, const Disciplina& d) : repo(r), disciplina(d) {}
+    UndoSterge(RepositoryMemory& r, const Disciplina& d) : repo(r), disciplina(d) {}
 
     /*
      *  Realizeaza undo cand ultima operatie a fost stergerea
@@ -35,10 +35,10 @@ public:
 
 class UndoModifica : public ActiuneUndo {
 private:
-    Repository& repo;
+    RepositoryMemory& repo;
     Disciplina disciplina_veche;
 public:
-    UndoModifica(Repository& r, const Disciplina& d) : repo(r), disciplina_veche(d) {}
+    UndoModifica(RepositoryMemory& r, const Disciplina& d) : repo(r), disciplina_veche(d) {}
 
     /*
      *  Realizeaza undo cand ultima operatie a fost modificarea

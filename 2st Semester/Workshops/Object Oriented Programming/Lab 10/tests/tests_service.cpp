@@ -4,7 +4,7 @@
 #include <ostream>
 
 void test_add_disciplina_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     assert(service.add_disciplina(2,"Matematica",4,"Obligatorie","Ioan Paul") == "Operatie efectuata cu succes!");
     try {
@@ -40,7 +40,7 @@ void test_add_disciplina_service() {
 }
 
 void test_remove_disciplina_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     service.add_disciplina(1,"Limba Romana",8,"Optionala","Maria Antonescu");
     service.add_disciplina(2,"Matematica",4,"Obligatorie","Ioan Paul");
@@ -54,7 +54,7 @@ void test_remove_disciplina_service() {
 }
 
 void test_update_disciplina_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     service.add_disciplina(1,"Limba Romana",8,"Optionala","Maria Antonescu");
     assert(service.update_disciplina(1,"Matematica",4,"Obligatorie","Ioan Paul") == "Operatie efectuata cu succes!");
@@ -91,7 +91,7 @@ void test_update_disciplina_service() {
 }
 
 void test_find_disciplina_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     service.add_disciplina(1,"Limba Romana",8,"Optionala","Maria Antonescu");
     assert(service.find_disciplina(1) == Disciplina(1,"Limba Romana",8,"Optionala","Maria Antonescu"));
@@ -104,7 +104,7 @@ void test_find_disciplina_service() {
 }
 
 void test_get_lista_discipline_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     assert(service.get_lista_discipline().empty() == true);
     service.add_disciplina(1,"Limba Romana",8,"Optionala","Maria Antonescu");
@@ -113,7 +113,7 @@ void test_get_lista_discipline_service() {
 }
 
 void test_filtrare_discipline_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     service.add_disciplina(1,"Limba Romana",8,"Optionala","Maria Antonescu");
     service.add_disciplina(2,"Matematica",4,"Obligatorie","Ioan Paul");
@@ -128,7 +128,7 @@ void test_filtrare_discipline_service() {
 }
 
 void test_sortare_discipline_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     service.add_disciplina(1,"Matematica",4,"Obligatorie","Maria Antonescu");
     service.add_disciplina(2,"Limba Romana",8,"Optionala","Ioan Paul");
@@ -157,7 +157,7 @@ void test_sortare_discipline_service() {
 }
 
 void test_raport_discipline_service() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
 
     service.add_disciplina(1, "Matematica", 5, "Obligatorie", "Popescu");

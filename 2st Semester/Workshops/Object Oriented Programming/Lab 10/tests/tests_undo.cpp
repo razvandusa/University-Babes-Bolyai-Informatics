@@ -4,7 +4,7 @@
 #include <cassert>
 
 void test_undo_adauga() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
 
     try {
@@ -22,7 +22,7 @@ void test_undo_adauga() {
 }
 
 void test_undo_sterge() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
 
     service.add_disciplina(2,"Matematica",4,"Obligatorie","Ioan Paul");
@@ -35,7 +35,7 @@ void test_undo_sterge() {
 }
 
 void test_undo_update() {
-    std::unique_ptr<Repository> repository = std::make_unique<Repository>();
+    std::unique_ptr<RepositoryMemory> repository = std::make_unique<RepositoryMemory>();
     Service service(std::move(repository));
     service.add_disciplina(2,"Matematica",4,"Obligatorie","Ioan Paul");
     assert(service.find_disciplina(2) == Disciplina(2,"Matematica",4,"Obligatorie","Ioan Paul"));
