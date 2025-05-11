@@ -1,0 +1,3 @@
+/tmp/TAD Matrice LDI/cmake-build-docker-arm/CMakeFiles/TAD_Matrice_LSI.dir
+/tmp/TAD Matrice LDI/cmake-build-docker-arm/CMakeFiles/edit_cache.dir
+/tmp/TAD Matrice LDI/cmake-build-docker-arm/CMakeFiles/rebuild_cache.dir

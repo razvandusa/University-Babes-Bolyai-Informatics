@@ -1,0 +1,12 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_CXX_COMPILER=/Library/Developer/CommandLineTools/usr/bin/c++ -G "Unix Makefiles" -S "/Users/razvandusa/CLionProjects/TAD Matrice LDI" -B "/Users/razvandusa/CLionProjects/TAD Matrice LDI/cmake-build-debug"
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/razvandusa/CLionProjects/TAD Matrice LDI/cmake-build-debug

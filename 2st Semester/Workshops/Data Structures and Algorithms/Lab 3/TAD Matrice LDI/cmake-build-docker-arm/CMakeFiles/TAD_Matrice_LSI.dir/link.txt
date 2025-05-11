@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -rdynamic CMakeFiles/TAD_Matrice_LSI.dir/main.cpp.o CMakeFiles/TAD_Matrice_LSI.dir/TAD_Matrice/Matrice.cpp.o CMakeFiles/TAD_Matrice_LSI.dir/Teste/TestScurt.cpp.o CMakeFiles/TAD_Matrice_LSI.dir/Teste/TestExtins.cpp.o -o TAD_Matrice_LSI 
