@@ -1,0 +1,13 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_CXX_COMPILER=/Library/Developer/CommandLineTools/usr/bin/c++ -G "Unix Makefiles" -S "/Users/razvandusa/CLionProjects/TAD Matrice LSI" -B "/Users/razvandusa/CLionProjects/TAD Matrice LSI/cmake-build-debug"
+-- Configuring done (0.0s)
+CMake Error at CMakeLists.txt:6 (add_executable):
+  Cannot find source file:
+
+    Teste/TestExtins.cpp.cpp
+
+
+CMake Error at CMakeLists.txt:6 (add_executable):
+  No SOURCES given to target: TAD_Matrice_LSI
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
