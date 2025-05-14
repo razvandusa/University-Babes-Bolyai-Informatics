@@ -1,0 +1,27 @@
+1
+1
+Matematica
+20
+Obligatorie
+Paul Ioan
+
+1
+2
+Limba Romana
+40
+Optionala
+Ilinca Popovici
+
+1
+3
+Religie
+30
+Optionala
+Oana Maria
+
+1
+4
+Informatica
+60
+Obligatorie
+Tudor Alex
