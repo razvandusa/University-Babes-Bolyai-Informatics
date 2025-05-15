@@ -1,0 +1,29 @@
+Let's search for things in file passwd
+a. Display all lines containing "dan". The solution is below
+grep -E "dan" passwd
+
+b. Display the line of username "meie". The username is the first field on the line, it is not empty, and it ends at
+the first :. We will rely on these aspects to ensure that we only search the usernames, and not anything else.
+grep -E "^meie[^:]*:" passwd
+
+c. Display the lines of all users who have digits in their username.
+grep -E "^[^:]*[0-9][^:]*:" passwd
+
+d. Display the lines of all users who have at least two vowels in their username. This is a little tricky, because the
+vowels do not need to be consecutive, so we need to allow for any characters between the vowels (including
+none), but we cannot allow : to appear between vowels, or else we would be searching outside the username.
+grep -E -i "^([^:]*[aeiou]){2,}[^:]*:"
+
+e.  There will be lots of users displayed for the problem above, so let's search for usernames with at least 4 vowels
+in their username. The first solution above will be really long for this case, but the second will be very easy to
+adapt, by changing 2 into 4.
+grep -E "^([^:]*[aeiou]){4,}[^:]*:" passwd
+
+f.  Display the lines of all the users that are having bash as their shell. The shell is the last value on the line, so we will
+use that when searching.
+grep -E -i "bash$" passwd
+
+g.  Display the lines of all users named Dan. We will have to search in the user-info field (the fifth field) of each
+line, ignore the upper/lower case of the letters, and ensure that we do not display anybody containing the
+sequence "Dan" in their names (eg Bogdan).
+grep -E -i "^([^:]*:){4,4}[^:]*\<dan\>*" passwd

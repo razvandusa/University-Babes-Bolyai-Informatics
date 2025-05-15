@@ -1,0 +1,15 @@
+Let's consider a random text file a.txt, and search for things in it
+a.  Display all the non-empty lines
+grep -E "." a.txt
+
+b.  Display all the empty lines
+grep -E "^$" a.txt
+
+c. Display all lines containing an odd number of characters
+grep -E -i "^.(..)*$" a.txt
+
+d. Display all lines containing an ocean name
+grep -E -i ".*\<pacific\>|\<atlantic\>|\<indian\>|\<arctic\>|\<antarctic|>.*" a.txt
+
+e.  Display all lines containing an email address
+grep -E -i ".*[^@\*\!\?]+@[a-z]+\.[a-z]+.*" a.txt
