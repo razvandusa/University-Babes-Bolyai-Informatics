@@ -8,6 +8,6 @@ b.  Display the sum of all user ids
 
 c.  Display the multiplication of the differences between the user id and the group id
 
-d.  Count the numbers of male and female users in /etc/passwd, accepting as true the following incorrect assumptions:
+d.  Display the female users in /etc/passwd, accepting as true the following incorrect assumptions:
     All users have their last name as the first name in the user-info filed (5th field)
     All women have one of their first or middle names ending in the letter "a"
