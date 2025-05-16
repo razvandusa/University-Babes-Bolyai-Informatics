@@ -1,0 +1,6 @@
+Let's manipulate the content of passwd
+a.  Convert the content of /etc/passwd using a sort of Leet/Calculator spelling (eg Bogdan -> B09d4n)
+sed -E "y/elaoszbg/31405289/" passwd
+
+b.  Convert the content of /etc/passwd surrounding with parentheses and sequence of 3 or more vowels
+sed -E "s/([aeiou]{3,})/(\1)/gi" passwd

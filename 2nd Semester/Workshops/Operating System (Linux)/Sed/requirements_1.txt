@@ -1,0 +1,15 @@
+Let's manipulate the content of passwd
+a.  Display all lines, replacing all vowels with spaces
+sed -E "s/[aeiou]/ /ig" passwd
+
+b.  Display all lines, converting all vowels to upper case
+sed -E "y/aeiou/AEIOU/" passwd
+
+c.  Display all lines, deleting those containing 17 or more digits:
+sed -E "/([^0-9]*[0-9][^0-9]*){17,}/d" passwd
+
+d.  Display all lines, swapping all pairs of letters
+sed -E "s/([a-z])([a-z])/\2\1/g" passwd
+
+e.  Display all lines, duplicating all vowels
+sed -E "s/([aeiou])/\1\1/gi" passwd
