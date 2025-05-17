@@ -1,0 +1,31 @@
+Other Useful Commands
+1.  Display only the last name of each user in /etc/passwd, considering the last name to be the first word in the 5th field.
+    awk -F: '{print $5}' passwd | cut -d" " -f1
+
+2.  Extent the solution above to only show the top 10 most frequent last names, ordered descending by their popularity
+    awk -F: '{print $5}' passwd | cut -d" " -f1 | sort | uniq -c | sort -r | head -n 10
+
+3.  Display all the directories under /etc that contain files with the extension .sh. Each directory should be displayed only
+    once. Hide the permission denied errors given by find.
+    find /etc -iregex ".*\.sh" 2>/dev/null | awk -F/ '{print $3}' | sort -u
+
+4.  Display in the pager, the number of processes of each username, sorting their usernames descending by their process count.
+    cat ps.fake | awk '{print $1}' | sort | uniq -c | sort -r | less
+
+5.  Display the processes that involve editing a httpd file.
+    cat ps.fake | grep -E "httpd$"
+
+6.  Display in the pager, the usernames with the most logins in the system.
+    cat last.fake | sort -k 6 -r | cut -d" " -f1 | uniq | less
+
+7.  Display in the pager the top of usernames by their time spent logged on in the system. The solution will be built
+    gradually following the steps below
+    a.  Display all the usernames and their time spent in the system, ignoring the other fields displayed by command
+        last.
+        cat last.fake | awk '{print $1 " " $10}'
+    b.  Calculate the time spent in the system in minutes for each entry
+        cat last.fake | awk -f prog_7_b.awk
+    c.  Calculate the total time spent in the system by each user
+        cat last.fake | awk -f prog_7_c.awk
+    d.  Sort the output descending by the time spent in the system and pipe it to the pager
+        cat last.fake | awk -f prog.awk | sort -k 2 -n | less
