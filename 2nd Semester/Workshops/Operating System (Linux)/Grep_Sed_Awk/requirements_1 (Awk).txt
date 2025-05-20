@@ -1,21 +1,21 @@
-Manipulate the content of /etc/passwd, using AWK with the program provided on the command line
+Manipulate the content of /etc/passwd.fake, using AWK with the program provided on the command line
 a.  Display all the usernames, but only the usernames, and nothing else. We will use argument -F to tell AWK that
 the input file is separated by :, and then we will print the first field of each line, by not providing any selector
 for the block.
-awk -F: '{print $1}' passwd
+awk -F: '{print $1}' passwd.fake
 
 b.  Print the full name (the user info field) of the users on odd lines
-awk -F: '{ if(NR % 2 == 1) print $5 }' passwd
+awk -F: '{ if(NR % 2 == 1) print $5 }' passwd.fake
 
 c.  Print the home directory of users having their usernames start with a vowel
-awk -F: '/^[aeiouAEIOU]/{ print $5 }' passwd
+awk -F: '/^[aeiouAEIOU]/{ print $5 }' passwd.fake
 
 d.  Print the full name of users having even user ids
-    i.  awk -F: '{ if ($3 % 2 == 0) print $1 }' passwd
-    ii. awk -F: '$3 % 2 == 0 { print $1 }' passwd
+    i.  awk -F: '{ if ($3 % 2 == 0) print $1 }' passwd.fake
+    ii. awk -F: '$3 % 2 == 0 { print $1 }' passwd.fake
 
 e.  Display the username of all users having their last field end with "nologin"
-awk -F: '/nologin$/ {print $1}' /etc/passwd
+awk -F: '/nologin$/ {print $1}' /etc/passwd.fake
 
 f.  Display the full names of all users having their username longer than 10 characters
-awk -F: 'length($1) > 10 {print $1}' /etc/passwd
+awk -F: 'length($1) > 10 {print $1}' /etc/passwd.fake

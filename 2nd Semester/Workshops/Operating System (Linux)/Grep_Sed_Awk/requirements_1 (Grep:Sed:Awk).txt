@@ -1,9 +1,9 @@
 Other Useful Commands
-1.  Display only the last name of each user in /etc/passwd, considering the last name to be the first word in the 5th field.
-    awk -F: '{print $5}' passwd | cut -d" " -f1
+1.  Display only the last name of each user in /etc/passwd.fake, considering the last name to be the first word in the 5th field.
+    awk -F: '{print $5}' passwd.fake | cut -d" " -f1
 
 2.  Extent the solution above to only show the top 10 most frequent last names, ordered descending by their popularity
-    awk -F: '{print $5}' passwd | cut -d" " -f1 | sort | uniq -c | sort -r | head -n 10
+    awk -F: '{print $5}' passwd.fake | cut -d" " -f1 | sort | uniq -c | sort -r | head -n 10
 
 3.  Display all the directories under /etc that contain files with the extension .sh. Each directory should be displayed only
     once. Hide the permission denied errors given by find.

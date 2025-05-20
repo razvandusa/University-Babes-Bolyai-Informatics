@@ -1,15 +1,15 @@
-Let's manipulate the content of passwd
+Let's manipulate the content of passwd.fake
 a.  Display all lines, replacing all vowels with spaces
-sed -E "s/[aeiou]/ /ig" passwd
+sed -E "s/[aeiou]/ /ig" passwd.fake
 
 b.  Display all lines, converting all vowels to upper case
-sed -E "y/aeiou/AEIOU/" passwd
+sed -E "y/aeiou/AEIOU/" passwd.fake
 
 c.  Display all lines, deleting those containing 17 or more digits:
-sed -E "/([^0-9]*[0-9][^0-9]*){17,}/d" passwd
+sed -E "/([^0-9]*[0-9][^0-9]*){17,}/d" passwd.fake
 
 d.  Display all lines, swapping all pairs of letters
-sed -E "s/([a-z])([a-z])/\2\1/g" passwd
+sed -E "s/([a-z])([a-z])/\2\1/g" passwd.fake
 
 e.  Display all lines, duplicating all vowels
-sed -E "s/([aeiou])/\1\1/gi" passwd
+sed -E "s/([aeiou])/\1\1/gi" passwd.fake

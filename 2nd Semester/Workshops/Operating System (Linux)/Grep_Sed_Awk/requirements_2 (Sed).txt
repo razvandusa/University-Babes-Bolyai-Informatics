@@ -1,6 +1,7 @@
-Let's manipulate the content of passwd
-a.  Convert the content of /etc/passwd using a sort of Leet/Calculator spelling (eg Bogdan -> B09d4n)
-sed -E "y/elaoszbg/31405289/" passwd
+Let's manipulate the content of passwd.fake
+a.  Convert the content of /etc/passwd.fake using a sort of Leet/Calculator spelling (eg Bogdan -> B09d4n)
+sed -E "y/elaoszbg/31405289/" passwd.fake
 
-b.  Convert the content of /etc/passwd surrounding with parentheses and sequence of 3 or more vowels
-sed -E "s/([aeiou]{3,})/(\1)/gi" passwd
+b.  Convert the content of /etc/passwd.fake surrounding with parentheses and sequence of 3 or more vowels
+sed -E "s/([aeiou]{3,})/(\1)/gi" passwd.fake
+passwd.fake.fake

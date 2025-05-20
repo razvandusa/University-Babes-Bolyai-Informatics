@@ -1,5 +1,5 @@
-Keep using /etc/passwd as input file, but provide AWK programs in a file. The command will look like
-awk -F: -f prog.awk /etc/passwd
+Keep using /etc/passwd.fake as input file, but provide AWK programs in a file. The command will look like
+awk -F: -f prog.awk /etc/passwd.fake
 
 a.  Provide the content of file prog.awk so that the command above will print all lines on even line having a
     group id less than 20
@@ -8,6 +8,6 @@ b.  Display the sum of all user ids
 
 c.  Display the multiplication of the differences between the user id and the group id
 
-d.  Count the numbers of the male and the female users in /etc/passwd, accepting as true the following incorrect assumptions:
+d.  Count the numbers of the male and the female users in /etc/passwd.fake, accepting as true the following incorrect assumptions:
     All users have their last name as the first name in the user-info filed (5th field)
     All women have one of their first or middle names ending in the letter "a"
