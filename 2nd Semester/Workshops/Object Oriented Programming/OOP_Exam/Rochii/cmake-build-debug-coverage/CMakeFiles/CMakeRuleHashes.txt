@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+8ede3d05daf351666eb2cbec59702d93 CMakeFiles/Rochii_autogen
+b7dfdc3567938bd2e31176ac01fc53cb Rochii_autogen/timestamp

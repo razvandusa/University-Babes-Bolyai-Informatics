@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+10037d9eae6f8094234d1cf988166be5 Apartamente_autogen/timestamp
+577a48d66ba8bd674a8cd50704585a63 CMakeFiles/Apartamente_autogen
+d02dd7bdbf5cd39d1079fef26e75e548 TestQt_autogen/timestamp

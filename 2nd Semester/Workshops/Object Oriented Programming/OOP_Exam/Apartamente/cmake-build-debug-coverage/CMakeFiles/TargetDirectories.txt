@@ -1,0 +1,5 @@
+/Users/razvandusa/CLionProjects/Apartamente/cmake-build-debug-coverage/CMakeFiles/Apartamente.dir
+/Users/razvandusa/CLionProjects/Apartamente/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+/Users/razvandusa/CLionProjects/Apartamente/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
+/Users/razvandusa/CLionProjects/Apartamente/cmake-build-debug-coverage/CMakeFiles/Apartamente_autogen_timestamp_deps.dir
+/Users/razvandusa/CLionProjects/Apartamente/cmake-build-debug-coverage/CMakeFiles/Apartamente_autogen.dir

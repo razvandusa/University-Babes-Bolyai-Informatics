@@ -1,0 +1,5 @@
+/Users/razvandusa/CLionProjects/Rochii/cmake-build-debug-coverage/CMakeFiles/Rochii.dir
+/Users/razvandusa/CLionProjects/Rochii/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+/Users/razvandusa/CLionProjects/Rochii/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
+/Users/razvandusa/CLionProjects/Rochii/cmake-build-debug-coverage/CMakeFiles/Rochii_autogen_timestamp_deps.dir
+/Users/razvandusa/CLionProjects/Rochii/cmake-build-debug-coverage/CMakeFiles/Rochii_autogen.dir

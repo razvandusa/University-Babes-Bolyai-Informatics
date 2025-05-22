@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Apartamente",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Apartamente::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Apartamente-Debug-8c84ad32790c72eb630f.json",
+					"name" : "Apartamente",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Apartamente_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Apartamente_autogen-Debug-9f6783e0787124912293.json",
+					"name" : "Apartamente_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Apartamente_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Apartamente_autogen_timestamp_deps-Debug-e34d23bb5ac921181732.json",
+					"name" : "Apartamente_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/razvandusa/CLionProjects/Apartamente/cmake-build-debug-coverage",
+		"source" : "/Users/razvandusa/CLionProjects/Apartamente"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

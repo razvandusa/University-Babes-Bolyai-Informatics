@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Apartamente_FILE /Users/razvandusa/CLionProjects/Apartamente/cmake-build-debug/Apartamente)
+set(__QT_DEPLOY_TARGET_Apartamente_TYPE EXECUTABLE)
