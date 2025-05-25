@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Biblioteca_FILE /Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug-coverage/Biblioteca)
+set(__QT_DEPLOY_TARGET_Biblioteca_TYPE EXECUTABLE)

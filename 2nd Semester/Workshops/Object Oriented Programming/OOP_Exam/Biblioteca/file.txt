@@ -1,0 +1,10 @@
+1 2540 Cartea Ioan_Slavici roman
+2 2640 Baltagul Ioan_Slavici poezie
+3 2340 Povesti_din_copilarie Ioan_Slavici roman
+4 2940 Noroc Ioan_Slavici roman
+5 2140 Albinuta Ioan_Slavici poezie
+6 2140 Randunica Ioan_Slavici roman
+7 2140 Sarpele Ioan_Slavici eseu
+8 2140 Maimuta Ioan_Slavici roman
+9 2140 Paianjen Ioan_Slavici thriller
+10 2140 Musca Ioan_Slavici roman

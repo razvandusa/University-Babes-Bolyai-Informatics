@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+3e43a9a8d323316998f0f12c8c59623e Biblioteca_autogen/timestamp
+b8dfbf5ec1812abeb5f5c79f6a06e158 CMakeFiles/Biblioteca_autogen
+f2b35dcdc198059ab93a80178975344b Examen_autogen/timestamp

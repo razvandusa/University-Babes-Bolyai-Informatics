@@ -1,0 +1,5 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_CXX_COMPILER=/Library/Developer/CommandLineTools/usr/bin/c++ "-DCMAKE_CXX_FLAGS=-fcoverage-mapping -fprofile-instr-generate" "-DCMAKE_C_FLAGS=-fcoverage-mapping -fprofile-instr-generate" -G "Unix Makefiles" -S /Users/razvandusa/CLionProjects/Biblioteca -B /Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug-coverage
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug-coverage

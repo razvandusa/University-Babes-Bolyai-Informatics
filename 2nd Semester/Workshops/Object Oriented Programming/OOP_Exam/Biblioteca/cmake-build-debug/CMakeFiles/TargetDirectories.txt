@@ -1,0 +1,5 @@
+/Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug/CMakeFiles/Biblioteca.dir
+/Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug/CMakeFiles/Biblioteca_autogen_timestamp_deps.dir
+/Users/razvandusa/CLionProjects/Biblioteca/cmake-build-debug/CMakeFiles/Biblioteca_autogen.dir
