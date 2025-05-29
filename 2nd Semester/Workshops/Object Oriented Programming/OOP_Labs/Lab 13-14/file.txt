@@ -1,0 +1,50 @@
+1
+Matematica
+20
+Obligatorie
+Paul Ioan
+4
+Informatica
+60
+Obligatorie
+Tudor Alex
+2
+Limba Romana
+40
+Optionala
+Ilinca Popovici
+3
+Religie
+30
+Optionala
+Ioana Giurgiuveanu
+5
+Istorie
+50
+Facultativa
+Andrei Vasilescu
+6
+Geografie
+35
+Optionala
+Maria Dima
+7
+Matematica
+45
+Obligatorie
+Cristina Ene
+8
+Limba Romana
+25
+Facultativa
+Dan Georgescu
+9
+Religie
+20
+Obligatorie
+Laura Mihai
+10
+Informatica
+70
+Optionala
+Mihai Petrescu
