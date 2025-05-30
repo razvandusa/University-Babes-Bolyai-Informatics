@@ -2,11 +2,11 @@
 All projects from my university!
 ## First Year
 * 📂 **First Semester**
-  * [⚙️Computer Architecture](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/1st%20Semester/Workshops/Computer%20systems%20architecture%20(Assembly))
-  * [➗Algebra](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/1st%20Semester/Seminars/Algebra)
-  * [⁉️Analysis](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/1st%20Semester/Seminars/Mathematical%20analysis)
-  * [🔰Programming Fundamentals](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/1st%20Semester/Workshops/Fundamentals%20of%20Programming%20(Python))
-  * [🗿Computational Logic](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/1st%20Semester/Seminars/Computational%20Logic)
+  * [⚙️Computer Systems Architecture (Assembly)](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/First%20Semester/Computer%20systems%20architecture%20(Assembly))
+  * [➗Algebra](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/First%20Semester/Algebra)
+  * [⁉️Mathematical Analysis](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/First%20Semester/Mathematical%20analysis)
+  * [🔰Fundamentals of Programming (Python)](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/First%20Semester/Fundamentals%20of%20Programming%20(Python))
+  * [🗿Computational Logic](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/First%20Semester/Computational%20Logic)
 * 📂 **Second Semester**
   * [📐Geometry](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/2nd%20Semester/Seminars/Geometry)
   * [🍇Graph Theory]()
