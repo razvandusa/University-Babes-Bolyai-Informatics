@@ -1,3 +1,4 @@
+//Dijkstra - algoritm pentru găsirea drumului minim de la un nod sursă s la toate nodurile
 #include <iostream>
 #include <vector>
 #include <queue>
