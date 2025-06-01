@@ -1,3 +1,5 @@
+//BFS - algoritm simplu de căutare (Parcurgere în lățime)
+//DFS - algoritm de parcurgere care explorează muchiile vârfurilor nou descoperite (Parcurgere în adâncime)
 #include <iostream>
 #include <fstream>
 using namespace std;
