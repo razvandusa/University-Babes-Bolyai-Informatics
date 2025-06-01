@@ -1,3 +1,4 @@
+//Kosaraju - algoritm pentru determinarea componentelor tare conex dintr-un graf orientat (DFS)
 #include <vector>
 #include <iostream>
 #include <queue>
