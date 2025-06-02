@@ -4,7 +4,7 @@
 #include <climits>
 using namespace std;
 
-vector<int> bellman_ford(int src, int V, const vector<vector<pair<int, int>>> &adj) {
+vector<int> BellmanFord(int src, int V, const vector<vector<pair<int, int>>> &adj) {
     // Cream vectorul de distante si il initializam cu infinit
     vector<int> dist(V + 1, INT_MAX);
     dist[src] = 0;
