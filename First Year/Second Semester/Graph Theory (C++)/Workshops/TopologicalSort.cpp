@@ -14,7 +14,7 @@ void dfs(int n, vector<vector<int>> &adj, vector<bool> &visited, stack<int> &res
     result.push(n);
 }
 
-void topological_sort(int V, vector<vector<int>> &adj) {
+void TopologicalSort(int V, vector<vector<int>> &adj) {
     vector<bool> visited(V, false);
     stack<int> result;
 
