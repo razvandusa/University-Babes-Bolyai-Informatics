@@ -5,7 +5,7 @@
 #include <limits>
 using namespace std;
 
-vector<int> dijkstra(int V, vector<vector<pair<int, int>>> &adj, int src) {
+vector<int> Dijkstra(int V, vector<vector<pair<int, int>>> &adj, int src) {
     // Coada cu prioritati : (distanta, nod)
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 
