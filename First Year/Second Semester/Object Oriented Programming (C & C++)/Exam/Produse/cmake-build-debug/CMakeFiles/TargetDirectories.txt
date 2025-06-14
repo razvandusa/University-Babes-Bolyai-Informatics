@@ -1,0 +1,5 @@
+/Users/razvandusa/CLionProjects/Produse/cmake-build-debug/CMakeFiles/Produse.dir
+/Users/razvandusa/CLionProjects/Produse/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/razvandusa/CLionProjects/Produse/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/razvandusa/CLionProjects/Produse/cmake-build-debug/CMakeFiles/Produse_autogen_timestamp_deps.dir
+/Users/razvandusa/CLionProjects/Produse/cmake-build-debug/CMakeFiles/Produse_autogen.dir

@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Produse",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Produse::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Produse-Debug-ba4b629b041e24f26f20.json",
+					"name" : "Produse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Produse_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Produse_autogen-Debug-c3736890729b60477e4c.json",
+					"name" : "Produse_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Produse_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Produse_autogen_timestamp_deps-Debug-631b2f302bb822828554.json",
+					"name" : "Produse_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/razvandusa/CLionProjects/Produse/cmake-build-debug",
+		"source" : "/Users/razvandusa/CLionProjects/Produse"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
