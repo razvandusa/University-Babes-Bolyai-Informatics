@@ -1,0 +1,10 @@
+1;Person;john123;john@gmail.com;pass1234;Doe;John;1995-05-20;Engineer
+2;Person;alice456;alice@yahoo.com;alicepass1;Smith;Alice;1998-10-12;Doctor
+3;Person;mark789;mark@hotmail.com;mark2020;Johnson;Mark;1992-08-15;Teacher
+4;Person;susan321;susan@outlook.com;su5anPass;Brown;Susan;1990-12-01;Lawyer
+5;Person;emily007;emily@gmail.com;em1lyPass;Davis;Emily;1999-07-07;Designer
+6;Duck;quacky;quack@mail.com;quack123;FLYING;30;50
+7;Duck;feathers;feathers@mail.com;feather1;SWIMMING;25;40
+8;Duck;wingy;wingy@gmail.com;wing1234;FLYING_AND_SWIMMING;28;45
+9;Duck;flappy;flappy@yahoo.com;flap9876;FLYING;35;55
+10;Duck;ducky77;ducky@mail.com;duckPass9;SWIMMING;22;30

@@ -1,0 +1,12 @@
+org.example
+org.example.domain
+org.example.exceptions
+org.example.exceptions.validationExceptions
+org.example.exceptions.validationExceptions.duckExceptions
+org.example.exceptions.validationExceptions.friendshipExceptions
+org.example.exceptions.validationExceptions.personExceptions
+org.example.exceptions.validationExceptions.userExceptions
+org.example.repository
+org.example.service
+org.example.ui
+org.example.validation
