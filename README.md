@@ -1,5 +1,5 @@
 # University-Babes-Bolyai-Informatics
-All projects from my university!
+**🏡 All projects from university + useful resources.**
 ## First Year
 * 📂 **First Semester**
   * [⚙️Computer Systems Architecture (Assembly)](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/First%20Semester/Computer%20systems%20architecture%20(Assembly))
@@ -14,3 +14,11 @@ All projects from my university!
   * [💻Operating Systems (C & Bash)](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/Second%20Semester/Operating%20Systems%20(C%20%26%20Bash))
   * [📚Data Structures and Algorithms (C & C++)](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/Second%20Semester/Data%20Structures%20and%20Algorithms%20(C%20%26%20C%2B%2B))
   * [📊Dynamic Systems](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/Second%20Semester/Dynamic%20Systems/Workshops)
+## Second Year
+* 📂 **First Semester**
+   * [🗂️Databases]
+   * [💂‍♂️English]
+   * [🎨Advanced Methods of Programming]
+   * [📉Probability and Statistics]
+   * [🔥Functional and Logic Programming]
+   * [🌐Computer Networks]
