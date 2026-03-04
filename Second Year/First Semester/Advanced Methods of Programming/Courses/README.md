@@ -1,0 +1,2 @@
+# Link youtube cursuri online
+https://www.youtube.com/watch?v=BQQkbPFaEDk&list=PL1xP-C-KL4zade3e6dQuwFAOgghCp8_Nk&index=1
