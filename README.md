@@ -16,9 +16,8 @@
   * [📊Dynamic Systems](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/First%20Year/Second%20Semester/Dynamic%20Systems/Workshops)
 ## Second Year
 * 📂 **First Semester**
-   * [🗂️Databases]
-   * [💂‍♂️English]
-   * [🎨Advanced Methods of Programming]
-   * [📉Probability and Statistics]
-   * [🔥Functional and Logic Programming]
-   * [🌐Computer Networks]
+   * [🗂️Databases](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Databases)
+   * [🎨Advanced Methods of Programming](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Advanced%20Methods%20of%20Programming)
+   * [📉Probability and Statistics](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Probability%20and%20Statistics)
+   * [🔥Functional and Logic Programming](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Functional%20and%20Logic%20Programming)
+   * [🌐Computer Networks](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Computer%20Networks)
