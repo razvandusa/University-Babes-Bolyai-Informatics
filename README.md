@@ -21,3 +21,9 @@
    * [📉Probability and Statistics](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Probability%20and%20Statistics)
    * [🔥Functional and Logic Programming](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Functional%20and%20Logic%20Programming)
    * [🌐Computer Networks](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Computer%20Networks)
+* 📂 **Second Semester**
+   * [🤖AI]
+   * [⚙️Software Engineering]
+   * [🕵️Systems for Design and Implementation]
+   * [🔩Database Management Systems]
+   * [🕸️Web]
