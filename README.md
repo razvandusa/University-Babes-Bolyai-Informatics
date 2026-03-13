@@ -24,6 +24,6 @@
 * 📂 **Second Semester**
    * [🤖AI]
    * [⚙️Software Engineering]
-   * [🕵️Systems for Design and Implementation]
-   * [🔩Database Management Systems]
+   * [🕵️Systems for Design and Implementation](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Systems%20for%20Design%20and%20Implementation)
+   * [🔩Database Management Systems](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Database%20Management%20Systems)
    * [🕸️Web]
