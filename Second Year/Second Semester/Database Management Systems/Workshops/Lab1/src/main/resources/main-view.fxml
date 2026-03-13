@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ui.MainViewController"
+      spacing="10">
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <HBox spacing="100">
+        <TableView fx:id="airplanesTable" VBox.vgrow="ALWAYS">
+
+            <columns>
+                <TableColumn fx:id="airplaneIDColumn" text="Airplane ID" prefWidth="80"/>
+                <TableColumn fx:id="modelColumn" text="Model" prefWidth="150"/>
+                <TableColumn fx:id="capacityColumn" text="Capacity" prefWidth="100"/>
+            </columns>
+
+        </TableView>
+
+        <VBox spacing="20">
+            <HBox spacing="20">
+                <TableView fx:id="flightsTable" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="flightIDColumn" text="Flight ID" prefWidth="80"/>
+                        <TableColumn fx:id="flightAirplaneIDColumn" text="Airplane ID" prefWidth="100"/>
+                        <TableColumn fx:id="departureAirportIDColumn" text="Departure Airport" prefWidth="120"/>
+                        <TableColumn fx:id="arrivalAirportIDColumn" text="Arrival Airport" prefWidth="120"/>
+                        <TableColumn fx:id="departureDateTimeColumn" text="Departure Date" prefWidth="120"/>
+                        <TableColumn fx:id="arrivalDateTimeColumn" text="Arrival Date" prefWidth="120"/>
+                    </columns>
+                </TableView>
+                <VBox>
+                    <Label text="Departure Airport ID"/>
+                    <TextField fx:id="departureAirportIDTextField"/>
+                    <Label text="Arrival Airport ID"/>
+                    <TextField fx:id="arrivalAirportIDTextField"/>
+                    <Label text="Departure Date (YYYY-MM-DD HH:MM)"/>
+                    <TextField fx:id="departureDateTimeTextField"/>
+                    <Label text="Arrival Date (YYYY-MM-DD HH:MM)"/>
+                    <TextField fx:id="arrivalDateTimeTextField"/>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="20">
+                <Button text="Add Flight" onAction="#addFlight"/>
+                <Button text="Delete Flight" onAction="#deleteFlight"/>
+                <Button text="Edit Flight" onAction="#editFlight"/>
+            </HBox>
+        </VBox>
+    </HBox>
+
+</VBox>
