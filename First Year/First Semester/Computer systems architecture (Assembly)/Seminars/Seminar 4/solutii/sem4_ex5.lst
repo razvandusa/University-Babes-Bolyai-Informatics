@@ -1,0 +1,80 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  
+     4                                  extern exit, printf
+     5                                  import exit msvcrt.dll
+     6                                  import printf msvcrt.dll
+     7                                  
+     8                                  segment data use32 class=data
+     9 00000000 1223563445677889        	s1 db 12h, 23h, 56h, 34h, 45h, 67h, 78h, 89h
+    10                                      len equ $-s1                ; numarul de elemente ale sirului s (in octeti)
+    11 00000008 3412564523788967            s2 db 34h, 12h, 56h, 45h, 23h, 78h, 89h, 67h
+    12 00000010 00                          p db 0
+    13 00000011 506F7A697469612070-         format db 'Pozitia p este %d', 13, 10, 0
+    13 0000001A 20657374652025640D-
+    13 00000023 0A00               
+    14                                  
+    15                                  ; 5. Se dau două șiruri de octeți s1 și s2 de lungimi egale.
+    16                                  ; Să se determine poziția p în care elementele ambelor șiruri sunt egale.
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                      ; -----------------------------------------------------------
+    20                                          ; ; Varianta 1: fara instructiuni pe siruri
+    21                                          ; mov ecx, len            ; ciclul se executa de len ori
+    22                                          ; jecxz final             ; prevenim intrarea intr-un ciclu infinit
+    23                                          ; mov esi, 0              ; i = 0
+    24                                      ; cauta:
+    25                                          ; ; citim elementele
+    26                                          ; mov al, [s1+esi]        ; AL = s1[i]
+    27                                          ; mov dl, [s2+esi]        ; DL = s2[i]
+    28                                          
+    29                                          ; ; comparam elementele
+    30                                          ; cmp al, dl              ; comparam s1[i] cu s2[i]
+    31                                          ; je gasit                ; sunt egale (ZF=1), sari la eticheta 'gasit'
+    32                                          
+    33                                          ; ; nu sunt egale, continuam cautarea
+    34                                          ; inc esi                 ; i++
+    35                                          ; loop cauta
+    36                                      
+    37                                          ; ; afisam la consola pozitia p determinata
+    38                                      ; gasit:
+    39                                          ; push dword esi          ; pozitia p
+    40                                          ; push dword format
+    41                                          ; call [printf]
+    42                                          ; add esp, 4*2
+    43                                          
+    44                                      ; -----------------------------------------------------------
+    45                                          ; Varianta 2: folosind instructiuni pe siruri
+    46 00000000 B908000000                      mov ecx, len            ; ciclul se executa de len ori
+    47 00000005 E338                            jecxz final             ; prevenim intrarea intr-un ciclu infinit
+    48                                          ; pregatim executia intructiunilor pe siruri
+    49 00000007 FC                              cld
+    50 00000008 BE[00000000]                    mov esi, s1             ; ESI = offset-ul primului element al sirului s1
+    51 0000000D BF[08000000]                    mov edi, s2             ; EDI = offset-ul primului element al sirului s2
+    52                                      cauta:
+    53 00000012 AC                              lodsb                   ; AL = s1[i] si inc ESI
+    54 00000013 AE                              scasb                   ; cmp AL, s2[i] si inc EDI
+    55                                          
+    56                                          ; cele 2 instructiuni de mai sus pot fi inlocuite cu:
+    57                                          ; cmpsb                   ; cmp s1[i], s2[i] si inc ESI si inc EDI
+    58                                          
+    59 00000014 7402                            je gasit
+    60 00000016 E2FA                            loop cauta
+    61                                      
+    62                                      gasit:
+    63                                          ; calculam pozitia p
+    64 00000018 89F0                            mov eax, esi        ; EAX = offset-ul curent din ESI
+    65 0000001A 48                              dec eax             ; decrementam (pentru ca ESI a fost deja incrementat de LODSB)
+    66 0000001B 2D[00000000]                    sub eax, s1         ; EAX = pozitia = (offset-ul curent) - (offset-ul primului element al lui s1)
+    67 00000020 8935[10000000]                  mov [p],esi
+    68 00000026 812D[10000000]-                 sub [p],dword s1
+    68 0000002C [00000000]         
+    69                                          ; afisam la consola pozitia p determinata
+    70 00000030 50                              push dword eax
+    71 00000031 68[11000000]                    push dword format
+    72 00000036 FF15[00000000]                  call [printf]
+    73 0000003C 83C408                          add esp, 4*2
+    74                                          
+    75                                      final:
+    76 0000003F 6A00                            push dword 0
+    77 00000041 FF15[00000000]                  call [exit]
