@@ -1,0 +1,16 @@
+How the Internet Works
+The Internet is a vast, global network that interconnects millions of computers and devices across every continent. Communication between these diverse systems is seamlessly managed through standardized protocols such as TCP/IP, ensuring data reaches its destination accurately.
+
+The Request-Response Cycle
+When a user accesses a website, the browser initiates a request to a remote server. The server processes this inquiry and transmits back the essential data—such as HTML, CSS, and images—required to render the webpage on your screen.
+
+Data Transmission and Navigation
+Data Packets: Information is broken down into small "packets" that travel independently through routers and fiber-optic cables, reassembling perfectly upon arrival.
+
+DNS (Domain Name System): Often called the "phonebook of the internet," this system translates human-friendly URLs into numerical IP addresses that machines use to identify each other.
+
+Security and Infrastructure
+Beyond simple connections, modern infrastructure relies on encryption protocols (like HTTPS) to keep data private. This massive web of undersea cables and satellite links forms the backbone of our digital age.
+
+Purpose
+Today, the Internet is the primary engine for global communication, education, and entertainment, providing nearly instantaneous access to the sum of human knowledge.

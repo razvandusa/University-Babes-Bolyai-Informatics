@@ -1,0 +1,9 @@
+How to Create a Google Drive Folder
+
+Google Drive is a cloud storage platform that allows users to store and organize files online. To create a new folder, the user must first sign into their Google account and open Google Drive from the browser.
+
+Once inside the platform, the user clicks the "New" button located on the left side of the screen. From the dropdown menu, the "Folder" option should be selected. A new window will appear where the user can type the folder name and confirm creation.
+
+After the folder is created, files can be uploaded by dragging them directly into the folder or by using the "Upload File" option. Users can also organize folders by colors, move them into other directories, or rename them at any time.
+
+Google Drive also supports collaboration features. Users can share folders with other people by entering their email addresses and selecting permissions such as viewer, commenter, or editor.

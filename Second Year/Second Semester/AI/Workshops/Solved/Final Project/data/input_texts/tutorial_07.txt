@@ -1,0 +1,9 @@
+How to Create a Simple Website with HTML
+
+HTML is the standard markup language used to create professional web pages. To build a simple website, users first need a reliable text editor such as Visual Studio Code, Sublime Text, or Notepad++.
+
+The first step involves creating a new file and saving it specifically with the .html extension. Inside the file, users can write the fundamental HTML structure, including the <html>, <head>, and <body> tags. The page title is added inside the <title> tag for browser tabs, while all visible content is placed inside the <body> section.
+
+Users can easily add headings, paragraphs, images, and hyperlinks using specific HTML elements. After saving the file, the webpage can be opened in any modern browser to preview the final result.
+
+HTML is commonly combined with CSS and JavaScript to create modern, stylish, and interactive websites. Learning HTML is widely considered the essential first step for any beginners interested in mastering the world of web development.

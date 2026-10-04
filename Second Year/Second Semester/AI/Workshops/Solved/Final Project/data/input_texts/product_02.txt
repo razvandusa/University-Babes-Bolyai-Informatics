@@ -1,0 +1,7 @@
+SmartBudget – Advanced Finance Management Application
+
+SmartBudget is a comprehensive mobile application created for individuals who want to better organize their monthly expenses and build long-term wealth. Users can securely connect their bank accounts and automatically track every transaction in real time. The application intelligently classifies expenses into intuitive categories such as food, transportation, entertainment, and recurring bills.
+
+The platform offers interactive charts and detailed weekly reports to help users visualize exactly how they are using their money. Additionally, SmartBudget acts as a financial guardian, sending instant notifications when a user approaches or exceeds a previously established budget limit.
+
+Another important advantage is the smart automatic saving feature. Users can set specific financial goals—like a vacation or an emergency fund—and the application recommends precise amounts that can be set aside monthly based on spending habits. SmartBudget is available on both Android and iOS and offers seamless cloud synchronization for secure access from multiple devices simultaneously.

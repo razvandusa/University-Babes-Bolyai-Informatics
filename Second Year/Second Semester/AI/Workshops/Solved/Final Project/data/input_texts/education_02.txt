@@ -1,0 +1,8 @@
+A Binary Search Tree (BST) is a type of Binary Tree data structure, where the following properties must be true for any node "X" in the tree:
+- The X node's left child and all of its descendants (children, children's children, and so on) have lower values than X's value.
+- The right child, and all its descendants have higher values than X's value.
+- Left and right subtrees must also be Binary Search Trees.
+The size of a tree is the number of nodes in it (n).
+A subtree starts with one of the nodes in the tree as a local root, and consists of that node and all its descendants.
+The descendants of a node are all the child nodes of that node, and all their child nodes, and so on. Just start with a node, and the descendants will be all nodes that are connected below that node.
+

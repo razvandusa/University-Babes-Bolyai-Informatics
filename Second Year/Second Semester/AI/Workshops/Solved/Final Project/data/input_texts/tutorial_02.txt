@@ -1,0 +1,20 @@
+A step-by-step guide to jump starting a car
+1. Line up both cars
+- Park both cars so their batteries are within easy reach of one another (without the cars actually touching)
+- Keep the handbrakes on and the ignitions off
+
+2. Connect the red jump lead
+- Use the red jump lead to connect the working battery’s positive (+) terminal to the flat battery’s positive (+) terminal. Never touch the ends of the red and black leads together as this could create sparks and cause vehicle damage
+
+3. Connect the black jump lead
+- Take the black jump lead and attach it to the negative (-) terminal on the working battery
+- Then attach the other end to an earthing point (unpainted metal on the engine block or chassis) well away from the flat battery and fuel system
+
+4. Start the other car
+- Keep both engines off and wait for 3 minutes, then start the working car’s engine and let it run for 1 minute
+
+5. Start your car
+- Turn on the engine in the car with a flat battery
+
+6. Let both cars run
+- Leave both cars to idle, at a fast pace, for around 10 minutes

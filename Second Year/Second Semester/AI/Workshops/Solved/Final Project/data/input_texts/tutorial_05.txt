@@ -1,0 +1,9 @@
+How to Use Zoom for Online Meetings
+
+Zoom is a video conferencing platform used for online classes, meetings, and remote collaboration. To start using Zoom, users need to download the desktop or mobile application and create an account.
+
+After logging in, users can schedule a meeting by selecting the "Schedule" option from the main dashboard. They can choose the meeting date, time, and privacy settings. Zoom automatically generates a meeting link that can be shared with participants.
+
+During the meeting, users can enable or disable their microphone and camera using the toolbar at the bottom of the screen. Zoom also provides features such as screen sharing, chat messaging, and recording.
+
+For better communication, users should test their audio and internet connection before joining a meeting. Zoom is widely used in education and business because it supports large groups and allows collaboration from different locations.

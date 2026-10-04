@@ -1,0 +1,9 @@
+GitHub repositories store a variety of projects. In this guide, you'll create a repository and commit your first change.
+
+1. In the upper-right corner of any page, select "+", then click "New repository".
+2. Optionally, to create a repository with the directory structure and files of an existing repository, select the "Choose a template" dropdown menu and click a template repository. You'll see template repositories that are owned by you and organizations you're a member of or that you've used before. For more information, see "Creating a repository from a template".
+3. Optionally, if you chose to use a template, to include the directory structure and files from all branches in the template, and not just the default branch, select Include all branches.
+4. Use the "Owner" dropdown menu to select the account you want to own the repository.
+5. Type a name for your repository (maximum 100 characters), and an optional description.
+6. Choose a repository visibility. For more information, see "About repositories".
+7. Click Create repository.
