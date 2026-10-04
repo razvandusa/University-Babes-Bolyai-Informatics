@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="myPersistenceUnit">
+        <!-- Entity classes -->
+        <class>org.example.domain.Course</class>
+        <class>org.example.domain.Enrollment</class>
+        <class>org.example.domain.Student</class>
+        <properties>
+            <!-- Database connection
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/sgbd"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="robert2005"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            -->
+            <!-- Hibernate settings -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!-- Hikari settings -->
+            <property name="hibernate.hikari.jdbcUrl" value="jdbc:postgresql://localhost:5432/sgbd"/>
+            <property name="hibernate.hikari.username" value="postgres"/>
+            <property name="hibernate.hikari.password" value="robert2005"/>
+            <property name="hibernate.hikari.minimumIdle" value="5"/>
+            <property name="hibernate.hikari.maximumPoolSize" value="10"/>
+            <property name="hibernate.hikari.connectionTimeout" value="30000"/>
+            <property name="hibernate.hikari.idleTimeout" value="600000"/>
+            <property name="hibernate.hikari.maxLifetime" value="1800000"/>
+        </properties>
+    </persistence-unit></persistence>

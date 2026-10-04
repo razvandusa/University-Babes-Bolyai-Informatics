@@ -1,0 +1,50 @@
+2026-05-28T13:37:11.399+03:00  INFO 10678 --- [liquibase] [main] teme.liquibase.LiquibaseApplication      : Starting LiquibaseApplication using Java 21.0.11 with PID 10678 (/home/robert/Documents/Facultate/SGBD/liquibase/target/classes started by robert in /home/robert/Documents/Facultate/SGBD/liquibase)
+2026-05-28T13:37:11.402+03:00  INFO 10678 --- [liquibase] [main] teme.liquibase.LiquibaseApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-28T13:37:11.749+03:00  INFO 10678 --- [liquibase] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-28T13:37:11.781+03:00  INFO 10678 --- [liquibase] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2026-05-28T13:37:12.052+03:00  INFO 10678 --- [liquibase] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-28T13:37:12.061+03:00  INFO 10678 --- [liquibase] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-28T13:37:12.062+03:00  INFO 10678 --- [liquibase] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-28T13:37:12.087+03:00  INFO 10678 --- [liquibase] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 658 ms
+2026-05-28T13:37:12.185+03:00  INFO 10678 --- [liquibase] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-28T13:37:12.461+03:00  INFO 10678 --- [liquibase] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1eca3ea7
+2026-05-28T13:37:12.462+03:00  INFO 10678 --- [liquibase] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-28T13:37:12.686+03:00  INFO 10678 --- [liquibase] [main] liquibase.database                       : Set default schema name to public
+2026-05-28T13:37:13.565+03:00  INFO 10678 --- [liquibase] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2026-05-28T13:37:13.709+03:00  INFO 10678 --- [liquibase] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-05-28T13:37:13.711+03:00  INFO 10678 --- [liquibase] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2026-05-28T13:37:13.722+03:00  INFO 10678 --- [liquibase] [main] liquibase.util                           : UPDATE SUMMARY
+2026-05-28T13:37:13.722+03:00  INFO 10678 --- [liquibase] [main] liquibase.util                           : Run:                          0
+2026-05-28T13:37:13.722+03:00  INFO 10678 --- [liquibase] [main] liquibase.util                           : Previously run:               9
+2026-05-28T13:37:13.722+03:00  INFO 10678 --- [liquibase] [main] liquibase.util                           : Filtered out:                 0
+2026-05-28T13:37:13.723+03:00  INFO 10678 --- [liquibase] [main] liquibase.util                           : -------------------------------
+2026-05-28T13:37:13.723+03:00  INFO 10678 --- [liquibase] [main] liquibase.util                           : Total change sets:            9
+2026-05-28T13:37:13.723+03:00  INFO 10678 --- [liquibase] [main] liquibase.util                           : Update summary generated
+2026-05-28T13:37:13.724+03:00  INFO 10678 --- [liquibase] [main] liquibase.command                        : Command execution complete
+2026-05-28T13:37:13.815+03:00  INFO 10678 --- [liquibase] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-28T13:37:13.880+03:00  INFO 10678 --- [liquibase] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-28T13:37:14.264+03:00  INFO 10678 --- [liquibase] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-28T13:37:14.331+03:00  INFO 10678 --- [liquibase] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/sgbd]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: sgbd/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-28T13:37:15.053+03:00  INFO 10678 --- [liquibase] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-28T13:37:15.055+03:00  INFO 10678 --- [liquibase] [main] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+2026-05-28T13:37:15.085+03:00  INFO 10678 --- [liquibase] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-28T13:37:15.137+03:00  INFO 10678 --- [liquibase] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-28T13:37:15.297+03:00  WARN 10678 --- [liquibase] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-28T13:37:15.509+03:00  INFO 10678 --- [liquibase] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-28T13:37:15.513+03:00  INFO 10678 --- [liquibase] [main] teme.liquibase.LiquibaseApplication      : Started LiquibaseApplication in 4.376 seconds (process running for 4.799)
+2026-05-28T13:39:48.324+03:00  INFO 10678 --- [liquibase] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-28T13:39:48.326+03:00  INFO 10678 --- [liquibase] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-28T13:39:48.329+03:00  INFO 10678 --- [liquibase] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-28T13:39:48.332+03:00  INFO 10678 --- [liquibase] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-28T13:39:48.335+03:00  INFO 10678 --- [liquibase] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
