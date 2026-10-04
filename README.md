@@ -27,3 +27,11 @@
    * [🕵️Systems for Design and Implementation](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Systems%20for%20Design%20and%20Implementation)
    * [🔩Database Management Systems](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Database%20Management%20Systems)
    * [🕸️Web](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Web)
+## Third Year
+* 📂 **First Semester**
+   * [🧩Formal languages and compiler design](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Third%20Year/First%20Semester/Formal%20languages%20and%20compiler%20design)
+   * [📱Mobile application programming](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Third%20Year/First%20Semester/Mobile%20application%20programming)
+   * [⚡Parallel and distributed programming](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Third%20Year/First%20Semester/Parallel%20and%20distributed%20programming)
+   * [🔐Public-key cryptography](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Third%20Year/First%20Semester/Public-key%20cryptography)
+   * [☁️DevOps Cloud automation](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Third%20Year/First%20Semester/DevOps%20Cloud%20automation)
+   * [👥Team project](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Third%20Year/First%20Semester/Team%20project)
