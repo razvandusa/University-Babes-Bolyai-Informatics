@@ -22,8 +22,8 @@
    * [🔥Functional and Logic Programming](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Functional%20and%20Logic%20Programming)
    * [🌐Computer Networks](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/First%20Semester/Computer%20Networks)
 * 📂 **Second Semester**
-   * [🤖AI]
-   * [⚙️Software Engineering]
+   * [🤖AI](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/AI)
+   * [⚙️Software Engineering](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Software%20Engineering)
    * [🕵️Systems for Design and Implementation](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Systems%20for%20Design%20and%20Implementation)
    * [🔩Database Management Systems](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Database%20Management%20Systems)
-   * [🕸️Web]
+   * [🕸️Web](https://github.com/razvandusa/University-Babes-Bolyai-Informatics/tree/main/Second%20Year/Second%20Semester/Web)
